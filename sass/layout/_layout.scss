@@ -43,6 +43,7 @@
     @include respond(down-tab-port){
         padding-left: 0rem;
         width: 100%;
+        overflow-y: unset;
     }
     h1{
         color: white;
