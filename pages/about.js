@@ -9,7 +9,7 @@ const About = () => {
     return (
         <div className="page_layout">
             <SideBar activeMenu={{act:'active',menu:'about'}} src="/mataer-logo-color.png"/>
-            <div className="page_layout-main d-flex"  initial='initial' animate='animate' exit="exit">
+            <div className="page_layout-main"  initial='initial' animate='animate' exit="exit">
                 <div className="menu-first menu-main">
                   <ul>
                     <li><Link href="/about"><a>Tentang Kami</a></Link></li>
@@ -21,18 +21,15 @@ const About = () => {
                         <li><p>PT. Mataer Makmurindo</p></li>
                         <li><p>info@mataer.com</p></li>
                         <br/>
-                        <li><p>Gd. Griya Upakara Kemenlu <br/>Lt 3B, Jl Cikini IV No 10, <br/>Jakarta Pusat</p></li>
+                        <li><p>Gd. Griya Upakara <br/>Kemenlu Lt 3B, <br/>Jl Cikini IV No 10, <br/>Jakarta Pusat</p></li>
                         <br/>
-                        <li><p>T (021) 3103080, (021) 3103080</p></li>
+                        <li><p>T (021) 3103080</p></li>
+                        <li><p>T (021) 3103080</p></li>
                         <li><p>F (021) 3162315</p></li>
                         <li><p>PN 0812-8394-1425</p></li>
-                        <br/>
-                        <li><p>Ruko Golden Madrid 1 <br/>Blok B - 10, BSD City, <br/>Kel. Rawa Mekar Jaya, Kec. Serpong - Tangerang Selatan</p></li>
-                        <br/>
-                        <li><p>T (021) 5319 1667</p></li>
                     </ul>
                 </div>
-                <div className="about-second page_about">
+                <div className="content__wrapper page_about">
                   <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
                   <br/>
                   <br/>

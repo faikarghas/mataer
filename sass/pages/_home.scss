@@ -5,33 +5,3 @@
 
 
 
-.about-second{
-    width: 77%;
-    position: relative;
-    padding-left: 4rem;
-    margin-top: 2rem;
-    overflow-y: auto;
-
-    h1{
-        color: white;
-        font-size: 5rem;
-        font-weight: 300;
-    }
-
-    .content-about-wrapper{
-        ol{
-            li{
-                display: flex;
-                border-bottom: 1px solid lightgray;
-                padding: 1rem;
-                span{
-                    display: block;
-                    p{
-                        margin: 0;
-                    }
-                }
-                p{margin: 0;}
-            }
-        }
-    }
-}

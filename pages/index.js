@@ -18,7 +18,7 @@ const Home = () => {
                     <li><Link href="/about"><a>Produk dan Sistem Pendukung</a></Link></li>
                   </ul>
                 </div>
-                <div className="about-second">
+                <div className="content__wrapper">
                   <h1>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan manajemen parkir kendaraan bermotor berbasis teknologi komputerisasi. </h1>
                 </div>
             </div>

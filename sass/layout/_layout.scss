@@ -10,19 +10,61 @@
     }
 
     .page_layout-main{
+        display: flex;
         width: 78%;
         height: 100vh;
         padding: 0 4rem;
         overflow: hidden;
+        @include respond(down-tab-port){
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: unset;
+            overflow: auto;
+        }
     }
 
 }
 
 .home-bg{
-    background-image: url('/bg-mataer2.png');
+    background-image: url('/bgtest2.jpg');
     background-position: 0% 61%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.content__wrapper{
+    width: 77%;
+    position: relative;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    overflow-y: auto;
+    @include respond(down-tab-port){
+        padding-left: 0rem;
+    }
+    h1{
+        color: white;
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    .content-about-wrapper{
+        ol{
+            li{
+                display: flex;
+                border-bottom: 1px solid lightgray;
+                padding: 1rem;
+                span{
+                    display: block;
+                    p{
+                        margin: 0;
+                    }
+                }
+                p{margin: 0;}
+            }
+        }
+    }
 }
 
 

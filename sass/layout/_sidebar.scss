@@ -6,6 +6,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @include respond(down-tab-port){
+        position: relative;
+        height: unset;
+        width: 100%;
+    }
+
     &-content{
         height: 100%;
         margin: 2rem 0;
@@ -19,6 +26,9 @@
             .logo{
                 width: 100%;
                 object-fit: contain;
+                @include respond(down-tab-port){
+                    width: 100px;
+                }
             }
             .link{
                 list-style: none;
@@ -61,13 +71,16 @@
 .menu-first{
     width: 23%;
     position: relative;
-    padding-right: 1rem;
+    padding-right: 4rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    @include respond(down-tab-port){
+        width: 100%;
+    }
     .information{
         list-style: none;
         li {
@@ -86,7 +99,7 @@
     &:after{
         right: 0;
         border-right: 1px solid #b5b5b5;
-        height: calc(100% + 1rem);
+        height: calc(100%);
         position: absolute;
         top: 0rem;
         content: "";
@@ -120,9 +133,9 @@
         li{
             list-style: none;
             a{
-                color: $color_darkblue;
+                color: #232323;
                 &:hover{
-                    color: $color_darkgreen;
+                    color: $color_darkblue;
                 }
             }
         }
