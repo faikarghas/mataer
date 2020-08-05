@@ -1,0 +1,65 @@
+p,li,a{
+    font-family: "MONTSERRAT-REGULAR";
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: $color_darkblue;
+    letter-spacing: 3px;
+}
+
+h1,h2,h3,h4,h5,th,td{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: $color_darkblue;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+label,button,span{
+    font-family: "MONTSERRAT-REGULAR";
+    letter-spacing: 2px;
+}
+
+input{
+    font-family: "MONTSERRAT-REGULAR";
+    letter-spacing: 2px;
+    &:focus{
+        outline: none;
+    }
+}
+
+
+@font-face {
+    font-family: "MONTSERRAT-REGULAR";
+    src:
+        url('/fonts/MONTSERRAT-REGULAR.woff') format('woff')
+}
+
+@font-face {
+    font-family: "MONTSERRAT-BOLD";
+    src:
+        url('/fonts/MONTSERRAT-BOLD.woff') format('woff')
+}
+
+@font-face {
+    font-family: "MONTSERRAT-REGULAR";
+    src:
+        url('/fonts/MONTSERRAT-REGULAR.woff') format('woff')
+}
+
+@font-face {
+    font-family: "Bellota-Bold";
+    src:
+        url('/fonts/Bellota-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: "BLISS2B";
+    src:
+        url('/fonts/BLISS2B.woff') format('woff')
+}
+
+
+
