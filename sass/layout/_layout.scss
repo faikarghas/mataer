@@ -42,6 +42,7 @@
     overflow-y: auto;
     @include respond(down-tab-port){
         padding-left: 0rem;
+        width: 100%;
     }
     h1{
         color: white;
