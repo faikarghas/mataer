@@ -34,8 +34,8 @@ html{
 
 body {
     box-sizing: border-box;
-    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
+    border-left: 9px solid $color_blue;
 
     @include respond(down-tab-port){
         overflow: auto;
@@ -54,6 +54,3 @@ a {
 }
 
 button:focus {outline:0;}
-
-
-   

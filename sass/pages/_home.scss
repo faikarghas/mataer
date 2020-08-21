@@ -1,6 +1,102 @@
-.content_scroll{
-    height: 100%;
-    overflow-y: auto;
+.home__section_about{
+    margin: 4rem 0;
+    h2{
+        margin-bottom: 3rem;
+        font-size: 3rem;
+    }
+    .title{
+        margin-bottom: 10rem;
+        font-family: "MONTSERRAT-BOLD";
+        color: $color_blue;
+        display: inline-block;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -5rem;
+            left: 0;
+            width: 26%;
+            height: 2px;
+            background-color: lightgray;
+        }
+    }
+    .fs-big{
+        font-size: 8rem;
+        font-family: "MONTSERRAT-SEMIBOLD";
+        color: $color_green;
+        line-height: 1em;
+        margin-top: 1rem;
+    }
+    .fs-med{
+        font-size: 6rem;
+        font-family: "MONTSERRAT-SEMIBOLD";
+        color: $color_green;
+        line-height: 1em;
+        margin-top: 1rem;
+    }
+    p{
+        font-family: "MONTSERRAT-REGULAR";
+    }
+
+    .pm{
+        border-top: 1px solid lightgray;
+    }
+
+    .km{
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+    }
+
+    .tp{
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
 }
 
+.home__section_product{
+    margin: 4rem 0;
+    padding: 6rem 0;
+    background-color: #01233d;
+    h2{
+        color: white;
+        font-size: 3rem;
+    }
 
+    ul{
+        margin: 0;
+        width: 100%;
+        li{
+            list-style: none;
+            padding: 2rem 0;
+            border-bottom: 1px solid white;
+            transition: all 0.3s;
+            &:first-child{
+                border-top: 1px solid white;
+            }
+            a{
+                color:white;
+                font-size: 2rem;
+                width: 100%;
+                display: block;
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                transition: all 0.5s;
+                span{
+                    padding-right: 2rem;
+                    transition: all 0.5s;
+                }
+            }
+            &:hover{
+                background-color: #022846;
+                a{
+                    padding-left: 1rem;
+                    span{
+                        padding-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
