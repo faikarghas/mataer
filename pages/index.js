@@ -37,18 +37,22 @@ const Home = () => {
                         </Col>
                         <Col xs={12} md={6}>
                             <div className="menu__link">
-                                <ul>
-                                    <li>TENTANG KAMI</li>
-                                    <li>HUBUNGI KAMI</li>
+                                <ul className="menu__link-top">
+                                    <li><Link href="/"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
+                                    <li><Link href="/"><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></Link></li>
                                 </ul>
-                                <ul>
-                                    <li>Parking</li>
-                                    <li>Event & Media</li>
-                                    <li>Adspro</li>
-                                    <li>Business & Consultant</li>
-                                    <li>Berita & Artikel</li>
-                                    <li>Karir</li>
-                                </ul>
+                                <div className="menu__link-bottom">
+                                    <ul className="menu__link-bottom-left">
+                                        <li><Link href="/"><a>Parking</a></Link></li>
+                                        <li><Link href="/"><a>Event & Media</a></Link></li>
+                                        <li><Link href="/"><a>Adspro</a></Link></li>
+                                        <li><Link href="/"><a>Business & Consultant</a></Link></li>
+                                    </ul>
+                                    <ul className="menu__link-bottom-right">
+                                        <li><Link href="/"><a>Berita & Artikel</a></Link></li>
+                                        <li><Link href="/"><a>Karir</a></Link></li>
+                                    </ul>
+                                </div>
                             </div>
                         </Col>
                     </Row>
