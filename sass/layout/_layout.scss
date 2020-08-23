@@ -76,11 +76,30 @@ header{
                 &:first-child{
                     background-color: white;
                     color: $color_green;
+                    img{
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        img{
+                            transform: translateX(-3px);
+                        }
+                    }
                 }
                 &:last-child{
                     background-color: $color_green;
                     color: white;
+                    img{
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        img{
+                            transform: translateX(3px);
+                        }
+                    }
                 }
+
+
+                
             }
         }
     }

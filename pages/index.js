@@ -93,8 +93,8 @@ const Home = () => {
             <Container>
             <div className="arrow__slider">
                 <ul>
-                    <li onClick={_prevArrow}>{`<`}</li>
-                    <li onClick={_nextArrow}>{`>`}</li>
+                    <li onClick={_prevArrow}><img src="/right.png" alt="arrow" /></li>
+                    <li onClick={_nextArrow}><img src="/arrow-slider-front.png" alt="arrow" /></li>
                 </ul>
             </div>
             </Container>
@@ -144,10 +144,10 @@ const Home = () => {
                         </Col>
                         <Col xs={12} md={6} className="d-flex align-items-center">
                             <ul>
-                                <li><Link href="/"><a>Mata Aer Parking Indonesia <span>{`->`}</span></a></Link></li>
-                                <li><Link href="/"><a>Mata Aer Event & Media <span>{`->`}</span></a></Link></li>
-                                <li><Link href="/"><a>Mata Aer Adspro <span>{`->`}</span></a></Link></li>
-                                <li><Link href="/"><a>Mata Aer Business & Consultant <span>{`->`}</span></a></Link></li>
+                                <li><Link href="/"><a>Mata Aer Parking Indonesia <span><img src="/arrow-front.png" /></span></a></Link></li>
+                                <li><Link href="/"><a>Mata Aer Event & Media <span><img src="/arrow-front.png" /></span></a></Link></li>
+                                <li><Link href="/"><a>Mata Aer Adspro <span><img src="/arrow-front.png" /></span></a></Link></li>
+                                <li><Link href="/"><a>Mata Aer Business & Consultant <span><img src="/arrow-front.png" /></span></a></Link></li>
                             </ul>
                         </Col>
                     </Row>
@@ -166,7 +166,7 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="artikel__wrapper_img1">
                                     <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                    <div className="linkToArtikel" ><Link href=""><a>{`->`}</a></Link></div>
+                                    <div className="linkToArtikel" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                 </div>
                             </Col>
                         </Row>
@@ -184,7 +184,7 @@ const Home = () => {
                                         <Col xs={12} md={4}>
                                             <div className="artikel__wrapper_img2">
                                                 <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -202,7 +202,7 @@ const Home = () => {
                                         <Col xs={12} md={6}>
                                             <div className="artikel__wrapper_img2">
                                                 <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -220,7 +220,7 @@ const Home = () => {
                                         <Col xs={12} md={4}>
                                             <div className="artikel__wrapper_img2">
                                                 <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -238,7 +238,7 @@ const Home = () => {
                                         <Col xs={12} md={6}>
                                             <div className="artikel__wrapper_img2">
                                                 <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
