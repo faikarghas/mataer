@@ -100,3 +100,113 @@
         }
     }
 }
+
+.home__section_artikel{
+    .button_toArtikel{
+        padding: 3.5rem 0;
+        text-align: right;
+        width: 100%;
+    }
+    .artikel__firstBorder{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 3.5rem 0;
+    }
+    .artikel__secondBorder{
+        border-bottom: 1px solid black;
+        padding: 3.5rem 0;
+    }
+    .artikel__wrapper_desc1{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        a{
+            color: $color_blue;
+            font-size: 3rem;
+            text-decoration: none;
+        }
+        span{
+            font-size: 1.3rem;
+        }
+    }
+
+    .artikel__wrapper_img1{
+        position: relative;
+        img{
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+    }
+
+    .artikel__wrapper_desc2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        a{
+            color: $color_blue;
+            font-size: 1.3rem;
+            text-decoration: none;
+        }
+        span{
+            font-size: 1.3rem;
+        }
+    }
+
+    .artikel__wrapper_img2{
+        position: relative;
+        img{
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+    }
+}
+
+.linkToArtikel{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: calc(-35px / 2);
+    right: 0px;
+    background-color: #55ba47;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    a{
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s;
+        &::before{
+            transition: all 1s;
+        }
+    }
+
+    &:hover{
+        width: 70px;
+        a{
+            justify-content: space-around;
+            &::before{
+                content: "Baca";
+                font-size: 1.4rem;
+                color: white;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.linkToArtikel_bottom-zero{
+    bottom: 0 !important;
+}

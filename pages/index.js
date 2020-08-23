@@ -154,7 +154,108 @@ const Home = () => {
                 </Container>
             </div>
             <div className="home__section_artikel">
-
+                <Container>
+                    <div className="artikel__firstBorder">
+                        <Row>
+                            <Col xs={12} md={6}>
+                                <div className="artikel__wrapper_desc1">
+                                    <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                    <span>14 Agustus 2020</span>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={6}>
+                                <div className="artikel__wrapper_img1">
+                                    <img src="/Article1.jpg" width="100%" alt="img artikel" />
+                                    <div className="linkToArtikel" ><Link href=""><a>{`->`}</a></Link></div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                        <Row>
+                            <Col xs={12} md={6}>
+                                <div className="artikel__secondBorder">
+                                    <Row>
+                                        <Col xs={12} md={8}>
+                                            <div className="artikel__wrapper_desc2">
+                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <span>14 Agustus 2020</span>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4}>
+                                            <div className="artikel__wrapper_img2">
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={6}>
+                                <div className="artikel__secondBorder">
+                                    <Row>
+                                        <Col xs={12} md={6}>
+                                            <div className="artikel__wrapper_desc2">
+                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <span>14 Agustus 2020</span>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={6}>
+                                            <div className="artikel__wrapper_img2">
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={6}>
+                                <div className="artikel__secondBorder">
+                                    <Row>
+                                        <Col xs={12} md={8}>
+                                            <div className="artikel__wrapper_desc2">
+                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <span>14 Agustus 2020</span>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4}>
+                                            <div className="artikel__wrapper_img2">
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={6}>
+                                <div className="artikel__secondBorder">
+                                    <Row>
+                                        <Col xs={12} md={6}>
+                                            <div className="artikel__wrapper_desc2">
+                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <span>14 Agustus 2020</span>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={6}>
+                                            <div className="artikel__wrapper_img2">
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a>{`->`}</a></Link></div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <div className="button_toArtikel">
+                                <Col xs={12}>
+                                    <div className="link__to">
+                                        <Link href="/about"><a>Lihat Cerita Kami</a></Link>
+                                        <div className="am__bg-link"></div>
+                                    </div>
+                                </Col>
+                            </div>
+                        </Row>
+                </Container>
             </div>
         </main>
         <footer>
