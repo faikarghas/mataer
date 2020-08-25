@@ -52,7 +52,9 @@ header{
                     border-right: 1px solid black;
                     li{
                         a{
-
+                            &.active{
+                                color: black;
+                            }
                         }
                     }
                 }
@@ -83,7 +85,7 @@ header{
     }
 
     .header__slider{
-        margin-top: 10rem;
+        margin-top: 12rem;
         &_item{
             position: relative;
 
@@ -154,7 +156,138 @@ header{
 }
 
 main{
-    padding: 5rem 0;
+    // padding: 5rem 0;
+
+    .product__wrapper{
+        margin-top: 12rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .sidebar{
+            width: 20%;
+            background-color: #01233d;
+            position: relative;
+            &__menu{
+                background-color: #0056b3;
+                width: 100%;
+                position: sticky;
+                top: 12rem;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3rem 0;
+                ul{
+                    li{
+                        list-style: none;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: 1.4rem;
+                            cursor: pointer;
+                        }
+                        &:not(:last-child){
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    ul{
+                        padding-left: 1rem;
+                        border-left: 1px solid white;
+                        li{
+                            list-style: none;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            width: 80%;
+
+            &__headerImg{
+                height: 420px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: brightness(0.8);
+                }
+                &-title{
+                    position: absolute;
+                    bottom: 20%;
+                    left: 5%;
+                    transform: translateY(-50%);
+                    h1{
+                        color: white;
+                        font-size: 3rem;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            bottom: -3rem;
+                            left: 0;
+                            width: 10%;
+                            height: 2px;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            &__firstSection{
+                padding: 9rem 5rem;
+                h3{
+                    color: #0056b3;
+                    margin-bottom: 4rem;
+                }
+
+                p{
+
+                }
+            }
+
+            &__visiSection{
+                height: 370px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &-desc{
+                    position: absolute;
+                    top: 50%;
+                    left: 5%;
+                    transform: translateY(-50%);
+                    background-color: white;
+                    width: 280px;
+                    height: calc(370px - 10rem);
+                    padding: 4rem;
+                }
+                h4{
+                    margin-bottom: 6rem;
+                    font-family: "MONTSERRAT-BOLD";
+                    color: $color_blue;
+                    display: inline-block;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        bottom: -3rem;
+                        left: 0;
+                        width: 95%;
+                        height: 2px;
+                        background-color: #0056b3;
+                    }
+                }
+                p{
+                    font-size: 1.2rem;
+                    color: #0056b3;
+                    font-family: "MONTSERRAT-BOLD";
+                }
+            }
+
+        }
+    }
 }
 
 footer{
