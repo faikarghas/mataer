@@ -2,13 +2,15 @@ import React from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
 
-const Menu = ({logo,page}) => {
+const Menu = ({logo,page,scrollActive}) => {
     return (
-        <menu>
+        <menu className={scrollActive}>
                 <Container fluid>
                     <Row>
                         <Col xs={12} md={6}>
+                            <Link href="/"><a>
                             <img src={logo} alt="logo mataer" width="70px"/>
+                            </a></Link>
                         </Col>
                         <Col xs={12} md={6}>
                             <div className="menu__link">

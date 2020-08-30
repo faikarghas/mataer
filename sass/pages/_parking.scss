@@ -1,0 +1,560 @@
+.content__parking{
+    width: 80%;
+
+    &__headerImg{
+        height: 420px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+        &-title{
+            position: absolute;
+            bottom: 20%;
+            left: 5%;
+            transform: translateY(-50%);
+            h1{
+                color: white;
+                font-size: 3rem;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    bottom: -3rem;
+                    left: 0;
+                    width: 10%;
+                    height: 2px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    &__firstSection{
+        padding: 9rem 30rem 9rem 5rem;
+        h3{
+            color: #0056b3;
+            margin-bottom: 4rem;
+        }
+
+        p{
+
+        }
+    }
+
+    &__visiSection{
+        height: 370px;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-desc{
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            background-color: white;
+            width: 280px;
+            height: calc(370px - 10rem);
+            padding: 4rem;
+        }
+        h4{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                // width: 95%;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            color: #0056b3;
+            font-family: "MONTSERRAT-BOLD";
+        }
+    }
+
+    &__misiSection{
+        padding: 9rem 0;
+        margin: 0 5rem;
+        h4{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                // width: 95%;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+        .left{
+            p{
+                padding-right: 13rem;
+            }
+        }
+        ul{
+            border-left: 1px solid black;
+            li{
+                list-style: none;
+                padding: 3rem;
+                position: relative;
+                &:not(:last-child){
+                    border-bottom: 1px solid black;
+                }
+                span{
+                    position: absolute;
+                    top: 3rem;
+                    left: -45px;
+                    color: $color_green;
+                    font-size: 2rem;
+                    line-height: 1em;
+                }
+            }
+        }
+    }
+
+    &__layanan{
+        padding-bottom: 9rem;
+        margin: 0 5rem;
+        border-bottom: 1px solid black;
+        h4{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+        &_top{
+            height: 400px;
+            background-image: url('/Layanan-min.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 4rem;
+            color: #ffffff;
+            .title_wrapper{
+                height: 120px;
+            }
+            h4{
+                color: white;
+                margin: 0;
+                &::after{
+                    background-color: white;
+                    top: 9rem;
+                    width: 35px;
+                }
+            }
+            p{
+                font-size: 1.4rem;
+                letter-spacing: normal;
+            }
+        }
+        &_img{
+            height: 250px;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__why{
+        padding: 9rem 0;
+        padding-right: 30rem;
+        margin: 0 5rem;
+        h3{
+            font-size: 3rem;
+        }
+        h4,h3{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+        ul{
+            margin-left: 2rem;
+            li{
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+                p{
+                    margin-left: 1rem;
+                }
+            }
+        }
+        p{
+            line-height: 3.5rem;
+        }
+    }
+
+    &__justImage{
+        height: 420px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__bannerWithBgText{
+        position: relative;
+        height: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &-desc{
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            background-color: white;
+            width: 280px;
+            // height: calc(370px - 10rem);
+            padding: 4rem;
+        }
+        h4{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                // width: 95%;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            color: #0056b3;
+            font-family: "MONTSERRAT-BOLD";
+        }
+    }
+
+    &__onlyTextOrImg{
+        padding: 9rem 0;
+        margin: 0 5rem;
+        h3{
+            font-size: 3rem;
+        }
+        h4,h3{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+        p{
+            line-height: 3.5rem;
+        }
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__slider{
+        padding: 9rem 0;
+        margin: 0 5rem;
+
+        .section__slider_imgWrapper{
+            height: 500px;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__map{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        &-bar{
+            min-height: 800px;
+            background-color: #f3f3f3;
+
+            &:first-child{
+                width: 32%;
+                .head{
+                    height: 70px;
+                    width: calc(100% - 10rem);
+                    border-bottom: 1px solid black;
+                    margin: auto;
+                }
+                .body{
+                    width: calc(100% - 10rem);
+                    margin: auto;
+                    span{
+                        font-size: 10rem;
+                        line-height: 1em;
+                        color: $color_green;
+                        margin-bottom: 2rem;
+                        display: block;
+                    }
+                    p{
+                        color: $color_blue;
+                    }
+                }
+            }
+            &:nth-child(2){
+                width: 28%;
+                .head{
+                    height: 70px;
+                    width: calc(100% - 5rem);
+                    border-bottom: 1px solid black;
+                    margin-left: 5rem;
+                    display: flex;
+                    p{
+                        align-self: center;
+                        color: $color_green;
+                        margin: 0;
+                    }
+                }
+                .body{
+                    width: calc(100% - 5rem);
+                    margin-left: 5rem;
+                    span{
+                        font-size: 10rem;
+                        line-height: 1em;
+                        color: $color_green;
+                        margin-bottom: 2rem;
+                        display: block;
+                    }
+                    p{
+                        color: $color_blue;
+                    }
+                    ul{
+                        li{
+                            list-style: none;
+                            padding: 1rem 0;
+                            border-bottom: 1px solid black;
+                            p{
+                                color: $color_blue;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                width: 32%;
+                .head{
+                    height: 70px;
+                    width: calc(100% - 5rem);
+                    border-bottom: 1px solid black;
+                    margin-right: 5rem;
+                    display: flex;
+                    p{
+                        align-self: center;
+                        color: $color_green;
+                        margin: 0;
+                    }
+                }
+                .body{
+                    width: calc(100% - 5rem);
+                    margin-right: 5rem;
+                    span{
+                        font-size: 10rem;
+                        line-height: 1em;
+                        color: $color_green;
+                        margin-bottom: 2rem;
+                        display: block;
+                    }
+                    p{
+                        color: $color_blue;
+                    }
+                    ul{
+                        li{
+                            list-style: none;
+                            padding: 1rem 0;
+                            border-bottom: 1px solid black;
+                            p{
+                                color: $color_blue;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .peta__wrapper{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 15rem);
+            .peta{
+                opacity: 0.5;
+                width: 100%;
+            }
+
+        }
+    }
+
+    &__struktur{
+        padding: 9rem 0;
+        margin: 0 5rem;
+
+        h3{
+            font-size: 3rem;
+        }
+        h4,h3{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+
+        .list_struktur{
+            margin-top: 8rem;
+            .imgAvatar{
+                width: 100%;
+                height: 240px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+    
+            a{
+                color: $color_blue;
+                text-decoration: underline;
+                text-decoration-color: $color_blue;;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__kontak{
+        padding: 9rem 0;
+        margin: 0 5rem;
+
+        h3{
+            font-size: 3rem;
+        }
+        h4,h3{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: $color_blue;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+
+        h5{
+            margin: 3rem 0;
+        }
+
+        .kontak__wrapper{
+            position: relative;
+            &-item{
+                padding: 4rem 0;
+                border-top: 1px solid black;
+                .kontak_title{
+                    color: $color_blue;
+                }
+
+                ul{
+                    li{
+                        list-style: none;
+                        font-size: 1.4rem;
+                        span{
+                            width: 80px;
+                            display: inline-block;
+                            position: relative;
+                            &::after{
+                                content:":";
+                                position: absolute;
+                                right: 0;
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

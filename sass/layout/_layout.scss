@@ -10,6 +10,12 @@ header{
         z-index: 3;
         border-left: 9px solid $color_blue;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+        transition: all 0.5s;
+        &.active_scroll{
+            // opacity: 0;
+            // visibility: hidden;
+            top: -100%;
+        }
         .menu__link{
             display: flex;
             flex-direction: column;
@@ -82,6 +88,7 @@ header{
                 }
             }
         }
+
     }
 
     .header__slider{
@@ -159,10 +166,14 @@ main{
     // padding: 5rem 0;
 
     .product__wrapper{
-        margin-top: 12rem;
+        margin-top: 11.5rem;
         width: 100%;
         display: flex;
         flex-direction: row;
+        transition: all 0.5s;
+        &.active_scroll{
+            margin-top: 0;
+        }
         .sidebar{
             width: 20%;
             background-color: #01233d;
@@ -177,6 +188,10 @@ main{
                 align-items: center;
                 justify-content: center;
                 padding: 3rem 0;
+                transition: all 0.5s;
+                &.active_scroll{
+                    top: 0;
+                }
                 ul{
                     li{
                         list-style: none;
@@ -200,92 +215,6 @@ main{
                     }
                 }
             }
-        }
-        .content{
-            width: 80%;
-
-            &__headerImg{
-                height: 420px;
-                position: relative;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    filter: brightness(0.8);
-                }
-                &-title{
-                    position: absolute;
-                    bottom: 20%;
-                    left: 5%;
-                    transform: translateY(-50%);
-                    h1{
-                        color: white;
-                        font-size: 3rem;
-                        &:after{
-                            content: "";
-                            position: absolute;
-                            bottom: -3rem;
-                            left: 0;
-                            width: 10%;
-                            height: 2px;
-                            background-color: white;
-                        }
-                    }
-                }
-            }
-            &__firstSection{
-                padding: 9rem 5rem;
-                h3{
-                    color: #0056b3;
-                    margin-bottom: 4rem;
-                }
-
-                p{
-
-                }
-            }
-
-            &__visiSection{
-                height: 370px;
-                position: relative;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-                &-desc{
-                    position: absolute;
-                    top: 50%;
-                    left: 5%;
-                    transform: translateY(-50%);
-                    background-color: white;
-                    width: 280px;
-                    height: calc(370px - 10rem);
-                    padding: 4rem;
-                }
-                h4{
-                    margin-bottom: 6rem;
-                    font-family: "MONTSERRAT-BOLD";
-                    color: $color_blue;
-                    display: inline-block;
-                    position: relative;
-                    &:after{
-                        content: "";
-                        position: absolute;
-                        bottom: -3rem;
-                        left: 0;
-                        width: 95%;
-                        height: 2px;
-                        background-color: #0056b3;
-                    }
-                }
-                p{
-                    font-size: 1.2rem;
-                    color: #0056b3;
-                    font-family: "MONTSERRAT-BOLD";
-                }
-            }
-
         }
     }
 }
