@@ -84,11 +84,11 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="content__parking__firstSection">
-                        <h3>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan
+                        <p><b>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan
                         manajemen parkir kendaraan bermotor berbasis teknologi komputerisasi.
                         Telah berdiri sejak tahun 2015, telah memasuki dan memberikan layanan
                         manajemen parkir untuk Kampus/Universitas, Mall, Stasiun, Apartemen,
-                        serta tempat fasilitas umum lainnya.</h3>
+                        serta tempat fasilitas umum lainnya.</b></p>
                         <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
                     </div>
                     <div className="content__parking__visiSection">
@@ -105,9 +105,9 @@ const Home = () => {
                             </Col>
                             <Col xs={12} md={7}>
                                 <ul>
-                                    <li><span>1</span><p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra.</p></li>
-                                    <li><span>2</span><p>Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang profesional.</p></li>
-                                    <li><span>3</span><p>Menyelenggarakan pengelolaan parkir yang aman dan nyaman untuk para customer.</p></li>
+                                    <li><span>1</span><p><b>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra.</b></p></li>
+                                    <li><span>2</span><p><b>Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang profesional.</b></p></li>
+                                    <li><span>3</span><p><b>Menyelenggarakan pengelolaan parkir yang aman dan nyaman untuk para customer.</b></p></li>
                                 </ul>
                             </Col>
                         </Row>
@@ -122,14 +122,14 @@ const Home = () => {
                                     <div className="title_wrapper">
                                         <h4>Parking<br/>Management</h4>
                                     </div>
-                                    <p>Melayani pengelolaan
+                                    <p><b>Melayani pengelolaan
                                     dan manajemen parkir
                                     termasuk Traditional
                                     Valet, Building Parking,
                                     Parking Management
                                     Consultant, dan
                                     Pengembangan Area
-                                    Parkir.</p>
+                                    Parkir.</b></p>
                                 </div>
                                 <div className="content__parking__layanan_img">
                                     <img src="/Parking-Management-min.jpg" width="100%" alt=""/>
@@ -140,12 +140,12 @@ const Home = () => {
                                     <div className="title_wrapper">
                                     <h4>Insurance</h4>
                                     </div>
-                                    <p>Menyediakan layanan
+                                    <p><b>Menyediakan layanan
                                     asuransi di antaranya
                                     Personal Accident
                                     Insurance, Parking
                                     Insurance, dan Building
-                                    & Asset Insurance.</p>
+                                    & Asset Insurance.</b></p>
                                 </div>
                                 <div className="content__parking__layanan_img">
                                     <img src="/Insurance-min.jpg" width="100%" alt=""/>
@@ -156,13 +156,13 @@ const Home = () => {
                                     <div className="title_wrapper">
                                     <h4>Consulting</h4>
                                     </div>
-                                    <p>Melayani pembuatan
+                                    <p><b>Melayani pembuatan
                                     feasibility study untuk
                                     memaksimalkan alur
                                     dan penggunaan space
                                     gedung atau area untuk
                                     penyelenggaraan
-                                    parkir.</p>
+                                    parkir.</b></p>
                                 </div>
                                 <div className="content__parking__layanan_img">
                                     <img src="/Consulting-min.jpg" width="100%" alt=""/>

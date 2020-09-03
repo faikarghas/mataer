@@ -96,7 +96,7 @@ const ParkingLegal = () => {
                         <h4>Struktur Organisasi</h4>
                         <div className="list_struktur">
                             <Row>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">
@@ -110,7 +110,7 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">
@@ -124,7 +124,7 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">
@@ -138,7 +138,7 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">
@@ -152,7 +152,7 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">
@@ -166,7 +166,7 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">
@@ -180,7 +180,7 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} className="mb-5">
                                             <div className="imgAvatar">

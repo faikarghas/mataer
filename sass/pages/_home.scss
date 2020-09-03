@@ -3,7 +3,7 @@
     padding: 5rem 0;
     h2{
         margin-bottom: 3rem;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .title{
         margin-bottom: 10rem;
@@ -22,26 +22,27 @@
         }
     }
     .fs-big{
-        font-size: 8rem;
-        font-family: "MONTSERRAT-SEMIBOLD";
+        font-size: 17rem;
+        font-family: "Bellota-Bold";
         color: $color_green;
         line-height: 1em;
         margin-top: 1rem;
     }
     .fs-med{
-        font-size: 6rem;
-        font-family: "MONTSERRAT-SEMIBOLD";
+        font-size: 12rem;
+        font-family: "Bellota-Bold";
         color: $color_green;
         line-height: 1em;
         margin-top: 1rem;
     }
+
     p{
-        font-family: "MONTSERRAT-REGULAR";
+        font-family: "BLISS2B";
     }
 
     .pm{
         border-top: 1px solid lightgray;
-    }
+            }
 
     .km{
         border-top: 1px solid lightgray;
@@ -58,7 +59,7 @@
 .home__section_product{
     margin: 4rem 0;
     padding: 6rem 0;
-    background-color: #01233d;
+    background-color: #12132A;
     h2{
         color: white;
         font-size: 3rem;
@@ -93,9 +94,8 @@
                 }
             }
             &:hover{
-                background-color: #022846;
                 a{
-                    padding-left: 1rem;
+                    color: $color_blue;
                     span{
                         padding-right: 1rem;
                     }
@@ -126,6 +126,7 @@
         flex-direction: column;
         height: 100%;
         a{
+            font-family: "BLISS2R";
             color: $color_blue;
             font-size: 3rem;
             text-decoration: none;
@@ -151,6 +152,7 @@
         flex-direction: column;
         height: 100%;
         a{
+            font-family: "BLISS2R";
             color: $color_blue;
             font-size: 1.3rem;
             text-decoration: none;

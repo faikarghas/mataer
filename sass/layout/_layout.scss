@@ -176,7 +176,7 @@ main{
         }
         .sidebar{
             width: 20%;
-            background-color: #01233d;
+            background-color: #12132A;
             position: relative;
             &__menu{
                 background-color: #0056b3;
@@ -221,7 +221,7 @@ main{
 
 footer{
     padding: 5rem 4rem;
-    background-color: #022846;
+    background-color: #12132A;
     img{
         margin-bottom: 2rem;
     }
@@ -231,6 +231,7 @@ footer{
         font-size: 1.2rem;
         &:nth-child(2){
             font-weight: bold;
+            font-family: "BLISS2B";
         }
     }
     ul{

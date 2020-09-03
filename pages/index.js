@@ -41,7 +41,7 @@ const Home = () => {
                                     <Col xs={12}>
                                     <h1>Intuisi dan Kreatifitas <br/> dalam membawa nilai <br/>dan solusi kepada <br/> dunia usaha </h1>
                                     <div className="link__to">
-                                        <Link href="/about"><a>Pelajari Lebih Lanjut  </a></Link>
+                                        <Link href="/about"><a>Pelajari Lebih Lanjut  <span><img src="/arrow-front.png" /></span></a></Link>
                                         <div className="am__bg-link"></div>
                                     </div>
                                     </Col>
@@ -79,12 +79,12 @@ const Home = () => {
         <main>
             <div className="home__section_about">
                 <Container>
-                    <Row>
+                    <Row style={{width:'100%'}}>
                         <Col xs={12} md={6}>
                             <p className="title">Tentang Mataer</p>
                             <h2>Sejak tahun 2014,<br/>PT. Mata Aer Makmurindo<br/>telah menjadi mitra strategis<br/>dalam pelaksanaan dan<br/>pengadaan barang & jasa.</h2>
                             <div className="link__to">
-                                <Link href="/about"><a>Lihat Cerita Kami</a></Link>
+                                <Link href="/about"><a>Lihat Cerita Kami <span><img src="/arrow-front.png" /></span></a></Link>
                                 <div className="am__bg-link"></div>
                             </div>
                         </Col>
@@ -226,7 +226,7 @@ const Home = () => {
                             <div className="button_toArtikel">
                                 <Col xs={12}>
                                     <div className="link__to">
-                                        <Link href="/about"><a>Lihat Cerita Kami</a></Link>
+                                        <Link href="/about"><a>Lihat Cerita Kami <span><img src="/arrow-front.png" /></span></a></Link>
                                         <div className="am__bg-link"></div>
                                     </div>
                                 </Col>

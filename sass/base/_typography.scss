@@ -1,32 +1,36 @@
-p,li,a{
-    font-family: "MONTSERRAT-REGULAR";
-
+p,li{
+    font-family: "BLISS2R";
+    b{
+        font-family: "BLISS2B";
+    }
 }
-
+a{
+    font-family: "BLISS2B";
+}
 p{
     font-size: 1.6rem;
     letter-spacing: normal;
 }
 h1{
-    font-family: "MONTSERRAT-BOLD";
+    font-family: "BLISS2B";
     font-size: 2rem;
     letter-spacing: normal;
     font-weight: 300;
 }
 h2,h3,h4,h5,th,td{
-    font-family: "MONTSERRAT-SEMIBOLD";
+    font-family: "BLISS2R";
     font-size: 2rem;
-    line-height: 1.5em;
+    line-height: 1.3em;
     letter-spacing: normal;
     font-weight: 300;
 }
 
 label,button,span{
-    font-family: "MONTSERRAT-REGULAR";
+    font-family: "BLISS2B";
 }
 
 input{
-    font-family: "MONTSERRAT-REGULAR";
+    font-family: "BLISS2R";
     letter-spacing: 2px;
     &:focus{
         outline: none;
@@ -41,19 +45,12 @@ input{
 }
 
 
-
-
 @font-face {
     font-family: "MONTSERRAT-BOLD";
     src:
         url('/fonts/MONTSERRAT-BOLD.woff') format('woff')
 }
 
-@font-face {
-    font-family: "MONTSERRAT-SEMIBOLD";
-    src:
-        url('/fonts/MONTSERRAT-SEMIBOLD.woff') format('woff')
-}
 
 
 @font-face {
@@ -66,6 +63,12 @@ input{
     font-family: "BLISS2B";
     src:
         url('/fonts/BLISS2B.woff') format('woff')
+}
+
+@font-face {
+    font-family: "BLISS2R";
+    src:
+        url('/fonts/BLISS2R.woff') format('woff')
 }
 
 
