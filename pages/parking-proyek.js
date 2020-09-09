@@ -7,27 +7,32 @@ import Slider from "react-slick";
 import Menu from '../components/layout/menu'
 
 
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    arrows:true
-};
+
 
 
 const ParkingProyek = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
+    const [currentSlide , setCurrentSlide] = useState(1)
 
-    function _nextArrow(params) {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows:false,
+        beforeChange: (current, next) => setCurrentSlide(next + 1)
+        // afterChange: current => this.setState({ activeSlide2: current })
+    };
+
+    function _nextArrow() {
         refSlider.current.slickNext()
     }
 
-    function _prevArrow(params) {
+    function _prevArrow() {
         refSlider.current.slickPrev()
     }
 
@@ -146,9 +151,17 @@ const ParkingProyek = () => {
                         </div>
                     </div>
                     <div className="content__parking__slider">
+                        <h4>GALERI</h4>
                         <Slider {...settings} ref={refSlider}>
                             {listGaleri()}
                         </Slider>
+                        <div className="slick_ia">
+                            <p>{currentSlide} / 20</p>
+                            <ul className="button_slider">
+                                <li onClick={_prevArrow}><img src="/arrow-slider-l.png" alt="arrow"/></li>
+                                <li onClick={_nextArrow}><img src="/arrow-slider-r.png" alt="arrow"/></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

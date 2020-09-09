@@ -98,3 +98,23 @@ background: transparent;
 .slick-prev:before {
     color: #01233d;
 }
+
+.slick_ia{
+    display: flex;
+    flex-direction: row;
+    p{
+        color: $color_green;
+    }
+    .button_slider{
+        margin-left: 2rem;
+        li{
+            cursor: pointer;
+            list-style: none;
+            display: inline-block;
+            &:first-child{
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+

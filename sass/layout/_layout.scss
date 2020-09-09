@@ -100,6 +100,8 @@ header{
                 width: 100%;
                 height: 520px;
                 object-fit: cover;
+                transition: all 1s ;
+                transform: scale(1.01);
             }
             .text__banner{
                 position: absolute;
@@ -111,6 +113,15 @@ header{
                     font-size: 3.5rem;
                     margin-bottom: 3rem;
                 }
+            }
+        }
+    }
+
+    .slick-active{
+        z-index: 2;
+        .header__slider_item{
+            img{
+                transform: scale(1);
             }
         }
     }
@@ -136,11 +147,6 @@ header{
                     img{
                         transition: all 0.5s;
                     }
-                    &:hover{
-                        img{
-                            transform: translateX(-3px);
-                        }
-                    }
                 }
                 &:last-child{
                     background-color: $color_green;
@@ -148,15 +154,9 @@ header{
                     img{
                         transition: all 0.5s;
                     }
-                    &:hover{
-                        img{
-                            transform: translateX(3px);
-                        }
-                    }
                 }
 
 
-                
             }
         }
     }

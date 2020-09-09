@@ -1,7 +1,9 @@
-import React,{useRef,useState} from 'react'
+import React,{useRef,useState,useEffect} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
+import {useIntersection} from 'react-use'
 import Slider from "react-slick";
 import Link from 'next/link'
+import { useCountUp} from 'react-countup';
 
 import Menu from '../components/layout/menu'
 
@@ -12,12 +14,26 @@ const settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // fade: true,
+    fade: true
 };
 
 
 const Home = () => {
     const refSlider = useRef(null)
+    const numberRef = useRef(null)
+    const [active, setActive] = useState(false)
+    const { countUp, start} = useCountUp({
+        start: 0,
+        end: 15,
+        delay: 0,
+        duration: 1.5
+    });
+
+    const intersection = useIntersection(numberRef,{
+        root: null,
+        rootMargin:'0px',
+        threshold: 0.5
+    })
 
     function _nextArrow(params) {
         refSlider.current.slickNext()
@@ -26,6 +42,15 @@ const Home = () => {
     function _prevArrow(params) {
         refSlider.current.slickPrev()
     }
+
+    useEffect(() => {
+        if (intersection && intersection.intersectionRatio < 0.5) {
+            console.log('OBS');
+        } else {
+            start()
+        }
+    }, [intersection])
+
 
     return (
         <React.Fragment>
@@ -57,7 +82,7 @@ const Home = () => {
                                     <Col xs={12}>
                                     <h1>Banner 2</h1>
                                     <div className="link__to">
-                                        <Link href="/about"><a>Pelajari Lebih Lanjut  </a></Link>
+                                        <Link href="/about"><a>Pelajari Lebih Lanjut  <span><img src="/arrow-front.png" /></span></a></Link>
                                         <div className="am__bg-link"></div>
                                     </div>
                                     </Col>
@@ -77,7 +102,7 @@ const Home = () => {
             </Container>
         </header>
         <main>
-            <div className="home__section_about">
+            <div className="home__section_about" ref={numberRef}>
                 <Container>
                     <Row style={{width:'100%'}}>
                         <Col xs={12} md={6}>
@@ -92,7 +117,7 @@ const Home = () => {
                             <Row noGutters>
                                 <Col xs={12} >
                                     <div className="pm">
-                                        <p className="text-center fs-big">150</p>
+                                        <p className="text-center fs-big">{countUp}</p>
                                         <p className="text-center">Proyek dibawah Manajemen</p>
                                     </div>
                                 </Col>
