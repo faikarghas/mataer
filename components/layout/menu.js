@@ -17,7 +17,7 @@ const Menu = ({logo,page,scrollActive}) => {
                             <Link href="/"><a>
                                 <img src={logo} alt="logo mataer" width="70px"/>
                             </a></Link>
-                            <div className={`menu_mobile_btn forMobile ${showMenu ? 'open' : 'close'}`} onClick={openMenu}>
+                            <div className={`menu_mobile_btn forMobile ${showMenu ? 'open' : ''}`} onClick={openMenu}>
                                 <span></span>
                                 <span>MENU</span>
                                 <span></span>
