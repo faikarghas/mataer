@@ -102,6 +102,28 @@ header{
                 }
             }
 
+            &_box{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: #12132A;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.2s all;
+                a{
+                    color: white;
+                }
+                &.openMenu{
+                    opacity: 1;
+                    visibility: visible;
+                    body{
+                        overflow: hidden;
+                    }
+                }
+            }
+
             @include respond(down-tab-port){
                 display: flex;
                 justify-content: space-between;

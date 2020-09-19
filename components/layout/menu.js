@@ -22,8 +22,11 @@ const Menu = ({logo,page,scrollActive}) => {
                                 <span>MENU</span>
                                 <span></span>
                             </div>
+                            <div className={`menu_mobile_box ${showMenu ? 'openMenu' : ''}`}>
+
+                            </div>
                         </Col>
-                        <Col xs={12} md={6} className="forDesktop">
+                        <Col xs={12} md={6} className="forDesktop justify-content-end">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
                                     <li><Link href="/"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
