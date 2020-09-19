@@ -11,6 +11,9 @@ header{
         border-left: 9px solid $color_blue;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
         transition: all 0.5s;
+        @include respond(down-tab-port){
+            padding: 2rem;
+        }
         &.active_scroll{
             // opacity: 0;
             // visibility: hidden;
@@ -89,10 +92,30 @@ header{
             }
         }
 
+        .menu_mobile{
+            a{
+                img{
+                    @include respond(down-tab-port){
+                        width: 50px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            @include respond(down-tab-port){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
     }
 
     .header__slider{
         margin-top: 12rem;
+        @include respond(down-tab-port){
+            margin-top: 9rem;
+        }
         &_item{
             position: relative;
 
@@ -102,16 +125,27 @@ header{
                 object-fit: cover;
                 transition: all 1s ;
                 transform: scale(1.01);
+                @include respond(down-tab-port){
+                    height: 200px;
+                }
             }
             .text__banner{
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 width: 100%;
+                @include respond(down-tab-port){
+                    position: static;
+                    transform: none;
+                    margin-top: 4rem;
+                }
                 h1{
                     color: white;
                     font-size: 3.5rem;
                     margin-bottom: 3rem;
+                    @include respond(down-tab-port){
+                        color: $color_blue;
+                    }
                 }
             }
         }
@@ -129,9 +163,17 @@ header{
     .arrow__slider{
         position: absolute;
         bottom: -20px;
+        @include respond(down-tab-port){
+            position: static;
+            margin-top: 4rem;
+        }
+
         ul{
             margin: 0;
             border: 1px solid grey;
+            @include respond(down-tab-port){
+                display: inline-block;
+            }
             li{
                 list-style: none;
                 width: 40px;

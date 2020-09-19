@@ -1,18 +1,29 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
 
 const Menu = ({logo,page,scrollActive}) => {
+    const [showMenu , setShowMenu] = useState(false)
+
+    function openMenu() {
+        setShowMenu(!showMenu)
+    }
+
     return (
         <menu className={scrollActive}>
                 <Container fluid>
                     <Row>
-                        <Col xs={12} md={6}>
+                        <Col xs={12} md={6} className="menu_mobile">
                             <Link href="/"><a>
-                            <img src={logo} alt="logo mataer" width="70px"/>
+                                <img src={logo} alt="logo mataer" width="70px"/>
                             </a></Link>
+                            <div className={`menu_mobile_btn forMobile ${showMenu ? 'open' : 'close'}`} onClick={openMenu}>
+                                <span></span>
+                                <span>MENU</span>
+                                <span></span>
+                            </div>
                         </Col>
-                        <Col xs={12} md={6}>
+                        <Col xs={12} md={6} className="forDesktop">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
                                     <li><Link href="/"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
@@ -32,6 +43,7 @@ const Menu = ({logo,page,scrollActive}) => {
                                 </div>
                             </div>
                         </Col>
+                        
                     </Row>
                 </Container>
             </menu>

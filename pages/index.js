@@ -14,7 +14,8 @@ const settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true
+    fade: true,
+    arrows:false
 };
 
 
@@ -104,8 +105,8 @@ const Home = () => {
         <main>
             <div className="home__section_about" ref={numberRef}>
                 <Container>
-                    <Row style={{width:'100%'}}>
-                        <Col xs={12} md={6}>
+                    <Row>
+                        <Col xs={12} md={6} className="home__section_about-1">
                             <p className="title">Tentang Mataer</p>
                             <h2>Sejak tahun 2014,<br/>PT. Mata Aer Makmurindo<br/>telah menjadi mitra strategis<br/>dalam pelaksanaan dan<br/>pengadaan barang & jasa.</h2>
                             <div className="link__to">
@@ -167,8 +168,8 @@ const Home = () => {
                             </Col>
                             <Col xs={12} md={6}>
                                 <div className="artikel__wrapper_img1">
-                                    <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                    <div className="linkToArtikel" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                    <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                    <div className="linkToArtikel forDesktop"><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                 </div>
                             </Col>
                         </Row>
@@ -185,8 +186,8 @@ const Home = () => {
                                         </Col>
                                         <Col xs={12} md={4}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -203,8 +204,8 @@ const Home = () => {
                                         </Col>
                                         <Col xs={12} md={6}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -221,8 +222,8 @@ const Home = () => {
                                         </Col>
                                         <Col xs={12} md={4}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -239,8 +240,8 @@ const Home = () => {
                                         </Col>
                                         <Col xs={12} md={6}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" />
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
                                     </Row>
