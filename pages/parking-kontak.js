@@ -34,7 +34,7 @@ const ParkingKontak = () => {
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
-        if (currentScroll >= 540) {
+        if (currentScroll >= 540 && window.innerWidth > 900) {
             setScrollActive('active_scroll')
         } else {
             setScrollActive('')
