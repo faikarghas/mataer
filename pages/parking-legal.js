@@ -5,7 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-
+import MenuAct from '../components/menuAction'
 
 const settings = {
     dots: true,
@@ -79,6 +79,7 @@ const ParkingLegal = () => {
                     </div>
                 </div>
                 <div className="content__parking">
+                    <MenuAct/>
                     <div className="content__parking__why">
                         <h3>Legal Perusahaan</h3>
                         <p>PT Mataer Makmurindo didirikan pada tanggal 11 November 2014,

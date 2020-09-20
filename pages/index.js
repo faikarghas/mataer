@@ -25,7 +25,7 @@ const Home = () => {
     const [active, setActive] = useState(false)
     const { countUp, start} = useCountUp({
         start: 0,
-        end: 15,
+        end: 150,
         delay: 0,
         duration: 1.5
     });

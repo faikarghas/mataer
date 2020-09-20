@@ -100,6 +100,12 @@ header{
                         object-fit: contain;
                     }
                 }
+                &.open{
+                    z-index: 3;
+                }
+                &.active{
+                    color: $color_blue;
+                }
             }
 
             &_box{
@@ -120,6 +126,17 @@ header{
                     visibility: visible;
                     body{
                         overflow: hidden;
+                    }
+                }
+
+                ul{
+                    margin-top: 13rem;
+                    margin-left: 4rem;
+                    li{
+                        margin-bottom: 1rem;
+                        a {
+                            font-size: 2.5rem;
+                        }
                     }
                 }
             }
@@ -227,14 +244,15 @@ header{
 }
 
 main{
-    // padding: 5rem 0;
-
     .product__wrapper{
         margin-top: 11.5rem;
         width: 100%;
         display: flex;
         flex-direction: row;
         transition: all 0.5s;
+        @include respond(down-tab-port){
+            margin-top: 9rem;
+        }
         &.active_scroll{
             margin-top: 0;
         }
@@ -242,6 +260,9 @@ main{
             width: 20%;
             background-color: #12132A;
             position: relative;
+            @include respond(down-tab-port){
+                display: none;
+            }
             &__menu{
                 background-color: #0056b3;
                 width: 100%;

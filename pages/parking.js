@@ -4,34 +4,17 @@ import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 
 import Menu from '../components/layout/menu'
-
-
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // fade: true,
-};
-
+import MenuAct from '../components/menuAction'
 
 const Home = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
 
-    function _nextArrow(params) {
-        refSlider.current.slickNext()
-    }
-
-    function _prevArrow(params) {
-        refSlider.current.slickPrev()
-    }
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
-        if (currentScroll >= 540) {
+        if (currentScroll >= 540 && window.innerWidth > 900) {
             setScrollActive('active_scroll')
         } else {
             setScrollActive('')
@@ -77,6 +60,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="content__parking">
+                    <MenuAct/>
                     <div className="content__parking__headerImg">
                         <img src="/banner-parking.jpg" alt="banner parking" />
                         <div className="content__parking__headerImg-title">

@@ -5,6 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
+import MenuAct from '../components/menuAction'
 
 
 const settings = {
@@ -79,6 +80,7 @@ const ParkingKontak = () => {
                     </div>
                 </div>
                 <div className="content__parking">
+                    <MenuAct/>
                     <div className="content__parking__kontak">
                         <h3>Kontak MAPI</h3>
 

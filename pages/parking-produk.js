@@ -5,8 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-
-
+import MenuAct from '../components/menuAction'
 
 
 const ParkingProduct = () => {
@@ -83,6 +82,7 @@ const ParkingProduct = () => {
                     </div>
                 </div>
                 <div className="content__parking">
+                    <MenuAct/>
                     <div className="content__parking__why">
                         <h3>Produk & Sistem</h3>
                         <p>Mataer Parking Indonesia (MAPI) bergerak di bidang pengelolaan perparkiran berbasis teknologi

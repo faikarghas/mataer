@@ -1,5 +1,39 @@
 .content__parking{
     width: 80%;
+    .menuAct{
+        background-color: #0056b3;
+        width: 100%;
+        padding: 2rem;
+        transition: all 0.5s;
+        &.active_scroll{
+            top: 0;
+        }
+        ul{
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                }
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+            ul{
+                padding-left: 1rem;
+                border-left: 1px solid white;
+                li{
+                    list-style: none;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    @include respond(down-tab-port){
+        width: 100%;
+    }
 
     &__headerImg{
         height: 420px;
@@ -32,6 +66,9 @@
     }
     &__firstSection{
         padding: 9rem 30rem 9rem 5rem;
+        @include respond(down-tab-port){
+            padding: 2rem;
+        }
         p:first-child{
             color: #0056b3;
             margin-bottom: 4rem;
@@ -85,6 +122,9 @@
     &__misiSection{
         padding: 9rem 0;
         margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
         h4{
             margin-bottom: 6rem;
             font-family: "MONTSERRAT-BOLD";
@@ -110,10 +150,18 @@
         }
         ul{
             border-left: 1px solid rgb(214, 214, 214);
+            @include respond(down-tab-port){
+                padding-left: 5rem;
+                border-left: none;
+            }
             li{
                 list-style: none;
                 padding: 3rem;
                 position: relative;
+                @include respond(down-tab-port){
+                    border-left: 1px solid rgb(214, 214, 214);
+                    padding: 2rem;
+                }
                 &:not(:last-child){
                     border-bottom: 1px solid rgb(214, 214, 214);
                 }
@@ -133,6 +181,9 @@
         padding-bottom: 9rem;
         margin: 0 5rem;
         border-bottom: 1px solid black;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
         h4{
             margin-bottom: 6rem;
             color: #022846;
@@ -187,6 +238,10 @@
         padding: 9rem 0;
         padding-right: 30rem;
         margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+            padding-right: 0rem;
+        }
         h3{
             font-size: 5rem;
             font-family: "BLISS2B";
@@ -279,6 +334,9 @@
     &__onlyTextOrImg{
         padding: 9rem 0;
         margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
         h3{
             font-size: 3rem;
         }
@@ -312,6 +370,9 @@
     &__slider{
         padding: 9rem 0;
         margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
         h4{
             color: #0056b3;
             margin-bottom: 6rem;
@@ -345,21 +406,37 @@
         flex-direction: row;
         justify-content: space-between;
         position: relative;
+        @include respond(down-tab-port){
+            flex-wrap: wrap;
+        }
         &-bar{
             min-height: 800px;
             background-color: #f3f3f3;
-
+            @include respond(down-tab-port){
+                min-height: unset;
+            }
             &:first-child{
                 width: 32%;
+                @include respond(down-tab-port){
+                    width: 100%;
+                }
                 .head{
                     height: 70px;
                     width: calc(100% - 10rem);
                     border-bottom: 1px solid black;
                     margin: auto;
+                    @include respond(down-tab-port){
+                        width: calc(100% - 4rem);
+                        margin: 2rem;
+                    }
                 }
                 .body{
                     width: calc(100% - 10rem);
                     margin: auto;
+                    @include respond(down-tab-port){
+                        width: calc(100% - 4rem);
+                        margin: 2rem;
+                    }
                     span{
                         font-size: 10rem;
                         line-height: 1em;
@@ -375,12 +452,19 @@
             }
             &:nth-child(2){
                 width: 28%;
+                @include respond(down-tab-port){
+                    width: 100%;
+                }
                 .head{
                     height: 70px;
                     width: calc(100% - 5rem);
                     border-bottom: 1px solid black;
                     margin-left: 5rem;
                     display: flex;
+                    @include respond(down-tab-port){
+                        width: calc(100% - 4rem);
+                        margin: 2rem;
+                    }
                     p{
                         align-self: center;
                         color: $color_green;
@@ -391,6 +475,10 @@
                 .body{
                     width: calc(100% - 5rem);
                     margin-left: 5rem;
+                    @include respond(down-tab-port){
+                        width: calc(100% - 4rem);
+                        margin: 2rem;
+                    }
                     span{
                         font-size: 10rem;
                         line-height: 1em;
@@ -416,12 +504,19 @@
             }
             &:nth-child(3){
                 width: 32%;
+                @include respond(down-tab-port){
+                    width: 100%;
+                }
                 .head{
                     height: 70px;
                     width: calc(100% - 5rem);
                     border-bottom: 1px solid black;
                     margin-right: 5rem;
                     display: flex;
+                    @include respond(down-tab-port){
+                        width: calc(100% - 4rem);
+                        margin: 2rem;
+                    }
                     p{
                         align-self: center;
                         color: $color_green;
@@ -432,6 +527,10 @@
                 .body{
                     width: calc(100% - 5rem);
                     margin-right: 5rem;
+                    @include respond(down-tab-port){
+                        width: calc(100% - 4rem);
+                        margin: 2rem;
+                    }
                     span{
                         font-size: 10rem;
                         line-height: 1em;
@@ -463,6 +562,10 @@
             left: 50%;
             transform: translateX(-50%);
             width: calc(100% - 15rem);
+            @include respond(down-tab-port){
+                display: none;
+            }
+
             .peta{
                 opacity: 0.5;
                 width: 100%;
@@ -474,7 +577,9 @@
     &__struktur{
         padding: 9rem 0;
         margin: 0 5rem;
-
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
         h3{
             font-size: 3rem;
         }
@@ -536,7 +641,9 @@
     &__kontak{
         padding: 9rem 0;
         margin: 0 5rem;
-
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
         h3{
             font-size: 3rem;
             font-family: "BLISS2B";

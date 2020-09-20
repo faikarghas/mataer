@@ -15,7 +15,7 @@ const Menu = ({logo,page,scrollActive}) => {
                     <Row>
                         <Col xs={12} md={6} className="menu_mobile">
                             <Link href="/"><a>
-                                <img src={logo} alt="logo mataer" width="70px"/>
+                                <img src={`${showMenu ? '/mataer-logo-dark.png' : logo}`} className={`${showMenu ? 'open' : ''}`} alt="logo mataer" width="70px"/>
                             </a></Link>
                             <div className={`menu_mobile_btn forMobile ${showMenu ? 'open' : ''}`} onClick={openMenu}>
                                 <span></span>
@@ -23,7 +23,16 @@ const Menu = ({logo,page,scrollActive}) => {
                                 <span></span>
                             </div>
                             <div className={`menu_mobile_box ${showMenu ? 'openMenu' : ''}`}>
-
+                                <ul>
+                                    <li><Link href="/parking"><a className={page === 'parking' ? 'active' : ''}>Parking</a></Link></li>
+                                    <li><Link href="/"><a>Event & Media</a></Link></li>
+                                    <li><Link href="/"><a>Adspro</a></Link></li>
+                                    <li><Link href="/"><a>Business & Consultant</a></Link></li>
+                                    <li><Link href="/"><a>Berita & Artikel</a></Link></li>
+                                    <li><Link href="/"><a>Karir</a></Link></li>
+                                    <li><Link href="/"><a>Tentang Kami</a></Link></li>
+                                    <li><Link href="/"><a>Hubungi Kami</a></Link></li>
+                                </ul>
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="forDesktop justify-content-end">

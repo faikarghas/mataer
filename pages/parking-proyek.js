@@ -5,9 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-
-
-
+import MenuAct from '../components/menuAction'
 
 
 const ParkingProyek = () => {
@@ -103,6 +101,7 @@ const ParkingProyek = () => {
                     </div>
                 </div>
                 <div className="content__parking">
+                    <MenuAct/>
                     <div className="content__parking__why">
                         <h3>Proyek</h3>
                         <p>Pengelolaan parkir termasuk dalam image property dan sesungguhnya dapat dikatakan pintu gerbang dalam serangkaian proses pembentukan kredibilitas citra layanan sebuah institusi ataupun instansi pemerintah dan swasta, termasuk juga dalam upaya memberikan pelayanan yang memiliki citra terbaik dan respon positif atas tuntutan masyarakat terhadap citra kinerja institusi tersebut secara keseluruhan.</p>
