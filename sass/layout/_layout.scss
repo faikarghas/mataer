@@ -271,13 +271,18 @@ main{
                 left: 0;
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                padding: 3rem 0;
+                padding: 3rem 5rem;
                 transition: all 0.5s;
                 &.active_scroll{
                     top: 0;
                 }
                 ul{
+                    .follow{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        margin-top: 2rem;
+                    }
                     li{
                         list-style: none;
                         a{
@@ -296,6 +301,22 @@ main{
                         li{
                             list-style: none;
                             margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+            .kontak_press{
+                display: flex;
+                align-items: center;
+                padding: 3rem 5rem;
+                ul{
+                    li{
+                        list-style: none;
+                        color: white;
+                        font-size: 1.4rem;
+                        margin: 0;
+                        &:first-child{
+                            margin-bottom: 2.5rem;
                         }
                     }
                 }

@@ -55,7 +55,7 @@ const Berita = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="mataer-logo-light.png" page="event" scrollActive={scrollActive}/>
+            <Menu logo="mataer-logo-light.png" page="berita" scrollActive={scrollActive}/>
         </header>
 
         <main>
@@ -67,6 +67,19 @@ const Berita = () => {
                             <li><Link href="/berita"><a>Kategori 1</a></Link></li>
                             <li><Link href="/berita"><a>Kategori 2</a></Link></li>
                             <li><Link href="/berita"><a>Kategori 3</a></Link></li>
+                            <li className="follow">Follow Mataer</li>
+                            <ul className="sosmed">
+                                <li></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div className="kontak_press">
+                        <ul>
+                            <li>Kontak Press</li>
+                            <li>Agus Ruspendy</li>
+                            <li>Direktur Marketing</li>
+                            <li>Corporate Communication</li>
+                            <li>0812 3456 789</li>
                         </ul>
                     </div>
                 </div>
