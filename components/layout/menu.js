@@ -25,10 +25,10 @@ const Menu = ({logo,page,scrollActive}) => {
                             <div className={`menu_mobile_box ${showMenu ? 'openMenu' : ''}`}>
                                 <ul>
                                     <li><Link href="/parking"><a className={page === 'parking' ? 'active' : ''}>Parking</a></Link></li>
-                                    <li><Link href="/"><a>Event & Media</a></Link></li>
+                                    <li><Link href="/event"><a className={page === 'event' ? 'active' : ''}>Event & Media</a></Link></li>
                                     <li><Link href="/"><a>Adspro</a></Link></li>
                                     <li><Link href="/"><a>Business & Consultant</a></Link></li>
-                                    <li><Link href="/"><a>Berita & Artikel</a></Link></li>
+                                    <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
                                     <li><Link href="/"><a>Karir</a></Link></li>
                                     <li><Link href="/"><a>Tentang Kami</a></Link></li>
                                     <li><Link href="/"><a>Hubungi Kami</a></Link></li>
@@ -44,18 +44,17 @@ const Menu = ({logo,page,scrollActive}) => {
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">
                                         <li><Link href="/parking"><a className={page === 'parking' ? 'active' : ''}>Parking</a></Link></li>
-                                        <li><Link href="/"><a>Event & Media</a></Link></li>
+                                        <li><Link href="/event"><a className={page === 'event' ? 'active' : ''}>Event & Media</a></Link></li>
                                         <li><Link href="/"><a>Adspro</a></Link></li>
                                         <li><Link href="/"><a>Business & Consultant</a></Link></li>
                                     </ul>
                                     <ul className="menu__link-bottom-right">
-                                        <li><Link href="/"><a>Berita & Artikel</a></Link></li>
+                                        <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
                                         <li><Link href="/"><a>Karir</a></Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </Col>
-                        
                     </Row>
                 </Container>
             </menu>

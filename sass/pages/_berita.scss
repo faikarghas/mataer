@@ -1,0 +1,51 @@
+.content__berita{
+    width: 80%;
+
+    &_wrapper{
+        padding: 9rem 0;
+        margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
+
+        &-item{
+            img{
+                height: 250px;
+                object-fit: cover;
+                margin-bottom: 2rem;
+            }
+            a{
+                font-size: 2rem;
+                color: #12132A;
+                margin-bottom: 2rem;
+                display: block;
+                text-decoration: none;
+            }
+            p{
+                color: $color_blue;
+                font-size: 1.1rem;
+            }
+        }
+        h3{
+            font-size: 3rem;
+            font-family: "BLISS2B";
+        }
+        h4,h3{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #12132A;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #0056b3;
+            }
+        }
+    }
+}
