@@ -54,18 +54,60 @@ const EventPortfolio = () => {
         };
     }, [])
 
-    function listGaleri(params) {
+    function listImgMedia(params) {
 
         let list = []
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= 3; i++) {
             list.push(i)
         }
 
         let imgs = list.map((item,i)=>{
             return(
                 <div className="section__slider_imgWrapper" key={i}>
-                    <img src={`/galeri/${item}.jpg`} width="100%"/>
+                    <img src={`/media/media-${item}.png`} width="100%"/>
                 </div>
+            )
+        })
+
+        return imgs
+
+    }
+
+    function listImgExhibition(params) {
+
+        let list = []
+        for (let i = 1; i <= 29; i++) {
+            list.push(i)
+        }
+
+        let imgs = list.map((item,i)=>{
+            return(
+                <Col xs={6} md={3} className="d-flex align-items-center">
+                    <div className="img__wrapper">
+                        <img key={i} src={`/exhibition/exhibition-${item}.png`} width="100%"/>
+                    </div>
+                </Col>
+            )
+        })
+
+        return imgs
+
+    }
+
+    function listImgForum(params) {
+
+        let list = []
+        for (let i = 1; i <= 12; i++) {
+            list.push(i)
+        }
+
+        let imgs = list.map((item,i)=>{
+            return(
+                <Col xs={6} md={3} className="d-flex align-items-center">
+                    <div className="img__wrapper">
+                        <img key={i} src={`/forum/forum-${item}.png`} width="100%"/>
+                    </div>
+                </Col>
             )
         })
 
@@ -104,55 +146,29 @@ const EventPortfolio = () => {
                         <p>Pelayanan industri mice internasional yang tidak lagi berbatas sektoral dan geografis dalam era digital saat ini, dituntut mampu memenuhi berbagai kebutuhan para penggiat perencana kegiatan penyelenggaraan yang semakin berkembang,</p>
                         <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
                     </div>
-                    <div className="content__event__map">
-                        <div className="content__event__map-bar">
-                            <div className="head"></div>
-                            <div className="body">
-                                <span>10+</span>
-                                <p>portfolio di seluruh pulau Jawa</p>
-                            </div>
-                        </div>
-                        <div className="content__event__map-bar">
-                            <div className="head">
-                                <p>Pengalaman Kerja</p>
-                            </div>
-                            <div className="body">
-                                <ul>
-                                    <li><p>RS Juanda Kuningan</p></li>
-                                    <li><p>RS Salak Bogor</p></li>
-                                    <li><p>Universitas Muhammadiyah Tangerang</p></li>
-                                    <li><p>RS Marzoeki Mahdi</p></li>
-                                    <li><p>Ruko Bidex</p></li>
-                                    <li><p>Ruko Tol Boulevard</p></li>
-                                    <li><p>Ruko Golden Boulevard</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="content__event__map-bar">
-                        <div className="head">
-                                <p>Kerjasama Operasi</p>
-                            </div>
-                            <div className="body">
-                                <ul>
-                                    <li><p>Ruko Sektor 4 BSD</p></li>
-                                    <li><p>Ruko Sektor 7 BSD</p></li>
-                                    <li><p>Ruko Sutra Niaga 1</p></li>
-                                    <li><p>Ruko Sutra Niaga 2</p></li>
-                                    <li><p>Ruko Sutra Niaga 3</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="peta__wrapper">
-                            <img className="peta" src="/map-indonesia.png" width="100%"/>
-                        </div>
+                    <div className="content__event__listImg">
+                        <h4>EXHIBITION</h4>
+                        <Container className="p-0">
+                            <Row >
+                                {listImgExhibition()}
+                            </Row>
+                        </Container>
+                    </div>
+                    <div className="content__event__listImg">
+                        <h4>FORUM</h4>
+                        <Container className="p-0">
+                            <Row>
+                                {listImgForum()}
+                            </Row>
+                        </Container>
                     </div>
                     <div className="content__event__slider">
-                        <h4>GALERI</h4>
+                        <h4>MEDIA</h4>
                         <Slider {...settings} ref={refSlider}>
-                            {listGaleri()}
+                            {listImgMedia()}
                         </Slider>
                         <div className="slick_ia">
-                            <p>{currentSlide} / 20</p>
+                            <p>{currentSlide} / 3</p>
                             <ul className="button_slider">
                                 <li onClick={_prevArrow}><img src="/arrow-slider-l.png" alt="arrow"/></li>
                                 <li onClick={_nextArrow}><img src="/arrow-slider-r.png" alt="arrow"/></li>
