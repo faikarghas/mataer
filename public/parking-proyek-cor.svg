@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1316" height="482" viewBox="0 0 1316 482">
+  <g id="Coordinate_Point" data-name="Coordinate Point" transform="translate(-501 -1000)">
+    <g id="Kuningan" transform="translate(878 1372)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill="#58b947"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
+    </g>
+    <g id="Banten" transform="translate(809 1350)">
+      <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill="#58b947"/>
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
+    </g>
+    <g id="Bogor" transform="translate(832 1361)">
+      <circle id="Ellipse_1-3" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill="#58b947"/>
+      <circle id="Ellipse_2-3" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -94,7 +94,7 @@ const Home = () => {
                 </Slider>
             </div>
             <Container>
-            <div className="arrow__slider">
+            <div className="arrow__slider arrow__slider_posHome">
                 <ul>
                     <li onClick={_prevArrow}><img src="/right.png" alt="arrow" /></li>
                     <li onClick={_nextArrow}><img src="/arrow-slider-front.png" alt="arrow" /></li>

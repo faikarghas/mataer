@@ -1,3 +1,52 @@
+// Arrow slider
+
+.arrow__slider{
+    
+
+    ul{
+        margin: 0;
+        border: 1px solid grey;
+        @include respond(down-tab-port){
+            display: inline-block;
+        }
+        li{
+            list-style: none;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            &:first-child{
+                background-color: white;
+                color: $color_green;
+                img{
+                    transition: all 0.5s;
+                }
+            }
+            &:last-child{
+                background-color: $color_green;
+                color: white;
+                img{
+                    transition: all 0.5s;
+                }
+            }
+
+
+        }
+    }
+}
+
+.arrow__slider_posHome{
+    position: absolute;
+    bottom: -20px;
+    @include respond(down-tab-port){
+        position: static;
+        margin-top: 4rem;
+    }
+}
+
 // SCROLL
 
 ::-webkit-scrollbar {
@@ -44,13 +93,9 @@ background: transparent;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
     &:hover{
-        // border: 1px solid $color_blue;
-        // .am__bg-link{
-        //     transform: translateX(0%);
-        // }
         a{
-            // color: $color_blue;
             span{
                 img{
                     transform: translateX(4px);
@@ -77,17 +122,6 @@ background: transparent;
                 object-fit: contain;
             }
         }
-    }
-    .am__bg-link{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: white;
-        transform: translateX(-100%);
-        transition: all 0.5s;
-        z-index: 1;
     }
 }
 
@@ -203,4 +237,206 @@ background: transparent;
     top: 39px;
     left: 9px;
     background-color: white;
+}
+
+// proyek
+
+.modal_project{
+    .modal-body{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 400px;
+        height: 450px;
+        padding: 0;
+        .desc__wrapper{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            overflow: hidden;
+            position: relative;
+            &_box1{
+                height: 100%;
+                width: 50%;
+            }
+            &_box2{
+                width: 50%;
+                background-color: #12132A;
+                opacity: 0.93;
+                height: 100%;
+                overflow-y: auto;
+                transition: 0.5s ease-in;
+                position: relative;
+                ::-webkit-scrollbar {
+                width: 3px;
+                height: 3px;
+                }
+                ::-webkit-scrollbar-button {
+                width: 0px;
+                height: 0px;
+                }
+                ::-webkit-scrollbar-thumb {
+                background: #e1e1e1;
+                border: 0px none #ffffff;
+                border-radius: 50px;
+                }
+                ::-webkit-scrollbar-thumb:hover {
+                background: #ffffff;
+                }
+                ::-webkit-scrollbar-thumb:active {
+                background: #ffffff;
+                }
+                ::-webkit-scrollbar-track {
+                background: #666666;
+                border: 0px none #ffffff;
+                border-radius: 50px;
+                }
+                ::-webkit-scrollbar-track:hover {
+                background: #666666;
+                }
+                ::-webkit-scrollbar-track:active {
+                background: #0056b3;
+                }
+                ::-webkit-scrollbar-corner {
+                background: transparent;
+                }
+                .button__action{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .arrow__slider{
+                    display: inline-block;
+                    margin-top: 1rem;
+                    ul{
+                        margin: 0;
+                        border: 1px solid grey;
+                        @include respond(down-tab-port){
+                            display: inline-block;
+                        }
+                        li{
+                            list-style: none;
+                            width: 40px;
+                            height: 40px;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 2rem;
+                            cursor: pointer;
+                            &:first-child{
+                                background-color: white;
+                                color: $color_green;
+                                img{
+                                    transition: all 0.5s;
+                                }
+                            }
+                            &:last-child{
+                                background-color: $color_green;
+                                color: white;
+                                img{
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
+                    }
+                }
+                h3{
+                    font-size: 2rem;
+                    margin-bottom: 2.5rem;
+                    color: white;
+                    font-family: "MONTSERRAT-BOLD";
+                }
+                h4{
+                    color: white;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    font-family: "MONTSERRAT-BOLD";
+                }
+                ul{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin:1.5rem 0px;
+                    li{
+                        color: white;
+                        font-family: "MONTSERRAT-BOLD";
+                        display: inline-block;
+                        font-size: 1.5rem;
+                        line-height: 1em;
+                        &:last-child{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                p{
+                    color: white;
+                    font-size: 1.4rem;
+                    margin-bottom: 1.5rem;
+                }
+                hr{
+                    border-top: 1px solid $color_green;
+                }
+
+                &-item{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 4rem;
+                    transition:0.5s all;
+                }
+
+            }
+
+            .detail_project{
+                position: absolute;
+                top: -100%;
+                right: 0;
+            }
+        }
+    }
+
+}
+
+.link__toProject{
+    background-color: $color_blue;
+    display: inline-flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin-top: 1rem;
+    &:hover{
+        a{
+            color: white;
+            span{
+                img{
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+    a{
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        text-decoration: none;
+        z-index: 2;
+        font-size: 1.4rem;
+        span{
+            margin-left: 1.5rem;
+            img{
+                transition: all 0.2s ease-in-out;
+                width: 15px;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
 }
