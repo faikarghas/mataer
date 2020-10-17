@@ -5,7 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuAction'
+import MenuAct from '../components/menuEventMobile'
 
 
 const EventPortfolio = () => {
@@ -125,16 +125,21 @@ const EventPortfolio = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul>
+                        <ul className="sidebar__menu-ul">
                             <li><Link href="/event"><a>Tentang MEM</a></Link></li>
-                            <ul>
+                            {/* <ul>
                                 <li><a>Layanan</a></li>
-                            </ul>
+                            </ul> */}
                             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
-                            <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
                             <ul>
-                                <li><a>Struktur Organisasi</a></li>
+                                <li><a href="#exhibition">Exhibition</a></li>
+                                <li><a href="#forum">Forum</a></li>
+                                <li><a href="#media">Media</a></li>
                             </ul>
+                            <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
+                            {/* <ul>
+                                <li><a>Struktur Organisasi</a></li>
+                            </ul> */}
                             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
                         </ul>
                     </div>
@@ -146,7 +151,7 @@ const EventPortfolio = () => {
                         <p>Pelayanan industri mice internasional yang tidak lagi berbatas sektoral dan geografis dalam era digital saat ini, dituntut mampu memenuhi berbagai kebutuhan para penggiat perencana kegiatan penyelenggaraan yang semakin berkembang,</p>
                         <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
                     </div>
-                    <div className="content__event__listImg">
+                    <div id="exhibition" className="content__event__listImg">
                         <h4>EXHIBITION</h4>
                         <Container className="p-0">
                             <Row >
@@ -154,7 +159,7 @@ const EventPortfolio = () => {
                             </Row>
                         </Container>
                     </div>
-                    <div className="content__event__listImg">
+                    <div id="forum" className="content__event__listImg">
                         <h4>FORUM</h4>
                         <Container className="p-0">
                             <Row>
@@ -162,7 +167,7 @@ const EventPortfolio = () => {
                             </Row>
                         </Container>
                     </div>
-                    <div className="content__event__slider">
+                    <div id="media" className="content__event__slider">
                         <h4>MEDIA</h4>
                         <Slider {...settings} ref={refSlider}>
                             {listImgMedia()}

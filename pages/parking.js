@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuAction'
+import MenuAct from '../components/menuParkingMobile'
 
 const Home = () => {
     const refSlider = useRef(null)
@@ -42,19 +42,19 @@ const Home = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul>
+                        <ul className="sidebar__menu-ul">
                             <li><Link href="/parking"><a>Tentang MAPI</a></Link></li>
                             <ul>
-                                <li><a>Visi & Misi</a></li>
-                                <li><a>Layanan</a></li>
-                                <li><a>Mengapa Kami</a></li>
+                                <li><a href="#visiMisi">Visi & Misi</a></li>
+                                <li><a href="#layanan">Layanan</a></li>
+                                <li><a href="#mengapaKami">Mengapa Kami</a></li>
                             </ul>
                             <li><Link href="/parking-produk"><a>Produk & Sistem</a></Link></li>
                             <li><Link href="/parking-proyek"><a>Proyek</a></Link></li>
                             <li><Link href="/parking-legal"><a>Legal Perusahaan</a></Link></li>
-                            <ul>
-                                <li><a>Struktur Organisasi</a></li>
-                            </ul>
+                            {/* <ul>
+                                <li><a href="#strukturOrganisasi">Struktur Organisasi</a></li>
+                            </ul> */}
                             <li><Link href="/parking-kontak"><a>Kontak</a></Link></li>
                         </ul>
                     </div>
@@ -75,7 +75,7 @@ const Home = () => {
                         serta tempat fasilitas umum lainnya.</b></p>
                         <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
                     </div>
-                    <div className="content__parking__visiSection">
+                    <div id="visiMisi" className="content__parking__visiSection">
                         <img src="/Visi.jpg" alt="visi" />
                         <div className="content__parking__visiSection-desc">
                              <h4>VISI</h4>
@@ -96,7 +96,7 @@ const Home = () => {
                             </Col>
                         </Row>
                     </div>
-                    <div className="content__parking__layanan">
+                    <div id="layanan" className="content__parking__layanan">
                         <Row>
                             <Col xs={12}>
                                 <h4>Layanan</h4>
@@ -155,7 +155,7 @@ const Home = () => {
                         </Row>
                     </div>
 
-                    <div className="content__parking__why">
+                    <div id="mengapaKami" className="content__parking__why">
                         <h4>Mengapa Kami</h4>
                         <ul>
                             <li><p>Memiliki lahan parkir yang aman, nyaman, dan tertata dengan baik serta pemaksimalan potensi pendapatan parkir</p></li>
@@ -165,7 +165,6 @@ const Home = () => {
                             <li><p>Terkoneksi dengan aplikasi pada smart phone untuk memudahkan pengguna melakukan booking dan payment secara online</p></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </main>

@@ -5,7 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuAction'
+import MenuAct from '../components/menuEventMobile'
 
 const settings = {
     dots: true,
@@ -61,15 +61,20 @@ const EventLegal = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul>
+                        <ul className="sidebar__menu-ul">
                             <li><Link href="/event"><a>Tentang MEM</a></Link></li>
-                            <ul>
+                            {/* <ul>
                                 <li><a>Layanan</a></li>
-                            </ul>
+                            </ul> */}
                             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
+                            {/* <ul>
+                                <li><a>Exhibition</a></li>
+                                <li><a>Forum</a></li>
+                                <li><a>Media</a></li>
+                            </ul> */}
                             <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
                             <ul>
-                                <li><a>Struktur Organisasi</a></li>
+                                <li><a href="#strukturOrganisasi">Struktur Organisasi</a></li>
                             </ul>
                             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
                         </ul>
@@ -90,7 +95,7 @@ const EventLegal = () => {
                         No Pendaftaran BPJS Ketenagakerjaan – 19153228 Tahun 2019
                         </p>
                     </div>
-                    <div className="content__parking__struktur">
+                    <div id="strukturOrganisasi" className="content__parking__struktur">
                         <h4>Struktur Organisasi</h4>
                         <div className="list_struktur">
                             <Row>

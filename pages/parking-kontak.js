@@ -5,7 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuAction'
+import MenuAct from '../components/menuParkingMobile'
 
 
 const settings = {
@@ -62,19 +62,19 @@ const ParkingKontak = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul>
+                        <ul className="sidebar__menu-ul">
                             <li><Link href="/parking"><a>Tentang MAPI</a></Link></li>
-                            <ul>
+                            {/* <ul>
                                 <li><a>Visi & Misi</a></li>
                                 <li><a>Layanan</a></li>
                                 <li><a>Mengapa Kami</a></li>
-                            </ul>
+                            </ul> */}
                             <li><Link href="/parking-produk"><a>Produk & Sistem</a></Link></li>
                             <li><Link href="/parking-proyek"><a>Proyek</a></Link></li>
                             <li><Link href="/parking-legal"><a>Legal Perusahaan</a></Link></li>
-                            <ul>
+                            {/* <ul>
                                 <li><a>Struktur Organisasi</a></li>
-                            </ul>
+                            </ul> */}
                             <li><Link href="/parking-kontak"><a>Kontak</a></Link></li>
                         </ul>
                     </div>

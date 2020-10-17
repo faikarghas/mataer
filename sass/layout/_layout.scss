@@ -203,7 +203,6 @@ header{
 
 main{
     .product__wrapper{
-        margin-top: 11.5rem;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -228,11 +227,16 @@ main{
                 top: 12rem;
                 left: 0;
                 display: flex;
-                align-items: center;
-                padding: 3rem 5rem;
+                align-items: flex-start;
+                padding: 3rem 5rem 0 5rem;
                 transition: all 0.5s;
+                flex-direction: column;
                 &.active_scroll{
                     top: 0;
+                }
+                padding-bottom: 3rem;
+                &-ul{
+                    padding-bottom: 3rem;
                 }
                 ul{
                     .follow{
@@ -266,7 +270,10 @@ main{
             .kontak_press{
                 display: flex;
                 align-items: center;
+                width: calc(100% + 10rem);
+                margin: 0 -5rem;
                 padding: 3rem 5rem;
+                background-color: #12132A;
                 ul{
                     li{
                         list-style: none;
@@ -277,6 +284,9 @@ main{
                             margin-bottom: 2.5rem;
                         }
                     }
+                }
+                .sosmed{
+                    border: none;
                 }
             }
         }

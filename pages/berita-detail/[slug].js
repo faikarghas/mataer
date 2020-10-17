@@ -19,7 +19,7 @@ const settings = {
 };
 
 
-const Berita = () => {
+const BeritaDetail = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
@@ -179,4 +179,4 @@ const Berita = () => {
     )
 }
 
-export default Berita
+export default BeritaDetail

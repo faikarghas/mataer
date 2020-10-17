@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuAction'
+import MenuAct from '../components/menuEventMobile'
 import Slider from "react-slick";
 
 const Home = () => {
@@ -63,16 +63,21 @@ const Home = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul>
+                        <ul className="sidebar__menu-ul">
                             <li><Link href="/event"><a>Tentang MEM</a></Link></li>
                             <ul>
-                                <li><a>Layanan</a></li>
+                                <li><a href="#layanan">Layanan</a></li>
                             </ul>
                             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
+                            {/* <ul>
+                                <li><a href="#exhibition">Exhibition</a></li>
+                                <li><a href="#forum">Forum</a></li>
+                                <li><a href="#media">Media</a></li>
+                            </ul> */}
                             <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
-                            <ul>
-                                <li><a>Struktur Organisasi</a></li>
-                            </ul>
+                            {/* <ul>
+                                <li><a href="#strukturOrganisasi">Struktur Organisasi</a></li>
+                            </ul> */}
                             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
                         </ul>
                     </div>
@@ -98,7 +103,7 @@ const Home = () => {
                         meninggalkan output cetak yang masih menawan sesuai kebutuhannya, menjangkau hal penting yang
                         tidak terpikirkan.</p>
                     </div>
-                    <div className="content__event__layananImg">
+                    <div id="layanan" className="content__event__layananImg">
                         <img src="/event-layanan.jpg" alt="event-layanan" />
                     </div>
                     <div className="content__event__layanan">
