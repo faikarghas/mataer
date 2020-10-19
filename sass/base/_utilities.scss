@@ -490,6 +490,7 @@ background: transparent;
     color: $color_blue;
     display: inline-block;
     position: relative;
+    font-size: 1.2rem;
     &:after{
         content: "";
         position: absolute;
@@ -520,4 +521,20 @@ background: transparent;
 
 hr.blue{
     border-top: 1px solid #0064af;
+}
+
+// Responsive
+
+.forMobile1{
+    display: none !important;
+    @include respond(down-tab-land){
+        display: block !important;
+    }
+}
+
+.forDesktop1{
+    display: block !important;
+    @include respond(down-tab-land){
+        display: none !important;
+    }
 }

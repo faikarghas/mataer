@@ -76,7 +76,7 @@ const About = () => {
                 <main>
                     <div className="about__section_about">
                         <Container>
-                            <p className="title">Tentang Perusahaan</p>
+                            <p className="title">TENTANG PERUSAHAAN</p>
                             <Row>
                                 <Col xs={12} md={6} className="home__section_about-1">
                                     <h2>PT. Mata Aer Makmurindo <br/> merupakan induk perusahaan yang bergerak di berbagai bidang dan layanan.</h2>
@@ -92,13 +92,13 @@ const About = () => {
                     <div id="visiMisi" className="about__section_visi">
                         <img src="/visiMataer.jpg" alt="visi" />
                         <div className="about__section_visi-desc">
-                            <h4>VISI</h4>
-                            <p>“Menjadi perusahaan penyedia layanan pengelolaan parkir terpercaya oleh mitra dan pengguna parkir se-Indonesia.”</p>
+                            <h4>Visi</h4>
+                            <p>“Menjadi perusahaan prioritas dalam penyedia barang & jasa mitra pemerintahan dan swasta terpercaya di Indonesia.”</p>
                         </div>
                     </div>
                     <div className="about__section_grup">
                         <Container>
-                            <p className="title">Grup Kami</p>
+                            <p className="title">GRUP KAMI</p>
                             <Row>
                                 <Col xs={12} md={6} lg={3}>
                                     <div className="about__section_grup-box">
@@ -137,21 +137,13 @@ const About = () => {
                     </div>
                     <div className="about__section_klien">
                         <Container>
-                            <p className="title-longb">Klien Kami</p>
+                            <p className="title-longb">KLIEN KAMI</p>
                             <hr className="blue"></hr>
                             <Row>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/APEKSI.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/APKASI.jpg" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/badanUrusanLogistik.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/BAKOSURTANAL.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/BankBRI.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/Benadryl.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/BritishPetroleum.jpg" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/Caltex.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/GarudaIndonesia.jpg" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/Goodyear.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/HSBC.png" width="100%"/></Col>
-                                <Col className="d-flex align-items-center" xs={4} md={2}><img src="/logo-client/indocement.jpg" width="100%"/></Col>
+                                <Col className="d-flex align-items-center" xs={12} md={12}>
+                                    <img className="forDesktop1" src="/LogoKlien.png" width="100%"/>
+                                    <img className="forMobile1" src="/LogoKlienMobile.png" width="100%"/>
+                                </Col>
                             </Row>
 
                         </Container>

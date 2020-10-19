@@ -76,6 +76,9 @@
             margin-bottom: 4rem;
             font-size: 2.5rem;
         }
+        p:last-child{
+            line-height: 2em;
+        }
 
     }
 
@@ -153,6 +156,10 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
+        }
+        p{
+            font-family: "BLISS2B";
+            line-height: 2em;
         }
         h4{
             color: #0056b3;

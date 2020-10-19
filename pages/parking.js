@@ -5,6 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuParkingMobile'
+import MenuParking from '../components/menuParking'
 
 const Home = () => {
     const refSlider = useRef(null)
@@ -42,21 +43,7 @@ const Home = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul className="sidebar__menu-ul">
-                            <li><Link href="/parking"><a>Tentang MAPI</a></Link></li>
-                            <ul>
-                                <li><Link href="/parking/#visiMisi"><a>Visi & Misi</a></Link></li>
-                                <li><a href="/parking/#layanan">Layanan</a></li>
-                                <li><a href="/parking/#mengapaKami">Mengapa Kami</a></li>
-                            </ul>
-                            <li><Link href="/parking-produk"><a>Produk & Sistem</a></Link></li>
-                            <li><Link href="/parking-proyek"><a>Proyek</a></Link></li>
-                            <li><Link href="/parking-legal"><a>Legal Perusahaan</a></Link></li>
-                            <ul>
-                                <li><a href="/parking-legal/#strukturOrganisasi">Struktur Organisasi</a></li>
-                            </ul>
-                            <li><Link href="/parking-kontak"><a>Kontak</a></Link></li>
-                        </ul>
+                        <MenuParking/>
                     </div>
                 </div>
                 <div className="content__parking">

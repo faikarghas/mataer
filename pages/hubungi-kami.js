@@ -55,20 +55,15 @@ const ParkingKontak = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="mataer-logo-light.png" page="parking" scrollActive={scrollActive}/>
+            <Menu logo="mataer-logo-light.png" scrollActive={scrollActive}/>
         </header>
 
         <main>
             <div className={`product__wrapper ${scrollActive}`}>
-                <div className="sidebar">
-                    <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuParking/>
-                    </div>
-                </div>
-                <div className="content__parking">
+                <div className="content__parking" style={{width:'100%'}}>
                     <MenuAct/>
                     <div className="content__parking__kontak">
-                        <h3>Kontak MAPI</h3>
+                        <h3>Kontak Mataer</h3>
 
                         <div className="kontak__wrapper">
                             <h5>PT. Mataer Makmurindo</h5>

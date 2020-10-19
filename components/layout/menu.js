@@ -31,7 +31,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                     <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
                                     <li><Link href="/"><a>Karir</a></Link></li>
                                     <li><Link href="/tentang-kami"><a>Tentang Kami</a></Link></li>
-                                    <li className="hub m-0" onClick={showContact}><a>Hubungi Kami</a></li>
+                                    <li className="hub m-0"><Link href="/hubungi-kami"><a>Hubungi Kami</a></Link></li>
                                 </ul>
                             </div>
                         </Col>
@@ -39,7 +39,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                             <div className="menu__link">
                                 <ul className="menu__link-top">
                                     <li><Link href="/tentang-kami"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
-                                    <li className="hub m-0" onClick={showContact}><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></li>
+                                    <li className="hub m-0"><Link href="/hubungi-kami"><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></Link></li>
                                 </ul>
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">
