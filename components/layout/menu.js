@@ -13,7 +13,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
         <menu className={scrollActive}>
                 <Container fluid>
                     <Row>
-                        <Col xs={12} md={6} className="menu_mobile">
+                        <Col xs={12} md={5} className="menu_mobile">
                             <Link href="/"><a>
                                 <img src={`${showMenu ? '/mataer-logo-dark.png' : logo}`} className={`${showMenu ? 'open' : ''}`} alt="logo mataer" width="70px"/>
                             </a></Link>
@@ -35,7 +35,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} md={6} className="forDesktop justify-content-end">
+                        <Col xs={12} md={7} className="forDesktop justify-content-end">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
                                     <li><Link href="/tentang-kami"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
