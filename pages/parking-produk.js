@@ -135,11 +135,11 @@ const ParkingProduct = () => {
                             </Col>
                             <Col xs={12} md={7}>
                                 <ul>
-                                    <li><span>1</span><p>Professional</p></li>
-                                    <li><span>2</span><p>Experienced</p></li>
-                                    <li><span>3</span><p>Teamwork</p></li>
-                                    <li><span>4</span><p>People</p></li>
-                                    <li><span>5</span><p>Development</p></li>
+                                    <li><span>1</span><p><b>Professional</b></p></li>
+                                    <li><span>2</span><p><b>Experienced</b></p></li>
+                                    <li><span>3</span><p><b>Teamwork</b></p></li>
+                                    <li><span>4</span><p><b>People</b></p></li>
+                                    <li><span>5</span><p><b>Development</b></p></li>
                                 </ul>
                             </Col>
                         </Row>
