@@ -32,9 +32,12 @@ header{
                     cursor: pointer;
                 }
                 li{
-                    width: 100px;
+                    width: 120px;
+                    &:first-child{
+                        margin-right: 3rem !important;
+                    }
                     a{
-                        font-size: 1.1rem;
+                        font-size: 1.35rem;
                         color: black;
                         text-decoration: none;
                         span{
@@ -57,7 +60,7 @@ header{
                 display: flex;
                 li{
                     a{
-                        font-size: 1.5rem;
+                        font-size: 1.6rem;
                         text-decoration: none;
                     }
                 }
@@ -65,7 +68,11 @@ header{
                     border-right: 1px solid black;
                     li{
                         a{
+                            color: $color_blue;
                             &.active{
+                                color: black;
+                            }
+                            &:hover{
                                 color: black;
                             }
                         }
@@ -83,8 +90,9 @@ header{
             ul{
                 li{
                     list-style: none;
-                    display: inline-block;
-                    margin-right: 2rem;
+                    display: inline-flex;
+                    justify-content: flex-end;
+                    margin-right: 5rem;
                 }
 
                 &:first-child{
@@ -184,7 +192,7 @@ header{
                 }
                 h1{
                     color: white;
-                    font-size: 3.5rem;
+                    font-size: 5rem;
                     margin-bottom: 3rem;
                     @include respond(down-tab-port){
                         color: $color_blue;
@@ -225,7 +233,7 @@ main{
                 display: none;
             }
             &__menu{
-                background-color: #0056b3;
+                background-color: $color_blue;
                 width: 100%;
                 position: sticky;
                 top: 12rem;
@@ -262,7 +270,7 @@ main{
                     }
                     ul{
                         padding-left: 1rem;
-                        border-left: 1px solid white;
+                        border-left: 1px solid #ffffff4d;
                         li{
                             list-style: none;
                             margin-bottom: 1rem;

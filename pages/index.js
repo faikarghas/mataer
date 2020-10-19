@@ -107,14 +107,14 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col xs={12} md={6} className="home__section_about-1">
-                            <p className="title">Tentang Mataer</p>
+                            <p className="title" style={{fontSize: '1.2rem'}}>TENTANG MATAER</p>
                             <h2>Sejak tahun 2014,<br/>PT. Mata Aer Makmurindo<br/>telah menjadi mitra strategis<br/>dalam pelaksanaan dan<br/>pengadaan barang & jasa.</h2>
                             <div className="link__to">
                                 <Link href="/about"><a>Lihat Cerita Kami <span><img src="/arrow-front.png" /></span></a></Link>
                                 <div className="am__bg-link"></div>
                             </div>
                         </Col>
-                        <Col xs={12} md={6} className="align-items-center d-flex">
+                        <Col xs={12} md={6} className="align-items-center d-flex am_wrapper">
                             <Row noGutters>
                                 <Col xs={12} >
                                     <div className="pm">
@@ -158,6 +158,7 @@ const Home = () => {
             </div>
             <div className="home__section_artikel">
                 <Container>
+                    <p className="title2">ARTIKEL TERBARU</p>
                     <div className="artikel__firstBorder">
                         <Row>
                             <Col xs={12} md={6}>
@@ -178,15 +179,15 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="artikel__secondBorder">
                                     <Row>
-                                        <Col xs={12} md={8}>
+                                        <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
                                                 <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={4}>
+                                        <Col xs={12} md={5}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <img src="/berita1.png" width="100%" alt="img artikel" className="forDesktop"/>
                                                 <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
@@ -196,15 +197,15 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="artikel__secondBorder">
                                     <Row>
-                                        <Col xs={12} md={6}>
+                                        <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
                                                 <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={6}>
+                                        <Col xs={12} md={5}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <img src="/berita2.png" width="100%" alt="img artikel" className="forDesktop"/>
                                                 <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
@@ -214,15 +215,15 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="artikel__secondBorder">
                                     <Row>
-                                        <Col xs={12} md={8}>
+                                        <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
                                                 <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={4}>
+                                        <Col xs={12} md={5}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <img src="/berita3.png" width="100%" alt="img artikel" className="forDesktop"/>
                                                 <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>
@@ -232,15 +233,15 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="artikel__secondBorder">
                                     <Row>
-                                        <Col xs={12} md={6}>
+                                        <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
                                                 <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
-                                        <Col xs={12} md={6}>
+                                        <Col xs={12} md={5}>
                                             <div className="artikel__wrapper_img2">
-                                                <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                                <img src="/berita4.png" width="100%" alt="img artikel" className="forDesktop"/>
                                                 <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
                                             </div>
                                         </Col>

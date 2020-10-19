@@ -35,7 +35,7 @@ html{
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    border-left: 9px solid #0056b3;
+    border-left: 9px solid $color_blue;
 
     @include respond(down-tab-port){
         overflow: auto;

@@ -13,7 +13,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
         <menu className={scrollActive}>
                 <Container fluid>
                     <Row>
-                        <Col xs={12} md={5} className="menu_mobile">
+                        <Col xs={12} md={4} className="menu_mobile">
                             <Link href="/"><a>
                                 <img src={`${showMenu ? '/mataer-logo-dark.png' : logo}`} className={`${showMenu ? 'open' : ''}`} alt="logo mataer" width="70px"/>
                             </a></Link>
@@ -31,15 +31,15 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                     <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
                                     <li><Link href="/"><a>Karir</a></Link></li>
                                     <li><Link href="/tentang-kami"><a>Tentang Kami</a></Link></li>
-                                    <li className="hub" onClick={showContact}><a>Hubungi Kami</a></li>
+                                    <li className="hub m-0" onClick={showContact}><a>Hubungi Kami</a></li>
                                 </ul>
                             </div>
                         </Col>
-                        <Col xs={12} md={7} className="forDesktop justify-content-end">
+                        <Col xs={12} md={8} className="forDesktop justify-content-end">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
                                     <li><Link href="/tentang-kami"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
-                                    <li className="hub" onClick={showContact}><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></li>
+                                    <li className="hub m-0" onClick={showContact}><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></li>
                                 </ul>
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">
@@ -50,7 +50,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                     </ul>
                                     <ul className="menu__link-bottom-right">
                                         <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
-                                        <li><Link href="/"><a>Karir</a></Link></li>
+                                        <li className="m-0"><Link href="/"><a>Karir</a></Link></li>
                                     </ul>
                                 </div>
                             </div>
