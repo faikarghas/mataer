@@ -45,16 +45,16 @@ const Home = () => {
                         <ul className="sidebar__menu-ul">
                             <li><Link href="/parking"><a>Tentang MAPI</a></Link></li>
                             <ul>
-                                <li><a href="#visiMisi">Visi & Misi</a></li>
-                                <li><a href="#layanan">Layanan</a></li>
-                                <li><a href="#mengapaKami">Mengapa Kami</a></li>
+                                <li><Link href="/parking/#visiMisi"><a>Visi & Misi</a></Link></li>
+                                <li><a href="/parking/#layanan">Layanan</a></li>
+                                <li><a href="/parking/#mengapaKami">Mengapa Kami</a></li>
                             </ul>
                             <li><Link href="/parking-produk"><a>Produk & Sistem</a></Link></li>
                             <li><Link href="/parking-proyek"><a>Proyek</a></Link></li>
                             <li><Link href="/parking-legal"><a>Legal Perusahaan</a></Link></li>
-                            {/* <ul>
-                                <li><a href="#strukturOrganisasi">Struktur Organisasi</a></li>
-                            </ul> */}
+                            <ul>
+                                <li><a href="/parking-legal/#strukturOrganisasi">Struktur Organisasi</a></li>
+                            </ul>
                             <li><Link href="/parking-kontak"><a>Kontak</a></Link></li>
                         </ul>
                     </div>

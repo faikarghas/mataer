@@ -127,19 +127,19 @@ const EventPortfolio = () => {
                     <div className={`sidebar__menu ${scrollActive}`}>
                         <ul className="sidebar__menu-ul">
                             <li><Link href="/event"><a>Tentang MEM</a></Link></li>
-                            {/* <ul>
-                                <li><a>Layanan</a></li>
-                            </ul> */}
+                            <ul>
+                                <li><a href="#layanan">Layanan</a></li>
+                            </ul>
                             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
                             <ul>
-                                <li><a href="#exhibition">Exhibition</a></li>
-                                <li><a href="#forum">Forum</a></li>
-                                <li><a href="#media">Media</a></li>
+                                <li><Link href="/event-portfolio/#exhibition"><a>Exhibition</a></Link></li>
+                                <li><Link href="/event-portfolio/#forum"><a>Forum</a></Link></li>
+                                <li><Link href="/event-portfolio/#media"><a>Media</a></Link></li>
                             </ul>
                             <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
-                            {/* <ul>
-                                <li><a>Struktur Organisasi</a></li>
-                            </ul> */}
+                            <ul>
+                                <li><Link href="/event-legal/#strukturOrganisasi"><a>Struktur Organisasi</a></Link></li>
+                            </ul>
                             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
                         </ul>
                     </div>
