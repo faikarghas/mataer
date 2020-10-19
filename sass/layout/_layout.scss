@@ -8,7 +8,7 @@ header{
         width: 100%;
         background-color: white;
         z-index: 3;
-        border-left: 9px solid $color_blue;
+        border-left: 9px solid #0056b3;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
         transition: all 0.5s;
         @include respond(down-tab-port){
