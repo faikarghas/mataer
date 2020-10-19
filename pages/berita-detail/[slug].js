@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
-import Menu from '../components/layout/menu'
+import Menu from '../../components/layout/menu'
 // import MenuAct from '../components/menuAction'
 
 
