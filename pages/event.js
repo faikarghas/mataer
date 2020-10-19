@@ -66,7 +66,7 @@ const Home = () => {
                         <ul className="sidebar__menu-ul">
                             <li><Link href="/event"><a>Tentang MEM</a></Link></li>
                             <ul>
-                                <li><a href="#layanan">Layanan</a></li>
+                                <li><Link href="/event-portfolio/#layanan"><a>Layanan</a></Link></li>
                             </ul>
                             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
                             <ul>

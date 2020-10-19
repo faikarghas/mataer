@@ -152,7 +152,7 @@ const EventPortfolio = () => {
                         <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
                     </div>
                     <div id="exhibition" className="content__event__listImg">
-                        <h4>EXHIBITION</h4>
+                        <h4>Exhibition</h4>
                         <Container className="p-0">
                             <Row >
                                 {listImgExhibition()}
@@ -160,7 +160,7 @@ const EventPortfolio = () => {
                         </Container>
                     </div>
                     <div id="forum" className="content__event__listImg">
-                        <h4>FORUM</h4>
+                        <h4>Forum</h4>
                         <Container className="p-0">
                             <Row>
                                 {listImgForum()}
@@ -168,7 +168,7 @@ const EventPortfolio = () => {
                         </Container>
                     </div>
                     <div id="media" className="content__event__slider">
-                        <h4>MEDIA</h4>
+                        <h4>Media</h4>
                         <Slider {...settings} ref={refSlider}>
                             {listImgMedia()}
                         </Slider>

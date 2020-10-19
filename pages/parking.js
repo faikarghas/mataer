@@ -78,14 +78,14 @@ const Home = () => {
                     <div id="visiMisi" className="content__parking__visiSection">
                         <img src="/Visi.jpg" alt="visi" />
                         <div className="content__parking__visiSection-desc">
-                             <h4>VISI</h4>
+                             <h4>Visi</h4>
                              <p>“Menjadi perusahaan penyedia layanan pengelolaan parkir terpercaya oleh mitra dan pengguna parkir se-Indonesia.”</p>
                         </div>
                     </div>
                     <div className="content__parking__misiSection">
                         <Row>
                             <Col xs={12} md={5}>
-                                <h4>MISI</h4>
+                                <h4>Misi</h4>
                             </Col>
                             <Col xs={12} md={7}>
                                 <ul>
