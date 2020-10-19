@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
 
-const Menu = ({logo,page,scrollActive}) => {
+const Menu = ({logo,page,scrollActive,showContact}) => {
     const [showMenu , setShowMenu] = useState(false)
 
     function openMenu() {
@@ -30,16 +30,16 @@ const Menu = ({logo,page,scrollActive}) => {
                                     <li><Link href="/"><a>Business & Consultant</a></Link></li>
                                     <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
                                     <li><Link href="/"><a>Karir</a></Link></li>
-                                    <li><Link href="/"><a>Tentang Kami</a></Link></li>
-                                    <li><Link href="/"><a>Hubungi Kami</a></Link></li>
+                                    <li><Link href="/tentang-kami"><a>Tentang Kami</a></Link></li>
+                                    <li className="hub" onClick={showContact}><a>Hubungi Kami</a></li>
                                 </ul>
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="forDesktop justify-content-end">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
-                                    <li><Link href="/"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
-                                    <li><Link href="/"><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></Link></li>
+                                    <li><Link href="/tentang-kami"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
+                                    <li className="hub" onClick={showContact}><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></li>
                                 </ul>
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">

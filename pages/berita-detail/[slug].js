@@ -180,3 +180,4 @@ const BeritaDetail = () => {
 }
 
 export default BeritaDetail
+

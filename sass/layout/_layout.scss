@@ -28,6 +28,9 @@ header{
             padding-top: 1rem;
 
             &-top{
+                .hub{
+                    cursor: pointer;
+                }
                 li{
                     a{
                         font-size: 1.1rem;
@@ -151,7 +154,7 @@ header{
     }
 
     .header__slider{
-        margin-top: 12rem;
+        margin-top: 11.5rem;
         @include respond(down-tab-port){
             margin-top: 9rem;
         }
@@ -234,7 +237,6 @@ main{
                 &.active_scroll{
                     top: 0;
                 }
-                padding-bottom: 3rem;
                 &-ul{
                     padding-bottom: 3rem;
                 }
@@ -328,5 +330,20 @@ footer{
                 }
             }
         }
+    }
+}
+
+.all__wrapper{
+    display: flex;
+    flex-direction: row;
+    &-item1{
+        width: 0%;
+        transition: 0.5s all;
+        margin-top: 11.5rem;
+        padding: 4rem;
+    }
+    &-item2{
+        width: 100%;
+        transition: 0.5s all;
     }
 }
