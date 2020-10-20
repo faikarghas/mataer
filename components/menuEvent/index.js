@@ -19,7 +19,7 @@ const Index = () => {
             <ul>
                 <li><Link href="/event-portfolio/#layanan"><a>Layanan</a></Link></li>
             </ul>
-            <li className={`${url === 'event-portofolio' ? 'active':'' }`}><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
+            <li className={`${url === 'event-portfolio' ? 'active':'' }`}><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
             <ul>
                 <li><Link href="/event-portfolio/#exhibition"><a>Exhibition</a></Link></li>
                 <li><Link href="/event-portfolio/#forum"><a>Forum</a></Link></li>

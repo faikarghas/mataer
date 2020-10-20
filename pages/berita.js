@@ -64,16 +64,18 @@ const Berita = () => {
                     <div className={`sidebar__menu ${scrollActive}`}>
                         <ul className="sidebar__menu-ul">
                             <li><Link href="/berita"><a>Semua Kategori</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori 1</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori 2</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori 3</a></Link></li>
+                            <li><Link href="/berita"><a>Kategori Satu</a></Link></li>
+                            <li><Link href="/berita"><a>Kategori Dua</a></Link></li>
+                            <li><Link href="/berita"><a>Kategori Tiga</a></Link></li>
+                            <li className="follow">Follow Mataer</li>
+                            <ul className="sosmed">
+                                <li><img src="/Facebook.png" /></li>
+                                <li><img src="/Instagram.png" /></li>
+                                <li><img src="/Linkedin.png" /></li>
+                            </ul>
                         </ul>
                         <div className="kontak_press">
                             <ul>
-                                <li className="follow">Follow Mataer</li>
-                                <ul className="sosmed">
-                                    <li></li>
-                                </ul>
                                 <li>Kontak Press</li>
                                 <li>Agus Ruspendy</li>
                                 <li>Direktur Marketing</li>
@@ -98,7 +100,21 @@ const Berita = () => {
                                         Berhasil Menarik
                                         1000 Pengunjung
                                         dalam Sehari</a></Link>
-                                        <p>14 AGUSTUS 2020 / EVENT PRESS RELEASE</p>
+                                        <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
+                                    </div>
+                                </Col>
+                                <Col xs={12} md={4} className="mb-5">
+                                    <div className="content__berita_wrapper-item">
+                                        <img src="/Article2.jpg" width="100%"/>
+                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
+                                    </div>
+                                </Col>
+                                <Col xs={12} md={4} className="mb-5">
+                                    <div className="content__berita_wrapper-item">
+                                        <img src="/Article4.jpg" width="100%"/>
+                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -111,46 +127,21 @@ const Berita = () => {
                                         Berhasil Menarik
                                         1000 Pengunjung
                                         dalam Sehari</a></Link>
-                                        <p>14 AGUSTUS 2020 / EVENT PRESS RELEASE</p>
+                                        <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <img src="/Article1.jpg" width="100%"/>
-                                        <Link href="/"><a>Pagelaran Budaya
-                                        Jakarta Berlangsung
-                                        Ramai, PT. Mata Aer
-                                        Makmurindo
-                                        Berhasil Menarik
-                                        1000 Pengunjung
-                                        dalam Sehari</a></Link>
-                                        <p>14 AGUSTUS 2020 / EVENT PRESS RELEASE</p>
+                                        <img src="/Article2.jpg" width="100%"/>
+                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <img src="/Article1.jpg" width="100%"/>
-                                        <Link href="/"><a>Pagelaran Budaya
-                                        Jakarta Berlangsung
-                                        Ramai, PT. Mata Aer
-                                        Makmurindo
-                                        Berhasil Menarik
-                                        1000 Pengunjung
-                                        dalam Sehari</a></Link>
-                                        <p>14 AGUSTUS 2020 / EVENT PRESS RELEASE</p>
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <img src="/Article1.jpg" width="100%"/>
-                                        <Link href="/"><a>Pagelaran Budaya
-                                        Jakarta Berlangsung
-                                        Ramai, PT. Mata Aer
-                                        Makmurindo
-                                        Berhasil Menarik
-                                        1000 Pengunjung
-                                        dalam Sehari</a></Link>
-                                        <p>14 AGUSTUS 2020 / EVENT PRESS RELEASE</p>
+                                        <img src="/Article4.jpg" width="100%"/>
+                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>
                             </Row>

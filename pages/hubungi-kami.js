@@ -6,7 +6,6 @@ import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuParkingMobile'
-import MenuParking from '../components/menuParking'
 
 const settings = {
     dots: true,

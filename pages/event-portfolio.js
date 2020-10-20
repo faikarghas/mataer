@@ -83,7 +83,7 @@ const EventPortfolio = () => {
 
         let imgs = list.map((item,i)=>{
             return(
-                <Col xs={6} md={3} className="d-flex align-items-center">
+                <Col xs={6} md={3} className="d-flex align-items-center" key={i}>
                     <div className="img__wrapper">
                         <img key={i} src={`/exhibition/exhibition-${item}.png`} width="100%"/>
                     </div>
