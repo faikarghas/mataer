@@ -65,7 +65,7 @@ header{
                     }
                 }
                 &-left{
-                    border-right: 1px solid black;
+                    border-right: 1px solid #ababab6e;
                     li{
                         a{
                             color: $color_blue;
@@ -79,7 +79,7 @@ header{
                     }
                 }
                 &-right{
-                    margin-left: 2rem;
+                    margin-left: 5rem;
                     li{
                         a{
                             color: black;
@@ -267,10 +267,17 @@ main{
                         &:not(:last-child){
                             margin-bottom: 1rem;
                         }
+                        &.active{
+                            a{
+                                text-decoration: underline;
+                                text-decoration-color: #ffffffbd;
+                                text-decoration-thickness: 3px;
+                            }
+                        }
                     }
                     ul{
                         padding-left: 1rem;
-                        border-left: 1px solid #ffffff4d;
+                        border-left: 1.5px solid #ffffff33;
                         li{
                             list-style: none;
                             margin-bottom: 1rem;

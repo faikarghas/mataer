@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Index = () => {
+const MenuParkingMobile = () => {
     return (
         <div className="menuAct forMobile">
         <ul>
@@ -23,4 +23,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default MenuParkingMobile

@@ -5,9 +5,9 @@ import { motion, useViewportScroll } from "framer-motion"
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuParkingMobile'
-import MenuParking from '../components/menuParking'
+import MenuParking from '../components/menuParking/menuParking'
 
-const Home = () => {
+const Parking = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
@@ -176,4 +176,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Parking

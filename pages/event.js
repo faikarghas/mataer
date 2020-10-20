@@ -5,9 +5,11 @@ import { motion, useViewportScroll } from "framer-motion"
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuEventMobile'
+import MenuEvent from '../components/menuEvent'
+
 import Slider from "react-slick";
 
-const Home = () => {
+const Event = () => {
     const refslider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
@@ -63,23 +65,7 @@ const Home = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul className="sidebar__menu-ul">
-                            <li><Link href="/event"><a>Tentang MEM</a></Link></li>
-                            <ul>
-                                <li><Link href="/event-portfolio/#layanan"><a>Layanan</a></Link></li>
-                            </ul>
-                            <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
-                            <ul>
-                                <li><Link href="/event-portfolio/#exhibition"><a>Exhibition</a></Link></li>
-                                <li><Link href="/event-portfolio/#forum"><a>Forum</a></Link></li>
-                                <li><Link href="/event-portfolio/#media"><a>Media</a></Link></li>
-                            </ul>
-                            <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
-                            <ul>
-                                <li><Link href="/event-legal/#strukturOrganisasi"><a>Struktur Organisasi</a></Link></li>
-                            </ul>
-                            <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
-                        </ul>
+                        <MenuEvent/>
                     </div>
                 </div>
                 <div className="content__event">
@@ -186,4 +172,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Event

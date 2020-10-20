@@ -6,6 +6,7 @@ import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuEventMobile'
+import MenuEvent from '../components/menuEvent'
 
 
 const settings = {
@@ -62,23 +63,7 @@ const EventKontak = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul className="sidebar__menu-ul">
-                            <li><Link href="/event"><a>Tentang MEM</a></Link></li>
-                            <ul>
-                                <li><a href="#layanan">Layanan</a></li>
-                            </ul>
-                            <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
-                            <ul>
-                                <li><Link href="/event-portfolio/#exhibition"><a>Exhibition</a></Link></li>
-                                <li><Link href="/event-portfolio/#forum"><a>Forum</a></Link></li>
-                                <li><Link href="/event-portfolio/#media"><a>Media</a></Link></li>
-                            </ul>
-                            <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
-                            <ul>
-                                <li><Link href="/event-legal/#strukturOrganisasi"><a>Struktur Organisasi</a></Link></li>
-                            </ul>
-                            <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
-                        </ul>
+                        <MenuEvent/>
                     </div>
                 </div>
                 <div className="content__event">

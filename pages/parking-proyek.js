@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuParkingMobile'
 import ModalProject from '../components/modalProject'
-import MenuParking from '../components/menuParking'
+import MenuParking from '../components/menuParking/menuParking'
 
 import {dataProjectParking} from '../lib/data'
 
