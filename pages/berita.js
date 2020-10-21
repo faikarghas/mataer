@@ -55,7 +55,7 @@ const Berita = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="mataer-logo-light.png" page="berita" scrollActive={scrollActive}/>
+            <Menu logo="/mataer-logo-light.png" page="berita" scrollActive={scrollActive}/>
         </header>
 
         <main>
@@ -93,7 +93,7 @@ const Berita = () => {
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <img src="/Article1.jpg" width="100%"/>
-                                        <Link href="/"><a>Pagelaran Budaya
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
                                         Jakarta Berlangsung
                                         Ramai, PT. Mata Aer
                                         Makmurindo

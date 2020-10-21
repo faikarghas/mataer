@@ -35,12 +35,11 @@
             }
         }
         h3{
-            font-size: 3rem;
+            font-size: 4rem;
             font-family: "BLISS2B";
         }
         h4,h3{
             margin-bottom: 6rem;
-            font-family: "MONTSERRAT-BOLD";
             color: #12132A;
             display: inline-block;
             position: relative;
@@ -52,7 +51,68 @@
                 left: 0;
                 width: 35px;
                 height: 2px;
-                background-color: #0056b3;
+                background-color:#0164AF;
+            }
+        }
+    }
+
+    &_detail{
+        padding: 9rem 0;
+        margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
+        h6{
+            color: $color_blue;
+            font-family: "MONTSERRAT-BOLD";
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            span{
+                color: rgba(204, 204, 204, 0.61);
+            }
+        }
+
+        &-content{
+            h1{
+                font-family: "BLISS2B";
+                color: #12132A;
+                font-size: 5.5rem;
+                margin-top: 5rem;
+                margin-bottom: 3rem;
+            }
+            h4{
+                font-family: "BLISS2B";
+                color: $color_blue;
+                margin-bottom: 10rem;
+            }
+            .date_wrapper{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 4rem;
+                &-f{
+                    width: 20%;
+                    border-right: 1.4px solid #ababab6e;
+                    border-top: 1.4px solid #ababab6e;
+                    padding-top: 1.5rem;
+                    span{
+                        color: $color_blue;
+                        font-size: 1.3rem;
+                        font-family: "MONTSERRAT-BOLD";
+                    }
+                }
+                &-m{
+                    width: 80%;
+                    border-top: 1.4px solid #ababab6e;
+                    padding-top: 1.5rem;
+                }
+            }
+            p{
+                color: #12132A;
+                font-family: "BLISS2R";
+                line-height: 2;
+            }
+            img{
+                width: 100%;
             }
         }
     }

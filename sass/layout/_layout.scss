@@ -275,15 +275,17 @@ main{
                             text-decoration: none;
                             font-size: 1.7rem;
                             cursor: pointer;
+                            font-family: "BLISS2R";
                         }
                         &:not(:last-child){
                             margin-bottom: 1rem;
                         }
                         &.active{
                             a{
-                                text-decoration: underline;
-                                text-decoration-color: #ffffffbd;
-                                text-decoration-thickness: 3px;
+                                // text-decoration: underline;
+                                // text-decoration-color: #ffffffbd;
+                                border-bottom: 1.3px solid  #ffffff8e;
+
                             }
                         }
                     }
@@ -319,7 +321,6 @@ main{
                         }
                     }
                 }
-                
             }
         }
     }
