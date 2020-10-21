@@ -44,17 +44,6 @@ const About = () => {
     return (
         <React.Fragment>
         <div className="all__wrapper">
-            <div className="all__wrapper-item1" style={{width:`${showContact.item1}%`}}>
-                <Container>
-                    <Row>
-                        <Col>
-                            KONTAK
-
-                            <button onClick={_closeContactHandler}>Close</button>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
             <div className="all__wrapper-item2" style={{width:`${showContact.item2}%`}}>
                 <header>
                     <Menu showContact={_showContactHandler} logo="mataer-logo-light.png"/>

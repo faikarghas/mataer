@@ -55,11 +55,11 @@ const Parking = () => {
                         </div>
                     </div>
                     <div className="content__parking__firstSection">
-                        <p><b>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan
+                        <p>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan
                         manajemen parkir kendaraan bermotor berbasis teknologi komputerisasi.
                         Telah berdiri sejak tahun 2015, telah memasuki dan memberikan layanan
                         manajemen parkir untuk Kampus/Universitas, Mall, Stasiun, Apartemen,
-                        serta tempat fasilitas umum lainnya.</b></p>
+                        serta tempat fasilitas umum lainnya.</p>
                         <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
                     </div>
                     <div id="visiMisi" className="content__parking__visiSection">
@@ -93,14 +93,14 @@ const Parking = () => {
                                     <div className="title_wrapper">
                                         <h4>Parking<br/>Management</h4>
                                     </div>
-                                    <p><b>Melayani pengelolaan
+                                    <p>Melayani pengelolaan
                                     dan manajemen parkir
                                     termasuk Traditional
                                     Valet, Building Parking,
                                     Parking Management
                                     Consultant, dan
                                     Pengembangan Area
-                                    Parkir.</b></p>
+                                    Parkir.</p>
                                 </div>
                                 <div className="content__parking__layanan_img">
                                     <img src="/Parking-Management-min.jpg" width="100%" alt=""/>
@@ -111,12 +111,12 @@ const Parking = () => {
                                     <div className="title_wrapper">
                                     <h4>Insurance</h4>
                                     </div>
-                                    <p><b>Menyediakan layanan
+                                    <p>Menyediakan layanan
                                     asuransi di antaranya
                                     Personal Accident
                                     Insurance, Parking
                                     Insurance, dan Building
-                                    & Asset Insurance.</b></p>
+                                    & Asset Insurance.</p>
                                 </div>
                                 <div className="content__parking__layanan_img">
                                     <img src="/Insurance-min.jpg" width="100%" alt=""/>
@@ -127,13 +127,13 @@ const Parking = () => {
                                     <div className="title_wrapper">
                                     <h4>Consulting</h4>
                                     </div>
-                                    <p><b>Melayani pembuatan
+                                    <p>Melayani pembuatan
                                     feasibility study untuk
                                     memaksimalkan alur
                                     dan penggunaan space
                                     gedung atau area untuk
                                     penyelenggaraan
-                                    parkir.</b></p>
+                                    parkir.</p>
                                 </div>
                                 <div className="content__parking__layanan_img">
                                     <img src="/Consulting-min.jpg" width="100%" alt=""/>

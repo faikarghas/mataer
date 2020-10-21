@@ -67,7 +67,7 @@
         }
     }
     &__firstSection{
-        padding: 9rem 30rem 9rem 5rem;
+        padding: 9rem 23rem 9rem 5rem;
         @include respond(down-tab-port){
             padding: 2rem;
         }
@@ -75,6 +75,7 @@
             color:#0164AF;
             margin-bottom: 4rem;
             font-size: 2.5rem;
+            font-family: 'BLISS2B';
         }
         p:last-child{
             line-height: 2em;
@@ -216,20 +217,22 @@
             padding: 4rem;
             color: #ffffff;
             .title_wrapper{
-                height: 120px;
+                height: 140px;
             }
             h4{
                 color: white;
                 margin: 0;
+                font-family: 'BLISS2B';
                 &::after{
                     background-color: white;
-                    top: 9rem;
+                    top: 11rem;
                     width: 35px;
                 }
             }
             p{
                 font-size: 1.8rem;
                 letter-spacing: normal;
+                font-family: 'BLISS2B';
             }
         }
         &_img{
@@ -242,7 +245,7 @@
     }
 
     &__why{
-        padding: 9rem 0;
+        padding: 9rem 0 0 0;
         padding-right: 30rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
@@ -277,7 +280,7 @@
             margin-left: 2rem;
             li{
                 font-size: 1.6rem;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
                 p{
                     margin-left: 1rem;
                 }
@@ -311,7 +314,7 @@
             left: 5%;
             transform: translateY(-50%);
             background-color: white;
-            width: 290px;
+            width: 300px;
             padding: 4rem;
         }
         h4{
@@ -321,6 +324,7 @@
             display: inline-block;
             position: relative;
             letter-spacing: normal;
+            font-size: 2.3rem;
             &:after{
                 content: "";
                 position: absolute;
@@ -328,8 +332,8 @@
                 left: 0;
                 // width: 95%;
                 width: 35px;
-                height: 2px;
-                background-color:#0164AF;
+                height: 1px;
+                background-color:rgb(158, 158, 158);
             }
         }
         p{
@@ -340,7 +344,7 @@
     }
 
     &__onlyTextOrImg{
-        padding: 9rem 0;
+        padding: 9rem 0 0 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -376,7 +380,7 @@
     }
 
     &__slider{
-        padding: 9rem 0;
+        padding: 9rem 0 0 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -602,7 +606,7 @@
     }
 
     &__struktur{
-        padding: 9rem 0;
+        padding: 9rem 0 0 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;

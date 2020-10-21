@@ -172,7 +172,7 @@ header{
 
             img{
                 width: 100%;
-                height: 520px;
+                height: 80vh;
                 object-fit: cover;
                 transition: all 1s ;
                 transform: scale(1.01);
@@ -192,7 +192,7 @@ header{
                 }
                 h1{
                     color: white;
-                    font-size: 5rem;
+                    font-size: 4rem;
                     margin-bottom: 3rem;
                     @include respond(down-tab-port){
                         color: $color_blue;
@@ -248,6 +248,7 @@ main{
                 }
                 &-ul{
                     padding-bottom: 3rem;
+                    margin: 0;
                 }
                 ul{
                     .follow{
@@ -285,7 +286,7 @@ main{
                                 // text-decoration: underline;
                                 // text-decoration-color: #ffffffbd;
                                 border-bottom: 1.3px solid  #ffffff8e;
-
+                                font-weight: bold;
                             }
                         }
                     }

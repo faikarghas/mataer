@@ -48,6 +48,10 @@
         color: $color_green;
         line-height: 1em;
         margin-top: 1rem;
+        span{
+            font-size: 10rem;
+            font-family: "Bellota-Bold";
+        }
         @include respond (down-tab-port){
             font-size: 7rem;
         }
@@ -127,7 +131,7 @@
             }
             &:hover{
                 a{
-                    color: $color_blue;
+                    color: $color_green;
                     span{
                         padding-right: 1rem;
                     }
@@ -162,7 +166,8 @@
         a{
             font-family: "BLISS2R";
             color: $color_blue;
-            font-size: 3.5rem;
+            font-size: 4rem;
+            line-height: 50px;
             text-decoration: none;
             @include respond(down-tab-port){
                 font-size: 2.5rem;
@@ -170,7 +175,7 @@
             }
         }
         span{
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-family: "BLISS2R";
         }
     }
@@ -193,7 +198,7 @@
         a{
             font-family: "BLISS2R";
             color: $color_blue;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             text-decoration: none;
             @include respond(down-tab-port){
                 font-size: 1.5rem;

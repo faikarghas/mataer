@@ -147,7 +147,7 @@ const ParkingProduct = () => {
                             </div>
                         </Slider>
                         <div className="slick_ia">
-                            <p>{currentSlide} / 20</p>
+                            <p>{currentSlide} <span>/</span> 20</p>
                             <ul className="button_slider">
                                 <li onClick={_prevArrow}><img src="/arrow-slider-l.png" alt="arrow"/></li>
                                 <li onClick={_nextArrow}><img src="/arrow-slider-r.png" alt="arrow"/></li>
