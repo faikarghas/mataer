@@ -52,7 +52,7 @@ const ParkingProyek = () => {
 
     function hideModal(params) {
         setModalShow(false)
-        setActiveColor('#4784b3')
+        setActiveColor('#58b947')
         setActiveColorOther('#58b947')
         console.log('hide modal');
     }
