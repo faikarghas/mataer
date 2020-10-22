@@ -10,7 +10,6 @@ const MenuParking = () => {
         let a = window.location.href.split('/')[3].split('#')[0]
         setUrl(a)
 
-        console.log(a);
     }, [])
 
     return (

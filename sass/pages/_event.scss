@@ -160,6 +160,7 @@
         p{
             font-family: "BLISS2B";
             line-height: 2em;
+            padding-left: 4rem;
         }
         h4{
             margin-bottom: 6rem;
@@ -182,6 +183,7 @@
             color: $color_green;
             font-weight: unset;
             font-size: 3rem;
+            font-family: "MONTSERRAT-REGULAR";
         }
         &_top{
             height: 400px;
@@ -402,9 +404,10 @@
             }
             &--desc{
                 width: 50%;
-                height: 580px;
+                height: 640px;
                 padding: 7rem;
                 background-color:#1e1f42;
+                overflow: auto;
                 h3{
                     color:white;
                     margin-bottom: 8rem;
@@ -412,7 +415,7 @@
                     display: inline-block;
                     position: relative;
                     letter-spacing: normal;
-                    font-size: 4rem;
+                    font-size: 3.5rem;
                     &:after{
                         content: "";
                         position: absolute;
@@ -703,6 +706,9 @@
                             font-family: "BLISS2B";
                         }
                     }
+                }
+                .mb-5rem{
+                    margin-bottom: 5rem;
                 }
             }
             a{

@@ -88,7 +88,7 @@ const Berita = () => {
                 <div className="content__berita">
                     {/* <MenuAct/> */}
                     <div className="content__berita_detail">
-                        <h6>Berita & Artikel <span> {'>'} </span>Event Press Release</h6>
+                        <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita"><a>Event Press Release</a></Link>
                         <Row>
                             <Col xs={12} md={9}>
                                 <div className="content__berita_detail-content">
@@ -123,7 +123,7 @@ const Berita = () => {
             <Container fluid>
                 <Row>
                     <Col xs={12} md={6}>
-                        <img src="mataer-logo-dark.png" alt="logo mataer" width="70px"/>
+                        <img src="/mataer-logo-dark.png" alt="logo mataer" width="70px"/>
                         <p>PT. Mata Aer Makmurindo</p>
                         <p>Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
                         Jalan Cikini IV No 10, Jakarta Pusat</p>

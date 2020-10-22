@@ -7,10 +7,10 @@ const Index = () => {
     useEffect(() => {
         // get url
 
-        let a = window.location.href.split('/')[3]
+        let a = window.location.href.split('/')[3].split('#')[0]
+
         setUrl(a)
 
-        console.log(a);
     }, [])
 
     return (

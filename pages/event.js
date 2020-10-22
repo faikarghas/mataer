@@ -7,6 +7,8 @@ import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuEventMobile'
 import MenuEvent from '../components/menuEvent'
 
+import {dataLayanan} from '../lib/data'
+
 import Slider from "react-slick";
 
 const Event = () => {
@@ -115,36 +117,23 @@ const Event = () => {
 
                     <div className="content__event__slider2">
                         <Slider {...settings} ref={refslider}>
-                            <div className="content__event__slider2-wrapper">
-                                <div className="content__event__slider2-wrapper--img">
-                                    <img src="/Meeting_Conferences Management.jpg" width="100%"/>
-                                </div>
-                                <div className="content__event__slider2-wrapper--desc">
-                                    <ul>
-                                        <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
-                                        <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
-                                    </ul>
-                                    <h3>Meeting / Conferences <br/> Management</h3>
-                                    <p>Public private forum, business to business forum,
-                                    sarasehan/simposium/seminar, peluncuran produk dan
-                                    forum sosial.</p>
-                                </div>
-                            </div>
-                            <div className="content__event__slider2-wrapper">
-                                <div className="content__event__slider2-wrapper--img">
-                                    <img src="/Meeting_Conferences Management.jpg" width="100%"/>
-                                </div>
-                                <div className="content__event__slider2-wrapper--desc">
-                                    <ul>
-                                        <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
-                                        <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
-                                    </ul>
-                                    <h3>Meeting / Conferences <br/> Management 2</h3>
-                                    <p>Public private forum, business to business forum,
-                                    sarasehan/simposium/seminar, peluncuran produk dan
-                                    forum sosial.</p>
-                                </div>
-                            </div>
+                            {dataLayanan.map((item,i)=>{
+                                return(
+                                    <div className="content__event__slider2-wrapper" key={i}>
+                                        <div className="content__event__slider2-wrapper--img">
+                                            <img src={`/layanan/${item.img}`} width="100%"/>
+                                        </div>
+                                        <div className="content__event__slider2-wrapper--desc">
+                                            <ul>
+                                                <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
+                                                <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
+                                            </ul>
+                                            <h3>{item.judul}</h3>
+                                            <p>{item.deskripsi}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
                         </Slider>
                     </div>
 

@@ -86,12 +86,12 @@ const ParkingLegal = () => {
                             <Row>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/ben-stevenson-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Anggin Maruf</b></p>
                                             <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -100,12 +100,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/cara-haigh-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Prabadika Hadyan Romadhona</b></p>
                                             <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -114,12 +114,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/chris-poole-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Buyung Fajri Zaidin</b></p>
                                             <p className="dw">Direktur Utama</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -128,12 +128,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/henry-makin-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Puguh Susatyo</b></p>
                                             <p className="dw">Direktur Operasional</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -142,12 +142,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/joe-hamilton-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Hanik B. A.</b></p>
                                             <p className="dw">Direktur Keuangan </p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -156,12 +156,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/steven-gibson-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Constancia R.</b></p>
                                             <p className="dw">Direktur SDM & Umum</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -170,12 +170,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5">
+                                        <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/warren-holmes-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5">
+                                        <Col xs={7} className="mb-5rem">
                                             <p><b>Agus Ruspendy</b></p>
                                             <p className="dw">Direktur Marketing</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>

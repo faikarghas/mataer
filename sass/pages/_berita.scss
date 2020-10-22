@@ -11,6 +11,7 @@
 
         &-item{
             margin-top: 8rem;
+            padding: 0 1rem;
             img{
                 height: 350px;
                 object-fit: cover;
@@ -31,6 +32,7 @@
                 span{
                     font-family: "MONTSERRAT-REGULAR";
                     color: #7070708c;
+                    margin: 0 0.5rem;
                 }
             }
         }
@@ -62,13 +64,14 @@
         @include respond(down-tab-port){
             margin: 0 2rem;
         }
-        h6{
+        a{
             color: $color_blue;
             font-family: "MONTSERRAT-BOLD";
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             text-transform: uppercase;
             span{
                 color: rgba(204, 204, 204, 0.61);
+                margin: 0 0.5rem;
             }
         }
 
@@ -84,6 +87,7 @@
                 font-family: "BLISS2B";
                 color: $color_blue;
                 margin-bottom: 10rem;
+                line-height: 1.5em;
             }
             .date_wrapper{
                 display: flex;
@@ -96,7 +100,7 @@
                     padding-top: 1.5rem;
                     span{
                         color: $color_blue;
-                        font-size: 1.3rem;
+                        font-size: 1.2rem;
                         font-family: "MONTSERRAT-BOLD";
                     }
                 }
