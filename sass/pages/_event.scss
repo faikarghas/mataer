@@ -181,6 +181,7 @@
         h5{
             color: $color_green;
             font-weight: unset;
+            font-size: 3rem;
         }
         &_top{
             height: 400px;
@@ -430,7 +431,7 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
-                    margin-bottom: 4rem;
+                    margin-bottom: 5rem;
                     li{
                         list-style: none;
                         background-color: #55ba47;
