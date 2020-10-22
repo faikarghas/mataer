@@ -126,7 +126,7 @@
     }
 
     &__misiSection{
-        padding: 9rem 0;
+        padding: 9rem 0 0 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -344,7 +344,7 @@
     }
 
     &__onlyTextOrImg{
-        padding: 9rem 0 0 0;
+        padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -380,7 +380,7 @@
     }
 
     &__slider{
-        padding: 9rem 0 0 0;
+        padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
