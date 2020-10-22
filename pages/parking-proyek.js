@@ -19,6 +19,8 @@ const ParkingProyek = () => {
     const [currentSlide , setCurrentSlide] = useState(1)
     const [modalShow, setModalShow] = useState(false);
     const [thisData, setThisData] = useState();
+    const [activeColor, setActiveColor] = useState('#58b947');
+    const [activeColorOther, setActiveColorOther] = useState('#58b947');
 
     const settings = {
         dots: false,
@@ -29,12 +31,30 @@ const ParkingProyek = () => {
         fade: true,
         arrows:false,
         beforeChange: (current, next) => setCurrentSlide(next + 1)
-        // afterChange: current => this.setState({ activeSlide2: current })
     };
 
-    function showModal(data){
+    function showModal1(data){
         setModalShow(!modalShow)
         setThisData(data)
+        setActiveColor('#03406f')
+        setActiveColorOther('#626362')
+    }
+
+    function showModal2(data){
+        setModalShow(!modalShow)
+        setThisData(data)
+    }
+
+    function showModal3(data){
+        setModalShow(!modalShow)
+        setThisData(data)
+    }
+
+    function hideModal(params) {
+        setModalShow(false)
+        setActiveColor('#4784b3')
+        setActiveColorOther('#58b947')
+        console.log('hide modal');
     }
 
     function _nextArrow() {
@@ -148,23 +168,23 @@ const ParkingProyek = () => {
                             <img className="peta" src="/map-indonesia-mataer.png" width="100%"/>
                             <svg className="coordinate" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1316" height="482" viewBox="0 0 1316 482">
                                 <g id="Coordinate_Point" data-name="Coordinate Point" transform="translate(-501 -1000)">
-                                    <g id="Kuningan" transform="translate(878 1372)" onClick={()=>showModal(dataProjectParking.kuningan)}>
-                                        <circle id="Ellipse_1" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill="#58b947"/>
+                                    <g id="Kuningan" transform="translate(878 1372)" onClick={()=>showModal1(dataProjectParking.kuningan)}>
+                                        <circle id="Ellipse_1" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill={activeColor}/>
                                         <circle id="Ellipse_2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
                                     </g>
-                                    <g id="Banten" transform="translate(809 1350)" onClick={()=>showModal(dataProjectParking.bogor)}>
-                                    <circle id="Ellipse_1-2" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill="#58b947"/>
-                                    <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
+                                    <g id="Banten" transform="translate(809 1350)" onClick={()=>showModal2(dataProjectParking.bogor)}>
+                                        <circle id="Ellipse_1-2" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill={activeColorOther}/>
+                                        <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
                                     </g>
-                                    <g id="Bogor" transform="translate(832 1361)" onClick={()=>showModal(dataProjectParking.banten)}>
-                                    <circle id="Ellipse_1-3" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill="#58b947"/>
-                                    <circle id="Ellipse_2-3" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
+                                    <g id="Bogor" transform="translate(832 1361)" onClick={()=>showModal3(dataProjectParking.banten)}>
+                                        <circle id="Ellipse_1-3" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill={activeColorOther}/>
+                                        <circle id="Ellipse_2-3" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
                                     </g>
                                 </g>
                             </svg>
                             <ModalProject 
                                 show={modalShow}
-                                onHide={() => setModalShow(false)}
+                                onHide={hideModal}
                                 data={thisData}
                             />
                             <div className="box-hover"></div>

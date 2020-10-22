@@ -12,7 +12,6 @@ const Sidebar = ({activeMenu,src}) => {
                     <Link href="/"><a><img className="logo" src={src} /></a></Link>
                 </div>
                 <div className="menu_sidebar-content--bottom">
-                    
                 </div>
             </div>
         </aside>

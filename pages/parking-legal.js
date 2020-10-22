@@ -93,7 +93,7 @@ const ParkingLegal = () => {
                                         </Col>
                                         <Col xs={6} className="mb-5">
                                             <p><b>Anggin Maruf</b></p>
-                                            <p>Dewan Komisaris</p>
+                                            <p className="">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>

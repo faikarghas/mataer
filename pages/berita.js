@@ -106,21 +106,21 @@ const Berita = () => {
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <img src="/Article2.jpg" width="100%"/>
-                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <img src="/Article4.jpg" width="100%"/>
-                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <img src="/Article1.jpg" width="100%"/>
-                                        <Link href="/"><a>Pagelaran Budaya
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
                                         Jakarta Berlangsung
                                         Ramai, PT. Mata Aer
                                         Makmurindo
@@ -133,14 +133,14 @@ const Berita = () => {
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <img src="/Article2.jpg" width="100%"/>
-                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <img src="/Article4.jpg" width="100%"/>
-                                        <Link href="/"><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
                                     </div>
                                 </Col>

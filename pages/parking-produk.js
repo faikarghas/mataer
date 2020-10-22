@@ -105,11 +105,11 @@ const ParkingProduct = () => {
                                 perusahaan.</p>
                         </div>
                     </div>
-                    <div className="content__parking__onlyTextOrImg">
+                    <div className="content__parking__sistem">
                         <h4>Sistem & Infrastruktur Teknologi</h4>
                         <img src="/Sistem.png" alt="banner parking" />
                     </div>
-                    <div className="content__parking__misiSection">
+                    <div className="content__parking__human">
                         <Row>
                             <Col xs={12} md={5} className="left">
                                 <h4>Human Resource</h4>

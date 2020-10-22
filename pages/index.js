@@ -67,7 +67,7 @@ const Home = () => {
                                     <Col xs={12}>
                                     <h1>Intuisi dan Kreatifitas <br/> dalam membawa nilai <br/>dan solusi kepada <br/> dunia usaha </h1>
                                     <div className="link__to">
-                                        <Link href="/about"><a>Pelajari Lebih Lanjut  <span><img src="/arrow-front.png" /></span></a></Link>
+                                        <Link href="/tentang-kami"><a>Pelajari Lebih Lanjut  <span><img src="/arrow-front.png" /></span></a></Link>
                                         <div className="am__bg-link"></div>
                                     </div>
                                     </Col>
@@ -163,7 +163,7 @@ const Home = () => {
                         <Row>
                             <Col xs={12} md={6}>
                                 <div className="artikel__wrapper_desc1">
-                                    <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                    <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                     <span>14 Agustus 2020</span>
                                 </div>
                             </Col>
@@ -181,7 +181,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
@@ -199,7 +199,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
@@ -217,7 +217,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
@@ -235,7 +235,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href="/"><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>

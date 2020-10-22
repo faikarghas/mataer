@@ -126,7 +126,7 @@
     }
 
     &__misiSection{
-        padding: 9rem 0 0 0;
+        padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -245,8 +245,8 @@
     }
 
     &__why{
-        padding: 9rem 0 0 0;
-        padding-right: 30rem;
+        padding: 9rem 0;
+        padding-right: 23rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -344,7 +344,7 @@
     }
 
     &__onlyTextOrImg{
-        padding: 9rem 0;
+        padding: 0 0 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -376,6 +376,101 @@
         img{
             width: 100%;
             object-fit: contain;
+        }
+    }
+
+    &__sistem{
+        padding: 9rem 0 0 0;
+        margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        h4,h3{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color: #022846;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                width: 35px;
+                height: 2px;
+                background-color:#0164AF;
+            }
+        }
+        p{
+            line-height: 3.5rem;
+        }
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__human{
+        padding: 9rem 0 0 0;
+        margin: 0 5rem;
+        @include respond(down-tab-port){
+            margin: 0 2rem;
+        }
+        h4{
+            margin-bottom: 6rem;
+            font-family: "MONTSERRAT-BOLD";
+            color:#12132A;
+            display: inline-block;
+            position: relative;
+            letter-spacing: normal;
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                // width: 95%;
+                width: 35px;
+                height: 2px;
+                background-color:#0164AF;
+            }
+        }
+        .left{
+            p{
+                padding-right: 13rem;
+                line-height: 2em;
+            }
+        }
+        ul{
+            border-left: 1px solid rgb(214, 214, 214);
+            @include respond(down-tab-port){
+                padding-left: 5rem;
+                border-left: none;
+            }
+            li{
+                list-style: none;
+                padding: 3rem;
+                position: relative;
+                @include respond(down-tab-port){
+                    border-left: 1px solid rgb(214, 214, 214);
+                    padding: 2rem;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid rgb(214, 214, 214);
+                }
+                span{
+                    position: absolute;
+                    top: 3rem;
+                    left: -45px;
+                    color: $color_green;
+                    font-size: 2rem;
+                    line-height: 1em;
+                }
+            }
         }
     }
 
@@ -595,7 +690,7 @@
                     }
                     &:hover{
                         .hovef{
-                            fill: grey;
+                            fill: black;
                             r: 14;
                         }
                     }
@@ -606,7 +701,7 @@
     }
 
     &__struktur{
-        padding: 9rem 0 0 0;
+        padding: 0 0 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -655,6 +750,7 @@
                     &:nth-child(2){
                         p{
                             font-family: "BLISS2B";
+                            color: rgb(133, 133, 133);
                         }
                     }
                 }
@@ -666,6 +762,9 @@
                 font-size: 1.4rem;
                 border-bottom: 1px solid #0064af75;
                 padding-bottom: 4px;
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
     }
