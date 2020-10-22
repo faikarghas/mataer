@@ -1,12 +1,11 @@
 import React,{useRef,useState,useEffect} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
-import {useIntersection} from 'react-use'
 import Slider from "react-slick";
 import Link from 'next/link'
-import { useCountUp} from 'react-countup';
+
 
 import Menu from '../components/layout/menu'
-
+import NumberAnimation from '../components/countAnimation'
 
 const settings = {
     dots: false,
@@ -23,18 +22,6 @@ const Home = () => {
     const refSlider = useRef(null)
     const numberRef = useRef(null)
     const [active, setActive] = useState(false)
-    const { countUp, start} = useCountUp({
-        start: 0,
-        end: 150,
-        delay: 0,
-        duration: 1.5
-    });
-
-    const intersection = useIntersection(numberRef,{
-        root: null,
-        rootMargin:'0px',
-        threshold: 0.5
-    })
 
     function _nextArrow(params) {
         refSlider.current.slickNext()
@@ -43,14 +30,6 @@ const Home = () => {
     function _prevArrow(params) {
         refSlider.current.slickPrev()
     }
-
-    useEffect(() => {
-        if (intersection && intersection.intersectionRatio < 0.5) {
-            console.log('OBS');
-        } else {
-            start()
-        }
-    }, [intersection])
 
 
     return (
@@ -118,19 +97,19 @@ const Home = () => {
                             <Row noGutters>
                                 <Col xs={12} >
                                     <div className="pm">
-                                        <p className="text-center fs-big">{countUp}</p>
+                                        <p className="text-center fs-big"><NumberAnimation numberRef={numberRef} value={150}/></p>
                                         <p className="text-center">Proyek dibawah Manajemen</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={6} >
                                     <div className="km">
-                                        <p className="text-center fs-med">12</p>
+                                        <p className="text-center fs-med"><NumberAnimation numberRef={numberRef} value={12}/></p>
                                         <p className="text-center">Kemitraan</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={6} >
                                     <div className="tp">
-                                        <p className="text-center fs-med">5<span>+</span></p>
+                                        <p className="text-center fs-med"><NumberAnimation numberRef={numberRef} value={5}/><span>+</span></p>
                                         <p className="text-center">Tahun Pengalaman</p>
                                     </div>
                                 </Col>

@@ -15,7 +15,7 @@ const settings = {
 
 function Index(props) {
     const refSlider = useRef(null)
-    const [slide, setSlide] = useState(false)
+    const [slide, setSlide] = useState(props.slide)
     const [modalData, setModalData] = useState([])
 
     function slideBox(params) {
@@ -34,8 +34,19 @@ function Index(props) {
         if (props.data) {
             setModalData(props.data)
         }
-        console.log(props.data,'adasd');
     }, [])
+
+    function arrSl(params) {
+        if (props.data.institusi.length > 1) {
+            return (
+                <ul>
+                    <li onClick={_prevArrow}><img src="/right.png" alt="arrow" /></li>
+                    <li onClick={_nextArrow}><img src="/arrow-slider-front.png" alt="arrow" /></li>
+                </ul>
+            )
+        }
+    }
+
 
     if (props.data) {
         var listInstitusi = props.data.institusi.map((item,i)=>{
@@ -52,15 +63,12 @@ function Index(props) {
                     <h4>WAKTU KERJASAMA</h4>
                     <p>{item.WaktuKerjasama}</p>
                     <div className="button__action">
-                        <div className="link__toProject" onClick={slideBox}>
+                        <div className="link__toProject" onClick={props.slideHandler}>
                             <a>Back</a>
                             <div className="am__bg-link"></div>
                         </div>
                         <div className="arrow__slider">
-                            <ul>
-                                <li onClick={_prevArrow}><img src="/right.png" alt="arrow" /></li>
-                                <li onClick={_nextArrow}><img src="/arrow-slider-front.png" alt="arrow" /></li>
-                            </ul>
+                            {arrSl()}
                         </div>
                     </div>
                 </div>
@@ -79,12 +87,12 @@ function Index(props) {
         className="modal_project"
       >
         <Modal.Body >
-          <div className="desc__wrapper" style={{backgroundImage:`url(/proyek/${slide?`${props.data ? props.data.institusi[0].img : ''}`:`${props.data ? props.data.ringkasan.img : ''}`})`}}>
+          <div className="desc__wrapper" style={{backgroundImage:`url(/proyek/${props.slide?`${props.data ? props.data.institusi[0].img : ''}`:`${props.data ? props.data.ringkasan.img : ''}`})`}}>
                 <div className="desc__wrapper_box1">
 
                 </div>
                 <div className="desc__wrapper_box2" >
-                    <div className="desc__wrapper_box2-item" style={{zIndex:`${slide?'0':'1'}`,opacity:`${slide?'0':'1'}`,transform:`translateX(${slide?'10':'0'}px)`}}>
+                    <div className="desc__wrapper_box2-item" style={{zIndex:`${props.slide?'0':'1'}`,opacity:`${props.slide?'0':'1'}`,transform:`translateX(${slide?'10':'0'}px)`}}>
                         <div className="deskripsi_institusi" style={{height:'100%'}}>
                         <h3>{props.data ? props.data.ringkasan.judul : ''}</h3>
                         <p>{props.data ? props.data.ringkasan.deskripsi : ''}</p>
@@ -98,13 +106,13 @@ function Index(props) {
                             <li>TAHUN DIMULAI</li>
                             <li>{props.data ? props.data.ringkasan.tahun: ''}</li>
                         </ul>
-                        <div className="link__toProject" onClick={slideBox}>
+                        <div className="link__toProject" onClick={props.slideHandler}>
                             <a>Lihat Proyek<span><img src="/arrow-front.png" /></span></a>
                             <div className="am__bg-link"></div>
                         </div>
                         </div>
                     </div>
-                    <div className="desc__wrapper_box2-item" style={{width:'100%',zIndex:`${slide?'1':'0'}`,opacity:`${slide?'1':'0'}`,transform:`translateX(${slide?'0':'10'}px)`}}>
+                    <div className="desc__wrapper_box2-item" style={{width:'100%',zIndex:`${props.slide?'1':'0'}`,opacity:`${props.slide?'1':'0'}`,transform:`translateX(${props.slide?'0':'10'}px)`}}>
                         <Slider {...settings} ref={refSlider}>
                             {listInstitusi}
                         </Slider>

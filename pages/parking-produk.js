@@ -122,11 +122,11 @@ const ParkingProduct = () => {
                             </Col>
                             <Col xs={12} md={7}>
                                 <ul>
-                                    <li><span>1</span><p><b>Professional</b></p></li>
-                                    <li><span>2</span><p><b>Experienced</b></p></li>
-                                    <li><span>3</span><p><b>Teamwork</b></p></li>
-                                    <li><span>4</span><p><b>People</b></p></li>
-                                    <li><span>5</span><p><b>Development</b></p></li>
+                                    <li><span>1</span><p>Professional</p></li>
+                                    <li><span>2</span><p>Experienced</p></li>
+                                    <li><span>3</span><p>Teamwork</p></li>
+                                    <li><span>4</span><p>People</p></li>
+                                    <li><span>5</span><p>Development</p></li>
                                 </ul>
                             </Col>
                         </Row>
@@ -149,8 +149,8 @@ const ParkingProduct = () => {
                         <div className="slick_ia">
                             <p>{currentSlide} <span>/</span> 20</p>
                             <ul className="button_slider">
-                                <li onClick={_prevArrow}><img src="/arrow-slider-l.png" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img src="/arrow-slider-r.png" alt="arrow"/></li>
+                                <li onClick={_prevArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_nextArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
                     </div>

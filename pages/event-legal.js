@@ -84,100 +84,100 @@ const EventLegal = () => {
                         <h4>Struktur Organisasi</h4>
                         <div className="list_struktur">
                             <Row>
-                                <Col xs={12} md={6} className="list_struktur-item">
+                            <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/ben-stevenson-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Anggin Maruf</b></p>
-                                            <p>Dewan Komisaris</p>
+                                            <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/ben-stevenson-860px.jpg" />
+                                                <img src="/struktur/cara-haigh-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Prabadika Hadyan Romadhona</b></p>
-                                            <p>Dewan Komisaris</p>
+                                            <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/ben-stevenson-860px.jpg" />
+                                                <img src="/struktur/chris-poole-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Buyung Fajri Zaidin</b></p>
-                                            <p>Direktur Utama</p>
+                                            <p className="dw">Direktur Utama</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/ben-stevenson-860px.jpg" />
+                                                <img src="/struktur/henry-makin-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Puguh Susatyo</b></p>
-                                            <p>Direktur Operasional</p>
+                                            <p className="dw">Direktur Operasional</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/ben-stevenson-860px.jpg" />
+                                                <img src="/struktur/joe-hamilton-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Hanik B. A.</b></p>
-                                            <p>Direktur Keuangan </p>
+                                            <p className="dw">Direktur Keuangan </p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/ben-stevenson-860px.jpg" />
+                                                <img src="/struktur/steven-gibson-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Constancia R.</b></p>
-                                            <p>Direktur SDM & Umum</p>
+                                            <p className="dw">Direktur SDM & Umum</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={5} className="mb-5">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/ben-stevenson-860px.jpg" />
+                                                <img src="/struktur/warren-holmes-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={6} className="mb-5">
+                                        <Col xs={7} className="mb-5">
                                             <p><b>Agus Ruspendy</b></p>
-                                            <p>Direktur Marketing</p>
+                                            <p className="dw">Direktur Marketing</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>

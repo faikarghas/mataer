@@ -21,6 +21,7 @@ const ParkingProyek = () => {
     const [thisData, setThisData] = useState();
     const [activeColor, setActiveColor] = useState('#58b947');
     const [activeColorOther, setActiveColorOther] = useState('#58b947');
+    const [slide, setSlide] = useState(false)
 
     const settings = {
         dots: false,
@@ -54,7 +55,12 @@ const ParkingProyek = () => {
         setModalShow(false)
         setActiveColor('#58b947')
         setActiveColorOther('#58b947')
+        setSlide(false)
         console.log('hide modal');
+    }
+
+    function slideHandler(params) {
+        setSlide(!slide)
     }
 
     function _nextArrow() {
@@ -186,6 +192,8 @@ const ParkingProyek = () => {
                                 show={modalShow}
                                 onHide={hideModal}
                                 data={thisData}
+                                slide={slide}
+                                slideHandler={slideHandler}
                             />
                             <div className="box-hover"></div>
                         </div>
@@ -196,10 +204,10 @@ const ParkingProyek = () => {
                             {listGaleri()}
                         </Slider>
                         <div className="slick_ia">
-                            <p>{currentSlide} / 20</p>
+                            <p>{currentSlide} <span>/</span>20</p>
                             <ul className="button_slider">
-                                <li onClick={_prevArrow}><img src="/arrow-slider-l.png" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img src="/arrow-slider-r.png" alt="arrow"/></li>
+                                <li onClick={_prevArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_nextArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
                     </div>

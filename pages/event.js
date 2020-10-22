@@ -121,8 +121,8 @@ const Event = () => {
                                 </div>
                                 <div className="content__event__slider2-wrapper--desc">
                                     <ul>
-                                        <li className="prev" onClick={_prevArrow}>Sebelumnya</li>
-                                        <li className="next" onClick={_nextArrow}>Selanjutnya</li>
+                                        <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
+                                        <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
                                     </ul>
                                     <h3>Meeting / Conferences <br/> Management</h3>
                                     <p>Public private forum, business to business forum,
@@ -136,8 +136,8 @@ const Event = () => {
                                 </div>
                                 <div className="content__event__slider2-wrapper--desc">
                                     <ul>
-                                        <li className="prev" onClick={_prevArrow}>Sebelumnya</li>
-                                        <li className="next" onClick={_nextArrow}>Selanjutnya</li>
+                                        <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
+                                        <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
                                     </ul>
                                     <h3>Meeting / Conferences <br/> Management 2</h3>
                                     <p>Public private forum, business to business forum,

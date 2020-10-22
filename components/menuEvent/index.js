@@ -17,7 +17,7 @@ const Index = () => {
         <ul className="sidebar__menu-ul">
             <li className={`${url === 'event' ? 'active':'' }`}><Link href="/event"><a>Tentang MEM</a></Link></li>
             <ul>
-                <li><Link href="/event-portfolio/#layanan"><a>Layanan</a></Link></li>
+                <li><Link href="/event/#layanan"><a>Layanan</a></Link></li>
             </ul>
             <li className={`${url === 'event-portfolio' ? 'active':'' }`}><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
             <ul>

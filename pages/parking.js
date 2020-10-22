@@ -76,9 +76,9 @@ const Parking = () => {
                             </Col>
                             <Col xs={12} md={7}>
                                 <ul>
-                                    <li><span>1</span><p><b>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra.</b></p></li>
-                                    <li><span>2</span><p><b>Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang profesional.</b></p></li>
-                                    <li><span>3</span><p><b>Menyelenggarakan pengelolaan parkir yang aman dan nyaman untuk para customer.</b></p></li>
+                                    <li><span>1</span><p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra.</p></li>
+                                    <li><span>2</span><p>Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang profesional.</p></li>
+                                    <li><span>3</span><p>Menyelenggarakan pengelolaan parkir yang aman dan nyaman untuk para customer.</p></li>
                                 </ul>
                             </Col>
                         </Row>

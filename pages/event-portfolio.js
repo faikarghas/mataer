@@ -158,10 +158,10 @@ const EventPortfolio = () => {
                             {listImgMedia()}
                         </Slider>
                         <div className="slick_ia">
-                            <p>{currentSlide} / 3</p>
+                            <p>{currentSlide} <span>/</span>3</p>
                             <ul className="button_slider">
-                                <li onClick={_prevArrow}><img src="/arrow-slider-l.png" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img src="/arrow-slider-r.png" alt="arrow"/></li>
+                                <li onClick={_prevArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_nextArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
                     </div>

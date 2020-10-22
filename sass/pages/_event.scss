@@ -85,7 +85,7 @@
     &__layananImg{
         height: 400px;
         position: relative;
-        margin-bottom: 5rem;
+        margin-bottom: 9rem;
         img{
             width: 100%;
             height: 100%;
@@ -394,23 +394,28 @@
             flex-wrap: wrap;
             &--img{
                 width: 50%;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
             &--desc{
                 width: 50%;
+                height: 580px;
+                padding: 7rem;
                 background-color:#1e1f42;
-                padding: 4rem;
                 h3{
                     color:white;
-                    margin-bottom: 6rem;
-                    font-family: "MONTSERRAT-BOLD";
+                    margin-bottom: 8rem;
+                    font-family: "BLISS2B";
                     display: inline-block;
                     position: relative;
                     letter-spacing: normal;
-                    font-size: 2.5rem;
+                    font-size: 4rem;
                     &:after{
                         content: "";
                         position: absolute;
-                        bottom: -3rem;
+                        bottom: -4rem;
                         left: 0;
                         width: 35px;
                         height: 2px;
@@ -419,6 +424,7 @@
                 }
                 p{
                     color: white;
+                    line-height: 2em;
                 }
                 ul{
                     width: 100%;
@@ -428,13 +434,34 @@
                     li{
                         list-style: none;
                         background-color: #55ba47;
-                        height: 40px;
+                        height: 50px;
                         color: white;
-                        width: 109px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         cursor: pointer;
+                        font-size: 1.5rem;
+                        padding: 0 1.3rem;
+                        p{
+                            margin: 0;
+                            font-family: 'BLISS2B';
+                        }
+                        img{
+                            width: 24px;
+                        }
+                        &:first-child{
+                            p{
+                                margin-left: 1rem;
+                            }
+                        }
+                        &:last-child{
+                            p{
+                                margin-right: 1rem;
+                            }
+                            img{
+                                transform: rotate(180deg);
+                            }
+                        }
                     }
                 }
             }
