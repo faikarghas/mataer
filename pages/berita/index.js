@@ -5,7 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../../components/layout/menu'
-import MenuBerita from '../../components/MenuBerita'
+import MenuBerita from '../../components/menuBerita'
 
 
 const settings = {
@@ -91,7 +91,7 @@ const Berita = () => {
                                         Berhasil Menarik
                                         1000 Pengunjung
                                         dalam Sehari</a></Link>
-                                        <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
+                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -100,7 +100,7 @@ const Berita = () => {
                                             <a><img src="/Article2.jpg" width="100%"/></a>
                                         </Link>
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
+                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -109,7 +109,7 @@ const Berita = () => {
                                             <a><img src="/Article4.jpg" width="100%"/></a>
                                         </Link>
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
+                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -117,14 +117,8 @@ const Berita = () => {
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                            <a><img src="/Article1.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
-                                        Jakarta Berlangsung
-                                        Ramai, PT. Mata Aer
-                                        Makmurindo
-                                        Berhasil Menarik
-                                        1000 Pengunjung
-                                        dalam Sehari</a></Link>
-                                        <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
+                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</a></Link>
+                                        <Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -133,7 +127,7 @@ const Berita = () => {
                                             <a><img src="/Article2.jpg" width="100%"/></a>
                                         </Link>
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
+                                        <Link href="/berita/[category]" as={`/berita/event-press-release`}><a>PARKING AREA</a></Link>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -142,7 +136,7 @@ const Berita = () => {
                                             <a><img src="/Article4.jpg" width="100%"/></a>
                                         </Link>
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
+                                        <Link href="/berita/[category]" as={`/berita/event-press-release`}><a>PARKING AREA</a></Link>
                                     </div>
                                 </Col>
                             </Row>

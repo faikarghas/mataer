@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
-import Menu from '../../../components/layout/menu'
-// import MenuAct from '../components/menuAction'
+import Menu from '../../../../components/layout/menu'
+import MenuBerita from '../../../../components/menuBerita'
 
 
 const settings = {
@@ -62,18 +62,7 @@ const BeritaDetail = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul className="sidebar__menu-ul">
-                            <li><Link href="/berita"><a>Semua Kategori</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori Satu</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori Dua</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori Tiga</a></Link></li>
-                            <li className="follow">Follow Mataer</li>
-                            <ul className="sosmed">
-                                <li><img src="/Facebook.png" /></li>
-                                <li><img src="/Instagram.png" /></li>
-                                <li><img src="/Linkedin.png" /></li>
-                            </ul>
-                        </ul>
+                        <MenuBerita/>
                         <div className="kontak_press">
                             <ul>
                                 <li>Kontak Press</li>

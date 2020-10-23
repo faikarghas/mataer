@@ -96,14 +96,14 @@ const ParkingProyek = () => {
     function listGaleri(params) {
 
         let list = []
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= 21; i++) {
             list.push(i)
         }
 
         let imgs = list.map((item,i)=>{
             return(
                 <div className="section__slider_imgWrapper" key={i}>
-                    <img src={`/galeri/${item}.jpg`} width="100%"/>
+                    <img src={`/galeri/MAPI-${item}.jpg`} width="100%"/>
                 </div>
             )
         })
@@ -204,7 +204,7 @@ const ParkingProyek = () => {
                             {listGaleri()}
                         </Slider>
                         <div className="slick_ia">
-                            <p>{currentSlide} <span>/</span>20</p>
+                            <p>{currentSlide} <span>/</span>21</p>
                             <ul className="button_slider">
                                 <li onClick={_prevArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
                                 <li onClick={_nextArrow}><img src="/arrow-services.svg" alt="arrow"/></li>

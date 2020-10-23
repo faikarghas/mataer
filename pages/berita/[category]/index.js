@@ -5,7 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../../../components/layout/menu'
-import MenuBerita from '../../../components/MenuBerita'
+import MenuBerita from '../../../components/menuBerita'
 
 
 const settings = {
@@ -91,7 +91,7 @@ const Category = () => {
                                         Berhasil Menarik
                                         1000 Pengunjung
                                         dalam Sehari</a></Link>
-                                        <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
+                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
@@ -106,7 +106,7 @@ const Category = () => {
                                         Berhasil Menarik
                                         1000 Pengunjung
                                         dalam Sehari</a></Link>
-                                        <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
+                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                             </Row>

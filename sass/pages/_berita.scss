@@ -26,9 +26,12 @@
                 font-family: "BLISS2R";
             }
             .date_title{
-                color: $color_blue;
-                font-size: 1.2rem;
-                font-family: "MONTSERRAT-BOLD";
+                display: flex;
+                p,a{
+                    color: $color_blue;
+                    font-size: 1.2rem;
+                    font-family: "MONTSERRAT-BOLD";
+                }
                 span{
                     font-family: "MONTSERRAT-REGULAR";
                     color: #7070708c;

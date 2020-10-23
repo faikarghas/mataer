@@ -22,7 +22,7 @@ const Index = () => {
     return (
         <ul className="sidebar__menu-ul">
             <li className={`${url === 'berita' ? 'active':'' }`}><Link href="/berita"><a>Semua Kategori</a></Link></li>
-            <li className={`${url === 'press-event-release' ? 'active':'' }`}><Link href="/berita/[category]" as={`/berita/press-event-release`}><a>Event Press Release</a></Link></li>
+            <li className={`${url === 'event-press-release' ? 'active':'' }`}><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>Event Press Release</a></Link></li>
             <li><Link href="/berita"><a>Parking Area</a></Link></li>
             <li><Link href="/berita"><a>Internal Update</a></Link></li>
             <li className="follow">Follow Mataer</li>
