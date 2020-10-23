@@ -4,8 +4,8 @@ import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
-import Menu from '../components/layout/menu'
-// import MenuAct from '../components/menuAction'
+import Menu from '../../../components/layout/menu'
+import MenuBerita from '../../../components/MenuBerita'
 
 
 const settings = {
@@ -19,7 +19,7 @@ const settings = {
 };
 
 
-const Berita = () => {
+const Category = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
@@ -62,18 +62,7 @@ const Berita = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <ul className="sidebar__menu-ul">
-                            <li><Link href="/berita"><a>Semua Kategori</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori Satu</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori Dua</a></Link></li>
-                            <li><Link href="/berita"><a>Kategori Tiga</a></Link></li>
-                            <li className="follow">Follow Mataer</li>
-                            <ul className="sosmed">
-                                <li><img src="/Facebook.png" /></li>
-                                <li><img src="/Instagram.png" /></li>
-                                <li><img src="/Linkedin.png" /></li>
-                            </ul>
-                        </ul>
+                        <MenuBerita/>
                         <div className="kontak_press">
                             <ul>
                                 <li>Kontak Press</li>
@@ -108,24 +97,6 @@ const Berita = () => {
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                            <a><img src="/Article2.jpg" width="100%"/></a>
-                                        </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                            <a><img src="/Article4.jpg" width="100%"/></a>
-                                        </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                            <a><img src="/Article1.jpg" width="100%"/></a>
                                         </Link>
                                         <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
@@ -138,24 +109,6 @@ const Berita = () => {
                                         <p className="date_title">14 AGUSTUS 2020 <span>/</span> EVENT PRESS RELEASE</p>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                            <a><img src="/Article2.jpg" width="100%"/></a>
-                                        </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                            <a><img src="/Article4.jpg" width="100%"/></a>
-                                        </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
-                                        <p className="date_title">28 JULI 2020 <span>/</span> PARKING AREA</p>
-                                    </div>
-                                </Col>
                             </Row>
                     </div>
                 </div>
@@ -165,7 +118,7 @@ const Berita = () => {
             <Container fluid>
                 <Row>
                     <Col xs={12} md={6}>
-                        <img src="mataer-logo-dark.png" alt="logo mataer" width="70px"/>
+                        <img src="/mataer-logo-dark.png" alt="logo mataer" width="70px"/>
                         <p>PT. Mata Aer Makmurindo</p>
                         <p>Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
                         Jalan Cikini IV No 10, Jakarta Pusat</p>
@@ -182,4 +135,4 @@ const Berita = () => {
     )
 }
 
-export default Berita
+export default Category

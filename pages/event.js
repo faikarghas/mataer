@@ -60,7 +60,7 @@ const Event = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="mataer-logo-light.png" page="event" scrollActive={scrollActive}/>
+            <Menu logo="/LogoGrupMataer/logoMEM.png" page="event" scrollActive={scrollActive}/>
         </header>
 
         <main>
