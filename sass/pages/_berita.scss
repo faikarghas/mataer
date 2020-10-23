@@ -67,17 +67,21 @@
         @include respond(down-tab-port){
             margin: 0 2rem;
         }
-        a{
-            color: $color_blue;
-            font-family: "MONTSERRAT-BOLD";
-            font-size: 1.2rem;
-            text-transform: uppercase;
+        .brd{
+            a{
+                color: $color_blue;
+                font-family: "MONTSERRAT-BOLD";
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
             span{
                 color: rgba(204, 204, 204, 0.61);
                 margin: 0 0.5rem;
             }
         }
-
         &-content{
             h1{
                 font-family: "BLISS2B";

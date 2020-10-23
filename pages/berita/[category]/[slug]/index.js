@@ -77,7 +77,9 @@ const BeritaDetail = () => {
                 <div className="content__berita">
                     {/* <MenuAct/> */}
                     <div className="content__berita_detail">
-                        <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita"><a>Event Press Release</a></Link>
+                        <div className="brd">
+                            <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>Event Press Release</a></Link>
+                        </div>
                         <Row>
                             <Col xs={12} md={9}>
                                 <div className="content__berita_detail-content">
