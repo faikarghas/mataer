@@ -34,7 +34,7 @@ const Home = () => {
 
     return (
         <React.Fragment>
-        <header>
+        {/* <header>
             <Menu logo="mataer-logo-light.png"/>
             <div className="header__slider">
                 <Slider {...settings} ref={refSlider}>
@@ -257,7 +257,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-        </footer>
+        </footer> */}
         </React.Fragment>
     )
 }
