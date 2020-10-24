@@ -137,18 +137,24 @@ const EventPortfolio = () => {
                         <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
                     </div>
                     <div id="exhibition" className="content__event__listImg">
-                        <h4>Exhibition</h4>
+                        <h4>EXHIBITION</h4>
                         <Container className="p-0">
-                            <Row >
-                                {listImgExhibition()}
+                            <Row className="mt-5">
+                                <Col>
+                                    <img className="forDesktop" src={`/exhibition/Exhibition.png`} width="100%"/>
+                                    <img className="forMobile" src={`/exhibition/exhibition-mobile.png`} width="100%"/>
+                                </Col>
                             </Row>
                         </Container>
                     </div>
                     <div id="forum" className="content__event__listImg">
-                        <h4>Forum</h4>
+                        <h4>FORUM</h4>
                         <Container className="p-0">
-                            <Row>
-                                {listImgForum()}
+                            <Row className="mt-5">
+                                <Col>
+                                    <img className="forDesktop" src={`/forum/Forum.png`} width="100%"/>
+                                    <img className="forMobile" src={`/forum/forum-mobile.png`} width="100%"/>
+                                </Col>
                             </Row>
                         </Container>
                     </div>

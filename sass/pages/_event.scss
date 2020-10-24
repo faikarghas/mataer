@@ -791,20 +791,21 @@
             margin: 0 2rem;
         }
         h4{
-            margin-bottom: 6rem;
+            margin-bottom: 10rem;
             font-family: "MONTSERRAT-BOLD";
-            color: #12132A;
+            color: $color_blue;
             display: inline-block;
             position: relative;
             letter-spacing: normal;
+            font-size: 1.5rem;
             &:after{
                 content: "";
                 position: absolute;
-                bottom: -3rem;
+                bottom: -5rem;
                 left: 0;
                 width: 35px;
-                height: 2px;
-                background-color:#0164AF;
+                height: 1px;
+                background-color:#707070a2;
             }
         }
 
