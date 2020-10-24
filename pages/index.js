@@ -148,7 +148,7 @@ const Home = () => {
                             </Col>
                             <Col xs={12} md={6}>
                                 <div className="artikel__wrapper_img1">
-                                    <img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/>
+                                    <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/></a></Link>
                                     <div className="linkToArtikel forDesktop"><Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/arrow-front.png" /></a></Link></div>
                                 </div>
                             </Col>

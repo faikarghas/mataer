@@ -47,7 +47,7 @@ const About = () => {
             <div className="all__wrapper-item2" style={{width:`${showContact.item2}%`}}>
                 <header>
                     <Menu showContact={_showContactHandler} logo="mataer-logo-light.png"/>
-                    <div className="header__slider">
+                    <div className="header__slider header__about">
                         <div className="header__slider_item">
                             <img src="/tentangKami.jpg" alt="banner 1" style={{transform:'none'}}/>
                             <div className="text__banner">
@@ -89,7 +89,7 @@ const About = () => {
                         <Container>
                             <p className="title">GRUP KAMI</p>
                             <Row>
-                                <Col xs={12} md={6} lg={3}>
+                                <Col xs={12} md={6} lg={3} style={{paddingRight:'2rem'}}>
                                     <div className="about__section_grup-box">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoPark.png" width="100px"/>
@@ -97,7 +97,7 @@ const About = () => {
                                         <p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra. Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang professional.</p>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={6} lg={3}>
+                                <Col xs={12} md={6} lg={3} style={{padding:'0 2rem'}}>
                                     <div className="about__section_grup-box">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoMEM.png" width="100px"/>
@@ -105,7 +105,7 @@ const About = () => {
                                         <p>Mengadakan event, pameran, dan agenda promosi lainnya, baik secara independen dan kerjasama, dengan mengutamakan kelancaran & kesuksesan agenda melalui pelayanan yang dapat dipercaya dan professional di seluruh aspek dengan penawaran yang kompetitif.</p>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={6} lg={3}>
+                                <Col xs={12} md={6} lg={3} style={{padding:'0 2rem'}}>
                                     <div className="about__section_grup-box">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoMAP.png" width="100px"/>
@@ -113,7 +113,7 @@ const About = () => {
                                         <p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra. Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang professional.</p>
                                     </div>
                                 </Col>
-                                <Col xs={12} md={6} lg={3}>
+                                <Col xs={12} md={6} lg={3} style={{paddingLeft:'0 2rem'}}>
                                     <div className="about__section_grup-box">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoMBIC.png" width="100px"/>

@@ -50,7 +50,7 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                     </ul>
                                     <ul className="menu__link-bottom-right">
                                         <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
-                                        <li className="m-0"><Link href="/"><a>Karir</a></Link></li>
+                                        <li className="m-0"><Link href="/"><a className="disable">Karir</a></Link></li>
                                     </ul>
                                 </div>
                             </div>

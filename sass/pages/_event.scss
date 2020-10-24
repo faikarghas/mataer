@@ -797,7 +797,7 @@
             display: inline-block;
             position: relative;
             letter-spacing: normal;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             &:after{
                 content: "";
                 position: absolute;
@@ -805,7 +805,7 @@
                 left: 0;
                 width: 35px;
                 height: 1px;
-                background-color:#707070a2;
+                background-color : #70707077;
             }
         }
 

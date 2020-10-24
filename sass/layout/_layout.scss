@@ -205,6 +205,10 @@ header{
         }
     }
 
+    .header__about img {
+        height: 60vh;
+    }
+
     .slick-active{
         z-index: 2;
         .header__slider_item{
