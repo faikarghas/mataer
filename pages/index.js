@@ -142,14 +142,14 @@ const Home = () => {
                         <Row>
                             <Col xs={12} md={6}>
                                 <div className="artikel__wrapper_desc1">
-                                    <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                    <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                     <span>14 Agustus 2020</span>
                                 </div>
                             </Col>
                             <Col xs={12} md={6}>
                                 <div className="artikel__wrapper_img1">
-                                    <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/></a></Link>
-                                    <div className="linkToArtikel forDesktop"><Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/arrow-front.png" /></a></Link></div>
+                                    <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/></a></Link>
+                                    <div className="linkToArtikel forDesktop"><Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/arrow-front.png" /></a></Link></div>
                                 </div>
                             </Col>
                         </Row>
@@ -160,7 +160,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
@@ -178,7 +178,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
@@ -196,7 +196,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>
@@ -214,7 +214,7 @@ const Home = () => {
                                     <Row>
                                         <Col xs={12} md={7}>
                                             <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
                                                 <span>14 Agustus 2020</span>
                                             </div>
                                         </Col>

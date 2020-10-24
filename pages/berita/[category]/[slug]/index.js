@@ -6,7 +6,7 @@ import Slider from "react-slick";
 
 import Menu from '../../../../components/layout/menu'
 import MenuBerita from '../../../../components/menuBerita'
-
+import ShareIcon from '../../../../components/shareIcon'
 
 const settings = {
     dots: true,
@@ -21,8 +21,12 @@ const settings = {
 
 const BeritaDetail = () => {
     const refSlider = useRef(null)
+    const refContent = useRef(null)
+
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
+    const [showShare , setShowShare] = useState(true)
+    const [url , setUrl] = useState('')
 
     function _nextArrow(params) {
         refSlider.current.slickNext()
@@ -39,9 +43,20 @@ const BeritaDetail = () => {
         } else {
             setScrollActive('')
         }
+
+        let contentHeight = refContent.current.clientHeight
+        if (currentScroll > contentHeight - 200 ) {
+            setShowShare(false)
+        } else {
+            setShowShare(true)
+        }
     }
 
     useEffect(() => {
+        let currentUrl = window.location.href
+        setUrl(currentUrl)
+        console.log(currentUrl);
+
         function watchScroll() {
             window.addEventListener("scroll", handleScroll);
         }
@@ -82,7 +97,7 @@ const BeritaDetail = () => {
                         </div>
                         <Row>
                             <Col xs={12} md={9}>
-                                <div className="content__berita_detail-content">
+                                <div className="content__berita_detail-content" ref={refContent}>
                                     <h1>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</h1>
                                     <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</h4>
                                     <div className="date_wrapper">
@@ -103,7 +118,8 @@ const BeritaDetail = () => {
                                     <img src="/Article 1.png" width="100%" alt="foto artikel"/>
                                 </div>
                             </Col>
-                            <Col xs={12} md={4}>
+                            <Col xs={12} md={3} className="d-flex justify-content-center">
+                                <ShareIcon showShare={showShare} url={url}/>
                             </Col>
                         </Row>
                     </div>

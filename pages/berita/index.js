@@ -81,10 +81,10 @@ const Berita = () => {
                             <Row>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/kategori1/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article1.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
                                         Jakarta Berlangsung
                                         Ramai, PT. Mata Aer
                                         Makmurindo
@@ -96,46 +96,46 @@ const Berita = () => {
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article2.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article4.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                            <a><img src="/Article1.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article2.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>PARKING AREA</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article4.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>PARKING AREA</a></Link></div>
                                     </div>
                                 </Col>
@@ -144,7 +144,7 @@ const Berita = () => {
                                         <Link href={`/berita/[category]/[slug]`} as={`/berita/kategori1/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article1.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
                                         Jakarta Berlangsung
                                         Ramai, PT. Mata Aer
                                         Makmurindo
@@ -156,46 +156,46 @@ const Berita = () => {
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article2.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article4.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                            <a><img src="/Article1.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article2.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>PARKING AREA</a></Link></div>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                             <a><img src="/Article4.jpg" width="100%"/></a>
                                         </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
+                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Persiapan Penempatan 5 Titik Lokasi Parkir di Daerah Luar Pulau Jawa, Meliputi Bali dan Nusa Tenggara Timur</a></Link>
                                         <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>PARKING AREA</a></Link></div>
                                     </div>
                                 </Col>

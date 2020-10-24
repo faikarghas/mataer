@@ -19,9 +19,9 @@ const ParkingProyek = () => {
     const [currentSlide , setCurrentSlide] = useState(1)
     const [modalShow, setModalShow] = useState(false);
     const [thisData, setThisData] = useState();
-    const [activeColor, setActiveColor] = useState('#58b947');
-    const [activeColorOther, setActiveColorOther] = useState('#58b947');
     const [slide, setSlide] = useState(false)
+    const [dotActive, setDotActive] = useState('')
+    const [fillColor, setFillColor] = useState('')
 
     const settings = {
         dots: false,
@@ -36,29 +36,35 @@ const ParkingProyek = () => {
         }
     };
 
-    function showModal1(data){
+    function showModal(data){
         setModalShow(!modalShow)
         setThisData(data)
-        setActiveColor('#03406f')
-        setActiveColorOther('#626362')
+
+        // identifikasi titik yg di klik
+        setDotActive(data.ringkasan.judul)
     }
 
-    function showModal2(data){
-        setModalShow(!modalShow)
-        setThisData(data)
+    function fillSvgColor(params) {
+        // cek jika titik tidak di klik makan bewarna hijau
+        let color
+        if (!modalShow) {
+            color = '#55ba47'
+            return color
+        } else if(modalShow && dotActive === params) {
+            color = '#55ba47'
+            return color
+        } else if (modalShow && dotActive !== params){
+            color = '#707070'
+            return color
+        }
+
     }
 
-    function showModal3(data){
-        setModalShow(!modalShow)
-        setThisData(data)
-    }
 
     function hideModal(params) {
         setModalShow(false)
-        setActiveColor('#58b947')
-        setActiveColorOther('#58b947')
         setSlide(false)
-        console.log('hide modal');
+        setDotActive('')
     }
 
     function slideHandler(params) {
@@ -176,21 +182,21 @@ const ParkingProyek = () => {
                             <img className="peta" src="/map-indonesia-mataer.png" width="100%"/>
                             <svg className="coordinate" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1316" height="482" viewBox="0 0 1316 482">
                                 <g id="Coordinate_Point" data-name="Coordinate Point" transform="translate(-501 -1000)">
-                                    <g id="Kuningan" transform="translate(878 1372)" onClick={()=>showModal1(dataProjectParking.kuningan)}>
-                                        <circle id="Ellipse_1" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill={activeColor}/>
+                                    <g id="Kuningan" transform="translate(878 1372)" onClick={()=>showModal(dataProjectParking.kuningan)}>
+                                        <circle id="Ellipse_1" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r={dotActive == 'Kuningan' ? '14' : '11.5'} fill={fillSvgColor("Kuningan")}/>
                                         <circle id="Ellipse_2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
                                     </g>
-                                    <g id="Banten" transform="translate(809 1350)" onClick={()=>showModal2(dataProjectParking.bogor)}>
-                                        <circle id="Ellipse_1-2" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill={activeColorOther}/>
+                                    <g id="Banten" transform="translate(809 1350)" onClick={()=>showModal(dataProjectParking.bogor)}>
+                                        <circle id="Ellipse_1-2" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r={dotActive == 'Bogor' ? '14' : '11.5'} fill={fillSvgColor("Bogor")}/>
                                         <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
                                     </g>
-                                    <g id="Bogor" transform="translate(832 1361)" onClick={()=>showModal3(dataProjectParking.banten)}>
-                                        <circle id="Ellipse_1-3" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r="11.5" fill={activeColorOther}/>
+                                    <g id="Bogor" transform="translate(832 1361)" onClick={()=>showModal(dataProjectParking.banten)}>
+                                        <circle id="Ellipse_1-3" className="hovef" data-name="Ellipse 1" cx="11.5" cy="11.5" r={dotActive == 'Banten' ? '14' : '11.5'} fill={fillSvgColor("Banten")}/>
                                         <circle id="Ellipse_2-3" data-name="Ellipse 2" cx="3.5" cy="3.5" r="3.5" transform="translate(8 8)" fill="#fff"/>
                                     </g>
                                 </g>
                             </svg>
-                            <ModalProject 
+                            <ModalProject
                                 show={modalShow}
                                 onHide={hideModal}
                                 data={thisData}

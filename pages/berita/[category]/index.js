@@ -76,10 +76,10 @@ const Category = ({data}) => {
                                     return(
                                         <Col xs={12} md={4} className="mb-5" key={i}>
                                             <div className="content__berita_wrapper-item">
-                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
                                                     <a><img src="/Article1.jpg" width="100%"/></a>
                                                 </Link>
-                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>{item.title}</a></Link>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>{item.title}</a></Link>
                                                 <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/${category}`}><a>{category}</a></Link></div>
                                             </div>
                                         </Col>

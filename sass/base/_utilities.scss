@@ -556,3 +556,20 @@ hr.blue{
     pointer-events: none;
     cursor: default;
 }
+
+.shareIcon{
+    list-style: none;
+    display: inline-block;
+    position: fixed;
+    li{
+      margin-bottom: 1rem;
+      @include respond (phone){
+        display: inline-block;
+        margin-right: 1rem;
+      }
+      img{
+        width: 3.5rem;
+        cursor: pointer;
+      }
+    }
+  }
