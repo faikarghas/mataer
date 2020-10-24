@@ -202,6 +202,10 @@
             font-size: 1.7rem;
             text-decoration: none;
             margin-bottom: 5px;
+            // temporary
+            pointer-events: none;
+            cursor: default;
+
             @include respond(down-tab-port){
                 font-size: 1.5rem;
                 margin-bottom: 1.5rem;

@@ -551,3 +551,8 @@ hr.blue{
         display: none !important;
     }
 }
+
+.disable{
+    pointer-events: none;
+    cursor: default;
+}
