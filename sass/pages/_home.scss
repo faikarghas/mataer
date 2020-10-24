@@ -169,6 +169,7 @@
             font-size: 4rem;
             line-height: 50px;
             text-decoration: none;
+            margin-bottom: 5px;
             @include respond(down-tab-port){
                 font-size: 2.5rem;
                 margin-bottom: 1.5rem;
@@ -200,13 +201,14 @@
             color: $color_blue;
             font-size: 1.7rem;
             text-decoration: none;
+            margin-bottom: 5px;
             @include respond(down-tab-port){
                 font-size: 1.5rem;
                 margin-bottom: 1.5rem;
             }
         }
         span{
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-family: "BLISS2R";
         }
     }

@@ -29,7 +29,7 @@ const ParkingProyek = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true,
+        fade: false,
         arrows:false,
         beforeChange: (current, next) => setCurrentSlide(next + 1)
     };

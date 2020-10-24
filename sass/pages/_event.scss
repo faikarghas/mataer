@@ -416,6 +416,7 @@
                     position: relative;
                     letter-spacing: normal;
                     font-size: 3.5rem;
+                    text-transform: capitalize;
                     &:after{
                         content: "";
                         position: absolute;
