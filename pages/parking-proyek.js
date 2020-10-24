@@ -25,13 +25,15 @@ const ParkingProyek = () => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: false,
         arrows:false,
-        beforeChange: (current, next) => setCurrentSlide(next + 1)
+        beforeChange: (current, next) => {
+            setCurrentSlide(next + 1)
+        }
     };
 
     function showModal1(data){
@@ -206,8 +208,8 @@ const ParkingProyek = () => {
                         <div className="slick_ia">
                             <p>{currentSlide} <span>/</span>21</p>
                             <ul className="button_slider">
-                                <li onClick={_prevArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_nextArrow}><img style={{opacity:currentSlide == 21? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
                     </div>

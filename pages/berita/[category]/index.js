@@ -7,19 +7,11 @@ import Slider from "react-slick";
 import Menu from '../../../components/layout/menu'
 import MenuBerita from '../../../components/menuBerita'
 
-
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    arrows:true
-};
+import {absoluteUrl} from '../../../lib/absoluteUrl'
 
 
-const Category = () => {
+
+const Category = ({data}) => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
@@ -79,36 +71,20 @@ const Category = () => {
                     <div className="content__berita_wrapper">
                         <h3>Berita & Artikel</h3>
                             <Row>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                            <a><img src="/Article1.jpg" width="100%"/></a>
-                                        </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
-                                        Jakarta Berlangsung
-                                        Ramai, PT. Mata Aer
-                                        Makmurindo
-                                        Berhasil Menarik
-                                        1000 Pengunjung
-                                        dalam Sehari</a></Link>
-                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
-                                    </div>
-                                </Col>
-                                <Col xs={12} md={4} className="mb-5">
-                                    <div className="content__berita_wrapper-item">
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                           <a><img src="/Article1.jpg" width="100%"/></a>
-                                        </Link>
-                                        <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya
-                                        Jakarta Berlangsung
-                                        Ramai, PT. Mata Aer
-                                        Makmurindo
-                                        Berhasil Menarik
-                                        1000 Pengunjung
-                                        dalam Sehari</a></Link>
-                                        <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>EVENT PRESS RELEASE</a></Link></div>
-                                    </div>
-                                </Col>
+                                {data.dataCategory.map((item,i)=>{
+                                    let category = item.category.split('-').join(' ')
+                                    return(
+                                        <Col xs={12} md={4} className="mb-5" key={i}>
+                                            <div className="content__berita_wrapper-item">
+                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}>
+                                                    <a><img src="/Article1.jpg" width="100%"/></a>
+                                                </Link>
+                                                <Link href={`/berita/[slug]`} as={`/berita/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>{item.title}</a></Link>
+                                                <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/${category}`}><a>{category}</a></Link></div>
+                                            </div>
+                                        </Col>
+                                    )
+                                })}
                             </Row>
                     </div>
                 </div>
@@ -134,5 +110,19 @@ const Category = () => {
         </React.Fragment>
     )
 }
+
+
+Category.getInitialProps = async (ctx) => {
+    const { origin } = absoluteUrl(ctx.req, "localhost:3010");
+
+    const category = ctx.query.category
+
+    const pageRequest = `${origin}/api/getCategory/${category}`
+    const res = await fetch(pageRequest)
+    const json = await res.json()
+
+    return { data: json }
+}
+
 
 export default Category

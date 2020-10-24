@@ -27,6 +27,9 @@
             }
             .date_title{
                 display: flex;
+                a{
+                    text-transform: uppercase;
+                }
                 p,a{
                     color: $color_blue;
                     font-size: 1.2rem;

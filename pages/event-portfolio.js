@@ -21,7 +21,7 @@ const EventPortfolio = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        fade: true,
+        fade: false,
         arrows:false,
         beforeChange: (current, next) => setCurrentSlide(next + 1)
         // afterChange: current => this.setState({ activeSlide2: current })
@@ -166,8 +166,8 @@ const EventPortfolio = () => {
                         <div className="slick_ia">
                             <p>{currentSlide} <span>/</span>3</p>
                             <ul className="button_slider">
-                                <li onClick={_prevArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                <li onClick={_nextArrow}><img style={{opacity:currentSlide == 3? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
                     </div>
