@@ -562,13 +562,13 @@ hr.blue{
     display: inline-block;
     position: fixed;
     li{
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       @include respond (phone){
         display: inline-block;
         margin-right: 1rem;
       }
       img{
-        width: 3.5rem;
+        width: 2.5rem;
         cursor: pointer;
       }
     }
