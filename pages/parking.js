@@ -8,10 +8,11 @@ import MenuAct from '../components/menuParkingMobile'
 import MenuParking from '../components/menuParking/menuParking'
 
 const Parking = () => {
-    const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
+    const [currentHash, setCurrentHash] = useState('')
 
+    const ref = useRef();
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
@@ -23,6 +24,30 @@ const Parking = () => {
     }
 
     useEffect(() => {
+        let hashUrl = window.location.href.split('/')[3].split('#')[1]
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    //do your actions here
+                    setCurrentHash('layanan')
+
+                    console.log('It works!',ref.current)
+                } else {
+                    setCurrentHash('')
+                }
+            },
+            {
+              root: null,
+              rootMargin: "0px",
+              threshold: 0.6
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
         function watchScroll() {
             window.addEventListener("scroll", handleScroll);
         }
@@ -43,7 +68,7 @@ const Parking = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuParking/>
+                        <MenuParking hash={currentHash}/>
                     </div>
                 </div>
                 <div className="content__parking">
@@ -62,7 +87,7 @@ const Parking = () => {
                         serta tempat fasilitas umum lainnya.</p>
                         <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
                     </div>
-                    <div id="visiMisi" className="content__parking__visiSection">
+                    <div id="visiMisi" className="content__parking__visiSection" >
                         <img src="/Visi.jpg" alt="visi" />
                         <div className="content__parking__visiSection-desc">
                              <h4>Visi</h4>
@@ -83,7 +108,7 @@ const Parking = () => {
                             </Col>
                         </Row>
                     </div>
-                    <div id="layanan" className="content__parking__layanan">
+                    <div id="layanan" className="content__parking__layanan" ref={ref}>
                         <Row>
                             <Col xs={12}>
                                 <h4>Layanan</h4>
@@ -142,7 +167,7 @@ const Parking = () => {
                         </Row>
                     </div>
 
-                    <div id="mengapaKami" className="content__parking__why">
+                    <div id="mengapaKami" className="content__parking__why" >
                         <h4>Mengapa Kami</h4>
                         <ul>
                             <li><p>Memiliki lahan parkir yang aman, nyaman, dan tertata dengan baik serta pemaksimalan potensi pendapatan parkir</p></li>
