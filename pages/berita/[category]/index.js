@@ -117,6 +117,8 @@ Category.getInitialProps = async (ctx) => {
 
     const category = ctx.query.category
 
+    console.log(origin);
+
     const pageRequest = `${origin}/api/getCategory/${category}`
     const res = await fetch(pageRequest)
     const json = await res.json()
