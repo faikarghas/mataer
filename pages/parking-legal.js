@@ -92,7 +92,7 @@ const ParkingLegal = () => {
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Anggin Maruf</b></p>
+                                            <p>Anggin Maruf</p>
                                             <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
@@ -102,11 +102,11 @@ const ParkingLegal = () => {
                                     <Row>
                                         <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/cara-haigh-860px.jpg" />
+                                                <img src="/struktur/steven-gibson-860px.jpg" />
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Prabadika Hadyan Romadhona</b></p>
+                                            <p>Prabadika Hadyan Romadhona</p>
                                             <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
@@ -120,7 +120,7 @@ const ParkingLegal = () => {
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Buyung Fajri Zaidin</b></p>
+                                            <p>Buyung Fajri Zaidin</p>
                                             <p className="dw">Direktur Utama</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
@@ -134,7 +134,7 @@ const ParkingLegal = () => {
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Puguh Susatyo</b></p>
+                                            <p>Puguh Susatyo</p>
                                             <p className="dw">Direktur Operasional</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
@@ -148,7 +148,7 @@ const ParkingLegal = () => {
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Hanik B. A.</b></p>
+                                            <p>Hanik B. A.</p>
                                             <p className="dw">Direktur Keuangan </p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
@@ -158,11 +158,11 @@ const ParkingLegal = () => {
                                     <Row>
                                         <Col xs={5} className="mb-5rem">
                                             <div className="imgAvatar">
-                                                <img src="/struktur/steven-gibson-860px.jpg" />
+                                                <img src="/struktur/cara-haigh-860px.jpg" />
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Constancia R.</b></p>
+                                            <p>Constancia R.</p>
                                             <p className="dw">Direktur SDM & Umum</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
@@ -176,7 +176,7 @@ const ParkingLegal = () => {
                                             </div>
                                         </Col>
                                         <Col xs={7} className="mb-5rem">
-                                            <p><b>Agus Ruspendy</b></p>
+                                            <p>Agus Ruspendy</p>
                                             <p className="dw">Direktur Marketing</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>

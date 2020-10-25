@@ -804,12 +804,16 @@
                 .kontak_title{
                     color: $color_blue;
                     font-family: "BLISS2B";
+                    margin-bottom: 2rem;
+                }
+                .kontak_addr{
+                    margin-bottom: 2rem;
                 }
 
                 ul{
                     li{
                         list-style: none;
-                        font-size: 1.4rem;
+                        font-size: 1.6rem;
                         span{
                             width: 80px;
                             display: inline-block;

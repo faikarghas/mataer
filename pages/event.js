@@ -79,13 +79,13 @@ const Event = () => {
                         </div>
                     </div>
                     <div className="content__event__firstSection">
-                        <p><b>Mataer Event & Media berpengalaman menangani kegiatan festival
+                        <p>Mataer Event & Media berpengalaman menangani kegiatan festival
                         maupun expo kebudayaan dan potensi bisnis di tengah komunitas global,
                         membangun kemitraan dan kerjasama dalam kerangka pembangunan
                         ekonomi berkelanjutan. Kami berpengalaman lebih dari 30 tahun
                         memberikan pelayanan konsultasi dan memanajemen kegiatan strategis
                         nasional yang dapat membantu kebutuhan spesifik kegiatan
-                        penyelenggaraan Anda.</b></p>
+                        penyelenggaraan Anda.</p>
                         <p>Kami juga berpengalaman dalam perencanaan media, baik untuk promosi dan sosialisasi, maupun
                         pengembangan produk media komersil. Tentu semua kami lakukan berbasis digital. Meskipun tidak
                         meninggalkan output cetak yang masih menawan sesuai kebutuhannya, menjangkau hal penting yang

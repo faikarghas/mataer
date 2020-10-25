@@ -76,11 +76,9 @@ const ParkingKontak = () => {
                                 <Col xs={12} md={6}>
                                     <div className="kontak__wrapper-item">
                                         <p className="kontak_title">Jakarta Office</p>
-                                        <p>Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
+                                        <p className="kontak_addr">Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
                                         Jalan Cikini IV No 10, Jakarta Pusat<br/>
                                         DKI Jakarta, Indonesia</p>
-                                        <br/>
-                                        <br/>
                                         <ul>
                                             <li><span>Telepon</span>(021) 3103080, (021) 310 5671</li>
                                             <li><span>Fax</span>(021) 3162315</li>
@@ -91,11 +89,9 @@ const ParkingKontak = () => {
                                 <Col xs={12} md={6}>
                                     <div className="kontak__wrapper-item">
                                         <p className="kontak_title">Tangerang Selatan Office</p>
-                                        <p>Ruko Golden Madrid 1Blok B - 10,<br/>
+                                        <p className="kontak_addr">Ruko Golden Madrid 1Blok B - 10,<br/>
                                         BSD City, Kel. Rawa Mekar Jaya,<br/>
                                         Kec. Serpong - Tangerang Selatan, Indonesia</p>
-                                        <br/>
-                                        <br/>
                                         <ul>
                                             <li><span>Telepon</span>(021) 53191667</li>
                                             <li><span>Email</span>info@mataer.com </li>

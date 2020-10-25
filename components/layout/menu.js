@@ -38,8 +38,8 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                         <Col xs={12} md={11} className="forDesktop justify-content-end">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
-                                    <li style={{width:'120px'}}><Link href="/tentang-kami"><a>TENTANG KAMI <span><img src="/right2.png"/></span></a></Link></li>
-                                    <li style={{width:'120px'}} className="hub m-0"><Link href="/hubungi-kami"><a>HUBUNGI KAMI <span><img src="/right2.png"/></span></a></Link></li>
+                                    <li style={{width:'120px'}}><Link href="/tentang-kami"><a>TENTANG KAMI </a></Link><img src="/right2.png"/></li>
+                                    <li style={{width:'120px'}} className="hub m-0"><Link href="/hubungi-kami"><a>HUBUNGI KAMI </a></Link><img src="/right2.png"/></li>
                                 </ul>
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">
