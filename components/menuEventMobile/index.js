@@ -21,6 +21,8 @@ const Index = () => {
             </ul>
             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
         </ul>
+        <div className="scrollToTop"></div>
+
     </div>
     )
 }

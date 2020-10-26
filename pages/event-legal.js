@@ -65,9 +65,9 @@ const EventLegal = () => {
                         <MenuEvent/>
                     </div>
                 </div>
-                <div className="content__parking">
+                <div className="content__event">
                     <MenuAct/>
-                    <div className="content__parking__why">
+                    <div className="content__event__why">
                     <Container>
                             <Row>
                             <Col xs={12} >

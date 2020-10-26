@@ -6,6 +6,7 @@ import Slider from "react-slick";
 
 import Menu from '../../../components/layout/menu'
 import MenuBerita from '../../../components/menuBerita'
+import MenuAct from '../../../components/menuBeritaMobile'
 
 import {absoluteUrl} from '../../../lib/absoluteUrl'
 
@@ -26,7 +27,7 @@ const Category = ({data}) => {
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
-        if (currentScroll >= 540 && window.innerWidth > 900) {
+        if (currentScroll >= 540) {
             setScrollActive('active_scroll')
         } else {
             setScrollActive('')
@@ -67,7 +68,7 @@ const Category = ({data}) => {
                     </div>
                 </div>
                 <div className="content__berita">
-                    {/* <MenuAct/> */}
+                    <MenuAct/>
                     <div className="content__berita_wrapper">
                         <Container>
                             <Row>

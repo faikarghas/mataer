@@ -45,6 +45,7 @@ const Index = () => {
                     <li><img src="/Linkedin.png" /></li>
                 </ul>
             </ul>
+            <div className="scrollToTop"></div>
         </div>
     )
 }

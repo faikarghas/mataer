@@ -143,10 +143,10 @@ const EventPortfolio = () => {
                         </Container>
                     </div>
                     <div id="exhibition" className="content__event__listImg">
-                        <h4>EXHIBITION</h4>
-                        <Container className="p-0">
+                        <Container>
                             <Row className="mt-5">
-                                <Col>
+                                <Col xs={12}><h4>EXHIBITION</h4></Col>
+                                <Col xs={12}>
                                     <img className="forDesktop" src={`/exhibition/Exhibition.png`} width="100%"/>
                                     <img className="forMobile" src={`/exhibition/exhibition-mobile.png`} width="100%"/>
                                 </Col>
@@ -154,9 +154,9 @@ const EventPortfolio = () => {
                         </Container>
                     </div>
                     <div id="forum" className="content__event__listImg">
-                        <h4>FORUM</h4>
-                        <Container className="p-0">
+                        <Container>
                             <Row className="mt-5">
+                                <Col xs={12}><h4>FORUM</h4></Col>
                                 <Col>
                                     <img className="forDesktop" src={`/forum/Forum.png`} width="100%"/>
                                     <img className="forMobile" src={`/forum/forum-mobile.png`} width="100%"/>

@@ -627,3 +627,15 @@ hr.blue{
         }
     }
 }
+
+.scrollToTop{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 0 #9c9c9c;
+    z-index: 999;
+    border-radius: 5px;
+}

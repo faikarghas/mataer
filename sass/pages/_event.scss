@@ -197,7 +197,7 @@
     }
 
     &__why{
-        padding: 9rem 0;
+        padding-top: 9rem;
         padding-right: 23rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
@@ -330,7 +330,7 @@
     }
 
     &__slider{
-        padding: 0 0 9rem 0;
+        padding: 9rem 0 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;
@@ -658,7 +658,7 @@
         h4,h3{
             margin-bottom: 6rem;
             font-family: "MONTSERRAT-BOLD";
-            color: #022846;
+            color:#12132A;
             display: inline-block;
             position: relative;
             letter-spacing: normal;
@@ -677,7 +677,7 @@
             margin-top: 8rem;
             .imgAvatar{
                 width: 100%;
-                height: 223px;
+                height: 181px;
                 img{
                     width: 100%;
                     height: 100%;
@@ -693,11 +693,6 @@
                             font-family: "MONTSERRAT-BOLD";
                         }
                     }
-                    &:nth-child(2){
-                        p{
-                            font-family: "BLISS2B";
-                        }
-                    }
                 }
                 .mb-5rem{
                     margin-bottom: 5rem;
@@ -705,9 +700,12 @@
             }
             a{
                 color: $color_blue;
-                text-decoration: underline;
-                text-decoration-color: $color_blue;;
                 font-size: 1.4rem;
+                border-bottom: 1px solid #d1d1d1b7;
+                padding-bottom: 4px;
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -780,7 +778,7 @@
     }
 
     &__listImg{
-        padding: 0 0 9rem 0;
+        padding-top: 9rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 2rem;

@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import Menu from '../../../../components/layout/menu'
 import MenuBerita from '../../../../components/menuBerita'
 import ShareIcon from '../../../../components/shareIcon'
+import MenuAct from '../../../../components/menuBeritaMobile'
 
 const settings = {
     dots: true,
@@ -38,7 +39,7 @@ const BeritaDetail = () => {
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
-        if (currentScroll >= 540 && window.innerWidth > 900) {
+        if (currentScroll >= 540) {
             setScrollActive('active_scroll')
         } else {
             setScrollActive('')
