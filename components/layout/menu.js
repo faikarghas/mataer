@@ -9,6 +9,8 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
         setShowMenu(!showMenu)
     }
 
+
+
     return (
         <menu className={scrollActive}>
                 <Container fluid>

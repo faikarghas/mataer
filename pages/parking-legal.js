@@ -34,7 +34,7 @@ const ParkingLegal = () => {
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
-        if (currentScroll >= 540 && window.innerWidth > 900) {
+        if (currentScroll >= 540 ) {
             setScrollActive('active_scroll')
         } else {
             setScrollActive('')
@@ -67,7 +67,7 @@ const ParkingLegal = () => {
                 </div>
                 <div className="content__parking">
                     <MenuAct/>
-                    <div className="content__parking__why">
+                    <div className="content__parking__legal">
                     <Container>
                             <Row>
                                 <Col xs={12}>

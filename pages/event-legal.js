@@ -34,7 +34,7 @@ const EventLegal = () => {
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
-        if (currentScroll >= 540 && window.innerWidth > 900) {
+        if (currentScroll >= 540) {
             setScrollActive('active_scroll')
         } else {
             setScrollActive('')
