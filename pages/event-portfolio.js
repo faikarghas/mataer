@@ -132,9 +132,15 @@ const EventPortfolio = () => {
                 <div className="content__event">
                     <MenuAct/>
                     <div className="content__event__why">
+                    <Container>
+                        <Row>
+                            <Col xs={12} md={12}>
                         <h3>Portfolio</h3>
                         <p>Pelayanan industri mice internasional yang tidak lagi berbatas sektoral dan geografis dalam era digital saat ini, dituntut mampu memenuhi berbagai kebutuhan para penggiat perencana kegiatan penyelenggaraan yang semakin berkembang,</p>
                         <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
+                        </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div id="exhibition" className="content__event__listImg">
                         <h4>EXHIBITION</h4>
@@ -159,6 +165,9 @@ const EventPortfolio = () => {
                         </Container>
                     </div>
                     <div id="media" className="content__event__slider">
+                    <Container>
+                        <Row>
+                            <Col xs={12} md={12}>
                         <h4>Media</h4>
                         <Slider {...settings} ref={refSlider}>
                             {listImgMedia()}
@@ -170,6 +179,9 @@ const EventPortfolio = () => {
                                 <li onClick={_nextArrow}><img style={{opacity:currentSlide == 3? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
+                        </Col>
+                            </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

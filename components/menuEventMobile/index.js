@@ -7,17 +7,17 @@ const Index = () => {
         <ul>
             <li><Link href="/event"><a>Tentang MEM</a></Link></li>
             <ul>
-                <li><a>Layanan</a></li>
+                <li><Link href="/event#layanan"><a>Layanan</a></Link></li>
             </ul>
             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
             <ul>
-                <li><a>Exhibition</a></li>
-                <li><a>Forum</a></li>
-                <li><a>Media</a></li>
+                <li><Link href="/event#exhibition"><a>Exhibition</a></Link></li>
+                <li><Link href="/event#forum"><a>Forum</a></Link></li>
+                <li><Link href="/event#media"><a>Media</a></Link></li>
             </ul>
             <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
             <ul>
-                <li><a>Struktur Organisasi</a></li>
+                <li><Link href="/event#strukturOrganisasi"><a>Struktur Organisasi</a></Link></li>
             </ul>
             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
         </ul>

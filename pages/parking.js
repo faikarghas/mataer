@@ -80,12 +80,18 @@ const Parking = () => {
                         </div>
                     </div>
                     <div className="content__parking__firstSection">
-                        <p>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan
-                        manajemen parkir kendaraan bermotor berbasis teknologi komputerisasi.
-                        Telah berdiri sejak tahun 2015, telah memasuki dan memberikan layanan
-                        manajemen parkir untuk Kampus/Universitas, Mall, Stasiun, Apartemen,
-                        serta tempat fasilitas umum lainnya.</p>
-                        <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
+                        <Container>
+                            <Row>
+                                <Col xs={12}>
+                                <p>Mataer Parking Indonesia (MAPI) merupakan perusahaan penyedia layanan
+                                manajemen parkir kendaraan bermotor berbasis teknologi komputerisasi.
+                                Telah berdiri sejak tahun 2015, telah memasuki dan memberikan layanan
+                                manajemen parkir untuk Kampus/Universitas, Mall, Stasiun, Apartemen,
+                                serta tempat fasilitas umum lainnya.</p>
+                                <p>Sebagai salah satu penyedia jasa manajemen parkir di Indonesia, Mataer Parking Indonesia tidak pernah menyediakan layanan yang dirasa tidak bermanfaat untuk para mitra. Setiap manajemen parkir yang telah dikelola dibuat bersama dengan kehati-hatian dan perhatian untuk kebutuhan bisnis anda dalam hal efisiensi pekerjaan, moral pekerja, kelanjutan jangka panjang bisnis, serta keamanan dan kenyamanan untuk para pengguna parkir kendaraan bermotor.</p>
+                                </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div id="visiMisi" className="content__parking__visiSection" >
                         <img src="/Visi.jpg" alt="visi" />
@@ -95,6 +101,7 @@ const Parking = () => {
                         </div>
                     </div>
                     <div className="content__parking__misiSection">
+                        <Container>
                         <Row>
                             <Col xs={12} md={5}>
                                 <h4>Misi</h4>
@@ -107,8 +114,10 @@ const Parking = () => {
                                 </ul>
                             </Col>
                         </Row>
+                        </Container>
                     </div>
                     <div id="layanan" className="content__parking__layanan" ref={ref}>
+                        <Container>
                         <Row>
                             <Col xs={12}>
                                 <h4>Layanan</h4>
@@ -165,17 +174,24 @@ const Parking = () => {
                                 </div>
                             </Col>
                         </Row>
+                        </Container>
                     </div>
 
                     <div id="mengapaKami" className="content__parking__why" >
-                        <h4>Mengapa Kami</h4>
-                        <ul>
-                            <li><p>Memiliki lahan parkir yang aman, nyaman, dan tertata dengan baik serta pemaksimalan potensi pendapatan parkir</p></li>
-                            <li><p>Pelayanan cepat saat masuk dan keluar lahan parkir dengan teknologi terbaru</p></li>
-                            <li><p>Kepuasan pengalaman para pengguna jasa parkir</p></li>
-                            <li><p>Jaminan perlindungan asuransi kendaraan</p></li>
-                            <li><p>Terkoneksi dengan aplikasi pada smart phone untuk memudahkan pengguna melakukan booking dan payment secara online</p></li>
-                        </ul>
+                        <Container>
+                            <Row>
+                                <Col xs={12}>
+                                <h4>Mengapa Kami</h4>
+                                <ul>
+                                    <li><p>Memiliki lahan parkir yang aman, nyaman, dan tertata dengan baik serta pemaksimalan potensi pendapatan parkir</p></li>
+                                    <li><p>Pelayanan cepat saat masuk dan keluar lahan parkir dengan teknologi terbaru</p></li>
+                                    <li><p>Kepuasan pengalaman para pengguna jasa parkir</p></li>
+                                    <li><p>Jaminan perlindungan asuransi kendaraan</p></li>
+                                    <li><p>Terkoneksi dengan aplikasi pada smart phone untuk memudahkan pengguna melakukan booking dan payment secara online</p></li>
+                                </ul>
+                                </Col>
+                            </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

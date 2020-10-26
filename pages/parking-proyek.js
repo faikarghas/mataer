@@ -136,9 +136,15 @@ const ParkingProyek = () => {
                 <div className="content__parking">
                     <MenuAct/>
                     <div className="content__parking__why">
-                        <h3>Proyek</h3>
-                        <p>Pengelolaan parkir termasuk dalam image property dan sesungguhnya dapat dikatakan pintu gerbang dalam serangkaian proses pembentukan kredibilitas citra layanan sebuah institusi ataupun instansi pemerintah dan swasta, termasuk juga dalam upaya memberikan pelayanan yang memiliki citra terbaik dan respon positif atas tuntutan masyarakat terhadap citra kinerja institusi tersebut secara keseluruhan.</p>
-                        <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
+                        <Container>
+                            <Row>
+                                <Col xs={12}>
+                                    <h3>Proyek</h3>
+                                    <p>Pengelolaan parkir termasuk dalam image property dan sesungguhnya dapat dikatakan pintu gerbang dalam serangkaian proses pembentukan kredibilitas citra layanan sebuah institusi ataupun instansi pemerintah dan swasta, termasuk juga dalam upaya memberikan pelayanan yang memiliki citra terbaik dan respon positif atas tuntutan masyarakat terhadap citra kinerja institusi tersebut secara keseluruhan.</p>
+                                    <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
+                                </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div className="content__parking__map">
                         <div className="content__parking__map-bar">
@@ -207,17 +213,23 @@ const ParkingProyek = () => {
                         </div>
                     </div>
                     <div className="content__parking__slider">
-                        <h4>GALERI</h4>
-                        <Slider {...settings} ref={refSlider}>
-                            {listGaleri()}
-                        </Slider>
-                        <div className="slick_ia">
-                            <p>{currentSlide} <span>/</span>21</p>
-                            <ul className="button_slider">
-                                <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img style={{opacity:currentSlide == 21? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
-                            </ul>
-                        </div>
+                        <Container>
+                                <Row>
+                                    <Col xs={12}>
+                                        <h4>GALERI</h4>
+                                        <Slider {...settings} ref={refSlider}>
+                                            {listGaleri()}
+                                        </Slider>
+                                        <div className="slick_ia">
+                                            <p>{currentSlide} <span>/</span>21</p>
+                                            <ul className="button_slider">
+                                                <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                                <li onClick={_nextArrow}><img style={{opacity:currentSlide == 21? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                            </ul>
+                                        </div>
+                                    </Col>
+                                </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

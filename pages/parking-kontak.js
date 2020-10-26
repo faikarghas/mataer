@@ -68,11 +68,19 @@ const ParkingKontak = () => {
                 <div className="content__parking">
                     <MenuAct/>
                     <div className="content__parking__kontak">
-                        <h3>Kontak MAPI</h3>
-
-                        <div className="kontak__wrapper">
-                            <h5>PT. Mataer Makmurindo</h5>
+                        <Container>
                             <Row>
+                                <Col xs={12}>
+                                   <h3>Kontak MAPI</h3>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <div className="kontak__wrapper">
+                            <Container>
+                            <Row>
+                                <Col xs={12}>
+                                    <h5>PT. Mataer Makmurindo</h5>
+                                </Col>
                                 <Col xs={12} md={6}>
                                     <div className="kontak__wrapper-item">
                                         <p className="kontak_title">Jakarta Office</p>
@@ -100,6 +108,8 @@ const ParkingKontak = () => {
                                     </div>
                                 </Col>
                             </Row>
+                        </Container>
+
                         </div>
                     </div>
                 </div>

@@ -443,6 +443,10 @@
             p{
                 padding-right: 13rem;
                 line-height: 2em;
+                @include respond(down-tab-port){
+                    padding-right: 0rem;
+                    margin-bottom: 3rem;
+                }
             }
         }
         ul{
@@ -529,7 +533,7 @@
                 }
                 .head{
                     height: 70px;
-                    width: calc(100% - 10rem);
+                    width: calc(100% - 13rem);
                     border-bottom: 1px solid black;
                     margin: auto;
                     @include respond(down-tab-port){
@@ -538,7 +542,7 @@
                     }
                 }
                 .body{
-                    width: calc(100% - 10rem);
+                    width: calc(100% - 13rem);
                     margin: auto;
                     @include respond(down-tab-port){
                         width: calc(100% - 4rem);
@@ -768,7 +772,7 @@
         padding: 9rem 5rem;
         background-color: #70707017;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0;
         }
         h3{
             font-size: 3.5rem;

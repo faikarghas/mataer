@@ -68,6 +68,9 @@ const ParkingLegal = () => {
                 <div className="content__parking">
                     <MenuAct/>
                     <div className="content__parking__why">
+                    <Container>
+                            <Row>
+                                <Col xs={12}>
                         <h3>Legal Perusahaan</h3>
                         <p>PT Mataer Makmurindo didirikan pada tanggal 11 November 2014,
                         berkantor pusat di Ruko Golden Madrid 1 No B 10 Tangerang Selatan
@@ -79,19 +82,29 @@ const ParkingLegal = () => {
                         Surat Ijin Usaha Perdagangan - No 503/000873-BP2T/30-08/PM/XII2104
                         No Pendaftaran BPJS Ketenagakerjaan – 19153228 Tahun 2019
                         </p>
+                        </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div id="strukturOrganisasi" className="content__parking__struktur">
-                        <h4>Struktur Organisasi</h4>
+                        <Container>
+                            <Row>
+                                <Col xs={12}>
+                                <h4>Struktur Organisasi</h4>
+                                </Col>
+                            </Row>
+                        </Container>
                         <div className="list_struktur">
+                        <Container>
                             <Row>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/ben-stevenson-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Anggin Maruf</p>
                                             <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -100,12 +113,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/steven-gibson-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Prabadika Hadyan Romadhona</p>
                                             <p className="dw">Dewan Komisaris</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -114,12 +127,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/chris-poole-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Buyung Fajri Zaidin</p>
                                             <p className="dw">Direktur Utama</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -128,12 +141,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/henry-makin-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Puguh Susatyo</p>
                                             <p className="dw">Direktur Operasional</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -142,12 +155,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/joe-hamilton-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Hanik B. A.</p>
                                             <p className="dw">Direktur Keuangan </p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -156,12 +169,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/cara-haigh-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Constancia R.</p>
                                             <p className="dw">Direktur SDM & Umum</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -170,12 +183,12 @@ const ParkingLegal = () => {
                                 </Col>
                                 <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
-                                        <Col xs={5} className="mb-5rem">
+                                        <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
                                                 <img src="/struktur/warren-holmes-860px.jpg" />
                                             </div>
                                         </Col>
-                                        <Col xs={7} className="mb-5rem">
+                                        <Col xs={6} md={7} className="mb-5rem">
                                             <p>Agus Ruspendy</p>
                                             <p className="dw">Direktur Marketing</p>
                                             <a href="mailto: abc@example.com">EMAIL</a>
@@ -183,6 +196,7 @@ const ParkingLegal = () => {
                                     </Row>
                                 </Col>
                             </Row>
+                            </Container>
                         </div>
                     </div>
                 </div>

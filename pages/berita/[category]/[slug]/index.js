@@ -92,10 +92,13 @@ const BeritaDetail = () => {
                 <div className="content__berita">
                     {/* <MenuAct/> */}
                     <div className="content__berita_detail">
-                        <div className="brd">
-                            <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>Event Press Release</a></Link>
-                        </div>
+                        <Container>
                         <Row>
+                            <Col xs={12}>
+                                <div className="brd">
+                                    <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>Event Press Release</a></Link>
+                                </div>
+                            </Col>
                             <Col xs={12} md={9}>
                                 <div className="content__berita_detail-content" ref={refContent}>
                                     <h1>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</h1>
@@ -122,6 +125,7 @@ const BeritaDetail = () => {
                                 <ShareIcon showShare={showShare} url={url}/>
                             </Col>
                         </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

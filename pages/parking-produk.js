@@ -71,6 +71,9 @@ const ParkingProduct = () => {
                 <div className="content__parking">
                     <MenuAct/>
                     <div className="content__parking__why">
+                    <Container>
+                            <Row>
+                                <Col xs={12}>
                         <h3>Produk & Sistem</h3>
                         <p>Mataer Parking Indonesia (MAPI) bergerak di bidang pengelolaan perparkiran berbasis teknologi
                         komputerisasi. Penerapan teknologi komputer dalam pengelolaan parkir saat ini sudah menjadi kebutuhan
@@ -78,6 +81,9 @@ const ParkingProduct = () => {
                         lebih efektif dan efisien, aman, dan meminimalisir tingkat kebocoran yang terjadi di lapangan. Dan akan
                         berdampak langsung pada mutu pelayanan, level of service, dan mempengaruhi nilai image positif pada
                         management building.</p>
+                        </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div className="content__parking__onlyTextOrImg">
                         <img src="/Produk.jpg" alt="banner parking" />
@@ -106,10 +112,17 @@ const ParkingProduct = () => {
                         </div>
                     </div>
                     <div className="content__parking__sistem">
+                    <Container>
+                            <Row>
+                                <Col xs={12}>
                         <h4>Sistem & Infrastruktur Teknologi</h4>
                         <img src="/Sistem.png" alt="banner parking" />
+                        </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div className="content__parking__human">
+                    <Container>
                         <Row>
                             <Col xs={12} md={5} className="left">
                                 <h4>Human Resource</h4>
@@ -130,8 +143,13 @@ const ParkingProduct = () => {
                                 </ul>
                             </Col>
                         </Row>
+                        </Container>
+
                     </div>
                     <div className="content__parking__slider">
+                    <Container>
+                            <Row>
+                                <Col xs={12}>
                         <Slider {...settings} ref={refSlider}>
                             <div className="section__slider_imgWrapper">
                                 <img src="/Booth.png" width="100%"/>
@@ -153,6 +171,9 @@ const ParkingProduct = () => {
                                 <li onClick={_nextArrow}><img style={{opacity:currentSlide == 4? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
                             </ul>
                         </div>
+                        </Col>
+                        </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

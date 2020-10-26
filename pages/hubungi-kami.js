@@ -54,7 +54,7 @@ const ParkingKontak = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="mataer-logo-light.png" scrollActive={scrollActive}/>
+            <Menu logo="mataer-logo-light.png" page="kontak" scrollActive={scrollActive}/>
         </header>
 
         <main>

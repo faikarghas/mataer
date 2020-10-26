@@ -69,8 +69,9 @@ const Category = ({data}) => {
                 <div className="content__berita">
                     {/* <MenuAct/> */}
                     <div className="content__berita_wrapper">
-                        <h3>Berita & Artikel</h3>
+                        <Container>
                             <Row>
+                                <Col xs={12}><h3>Berita & Artikel</h3></Col>
                                 {data.dataCategory.map((item,i)=>{
                                     let category = item.category.split('-').join(' ')
                                     return(
@@ -86,6 +87,7 @@ const Category = ({data}) => {
                                     )
                                 })}
                             </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

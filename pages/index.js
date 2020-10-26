@@ -73,12 +73,16 @@ const Home = () => {
                 </Slider>
             </div>
             <Container>
-            <div className="arrow__slider arrow__slider_posHome">
-                <ul>
-                    <li onClick={_prevArrow}><img src="/right.png" alt="arrow" /></li>
-                    <li onClick={_nextArrow}><img src="/arrow-slider-front.png" alt="arrow" /></li>
-                </ul>
-            </div>
+                <Row>
+                    <Col xs={12}>
+                        <div className="arrow__slider arrow__slider_posHome">
+                            <ul>
+                                <li onClick={_prevArrow}><img src="/right.png" alt="arrow" /></li>
+                                <li onClick={_nextArrow}><img src="/arrow-slider-front.png" alt="arrow" /></li>
+                            </ul>
+                        </div>
+                    </Col>
+                </Row>
             </Container>
         </header>
         <main>
@@ -97,19 +101,19 @@ const Home = () => {
                             <Row noGutters>
                                 <Col xs={12} >
                                     <div className="pm">
-                                        <p className="text-center fs-big"><NumberAnimation numberRef={numberRef} value={150}/></p>
+                                        <h3 className="text-center fs-big"><NumberAnimation numberRef={numberRef} value={150}/></h3>
                                         <p className="text-center">Proyek dibawah Manajemen</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={6} >
                                     <div className="km">
-                                        <p className="text-center fs-med"><NumberAnimation numberRef={numberRef} value={12}/></p>
+                                        <h3 className="text-center fs-med"><NumberAnimation numberRef={numberRef} value={12}/></h3>
                                         <p className="text-center">Kemitraan</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={6} >
                                     <div className="tp">
-                                        <p className="text-center fs-med"><NumberAnimation numberRef={numberRef} value={5}/><span>+</span></p>
+                                        <h3 className="text-center fs-med"><NumberAnimation numberRef={numberRef} value={5}/><span>+</span></h3>
                                         <p className="text-center">Tahun Pengalaman</p>
                                     </div>
                                 </Col>

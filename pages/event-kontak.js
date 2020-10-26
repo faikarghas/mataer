@@ -5,9 +5,8 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuEventMobile'
-import MenuEvent from '../components/menuEvent'
-
+import MenuAct from '../components/menuParkingMobile'
+import MenuParking from '../components/menuParking/menuParking'
 
 const settings = {
     dots: true,
@@ -56,24 +55,32 @@ const EventKontak = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="/LogoGrupMataer/logoMEM.png" page="event" scrollActive={scrollActive}/>
+            <Menu logo="/LogoGrupMataer/logoPark.png" page="parking" scrollActive={scrollActive}/>
         </header>
 
         <main>
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuEvent/>
+                        <MenuParking/>
                     </div>
                 </div>
-                <div className="content__event">
+                <div className="content__parking">
                     <MenuAct/>
-                    <div className="content__event__kontak">
-                        <h3>Kontak MAPI</h3>
-
-                        <div className="kontak__wrapper">
-                            <h5>PT. Mataer Makmurindo</h5>
+                    <div className="content__parking__kontak">
+                        <Container>
                             <Row>
+                                <Col xs={12}>
+                                   <h3>Kontak MAPI</h3>
+                                </Col>
+                            </Row>
+                        </Container>
+                        <div className="kontak__wrapper">
+                            <Container>
+                            <Row>
+                                <Col xs={12}>
+                                    <h5>PT. Mataer Makmurindo</h5>
+                                </Col>
                                 <Col xs={12} md={6}>
                                     <div className="kontak__wrapper-item">
                                         <p className="kontak_title">Jakarta Office</p>
@@ -101,6 +108,8 @@ const EventKontak = () => {
                                     </div>
                                 </Col>
                             </Row>
+                        </Container>
+
                         </div>
                     </div>
                 </div>

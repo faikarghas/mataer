@@ -1,6 +1,10 @@
 .about__section_about{
     margin: 4rem;
     padding: 5rem 0;
+    @include respond(down-tab-port){
+        margin-bottom: 4rem;
+        margin: 0rem;
+    }
     &-1{
         @include respond(down-tab-port){
             margin-bottom: 4rem;

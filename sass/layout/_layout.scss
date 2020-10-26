@@ -199,6 +199,7 @@ header{
                     margin-bottom: 3rem;
                     @include respond(down-tab-port){
                         color: $color_blue;
+                        font-size: 3rem;
                     }
                 }
             }
@@ -227,7 +228,7 @@ main{
         flex-direction: row;
         transition: all 0.5s;
         @include respond(down-tab-port){
-            margin-top: 9rem;
+            margin-top: 0rem;
         }
         &.active_scroll{
             margin-top: 0;
@@ -337,6 +338,9 @@ main{
 footer{
     padding: 5rem 4rem;
     background-color: #12132A;
+    @include respond(down-phone){
+        padding: 5rem 2rem;
+    }
     img{
         margin-bottom: 2rem;
     }

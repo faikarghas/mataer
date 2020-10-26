@@ -46,7 +46,7 @@ const About = () => {
         <div className="all__wrapper">
             <div className="all__wrapper-item2" style={{width:`${showContact.item2}%`}}>
                 <header>
-                    <Menu showContact={_showContactHandler} logo="mataer-logo-light.png"/>
+                    <Menu logo="mataer-logo-light.png" page="tentang-kami"  showContact={_showContactHandler}/>
                     <div className="header__slider header__about">
                         <div className="header__slider_item">
                             <img src="/tentangKami.jpg" alt="banner 1" style={{transform:'none'}}/>
@@ -134,7 +134,6 @@ const About = () => {
                                     <img className="forMobile1" src="/LogoKlienMobile.png" width="100%"/>
                                 </Col>
                             </Row>
-
                         </Container>
                     </div>
                 </main>

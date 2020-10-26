@@ -28,18 +28,18 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                     <li><Link href="/event"><a className={page === 'event' ? 'active' : ''}>Event & Media</a></Link></li>
                                     <li><Link href="/"><a>Adspro</a></Link></li>
                                     <li><Link href="/"><a>Business & Consultant</a></Link></li>
-                                    <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
+                                    <li><Link href="/berita"><a className={page === 'berita' ? 'active' : ''}>Berita & Artikel</a></Link></li>
                                     <li><Link href="/"><a>Karir</a></Link></li>
-                                    <li><Link href="/tentang-kami"><a>Tentang Kami</a></Link></li>
-                                    <li className="hub m-0"><Link href="/hubungi-kami"><a>Hubungi Kami</a></Link></li>
+                                    <li><Link href="/tentang-kami"><a className={page === 'tentang-kami' ? 'active' : ''}>Tentang Kami</a></Link></li>
+                                    <li className="hub m-0"><Link href="/hubungi-kami"><a className={page === 'kontak' ? 'active' : ''}>Hubungi Kami</a></Link></li>
                                 </ul>
                             </div>
                         </Col>
                         <Col xs={12} md={11} className="forDesktop justify-content-end">
                             <div className="menu__link">
                                 <ul className="menu__link-top">
-                                    <li style={{width:'120px'}}><Link href="/tentang-kami"><a>TENTANG KAMI </a></Link><img src="/right2.png"/></li>
-                                    <li style={{width:'120px'}} className="hub m-0"><Link href="/hubungi-kami"><a>HUBUNGI KAMI </a></Link><img src="/right2.png"/></li>
+                                    <li style={{width:'120px'}}><Link href="/tentang-kami"><a className={page === 'tentang-kami' ? 'active' : ''}>TENTANG KAMI </a></Link><img src="/right2.png"/></li>
+                                    <li style={{width:'120px'}} className="hub m-0"><Link href="/hubungi-kami"><a className={page === 'kontak' ? 'active' : ''}>HUBUNGI KAMI </a></Link><img src="/right2.png"/></li>
                                 </ul>
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">

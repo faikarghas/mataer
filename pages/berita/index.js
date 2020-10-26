@@ -77,8 +77,9 @@ const Berita = () => {
                 <div className="content__berita">
                     {/* <MenuAct/> */}
                     <div className="content__berita_wrapper">
-                        <h3>Berita & Artikel</h3>
+                        <Container>
                             <Row>
+                                <Col xs={12}><h3>Berita & Artikel</h3></Col>
                                 <Col xs={12} md={4} className="mb-5">
                                     <div className="content__berita_wrapper-item">
                                         <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
@@ -200,6 +201,7 @@ const Berita = () => {
                                     </div>
                                 </Col>
                             </Row>
+                        </Container>
                     </div>
                 </div>
             </div>

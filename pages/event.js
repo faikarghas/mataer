@@ -79,6 +79,9 @@ const Event = () => {
                         </div>
                     </div>
                     <div className="content__event__firstSection">
+                    <Container>
+                            <Row>
+                                <Col xs={12}>
                         <p>Mataer Event & Media berpengalaman menangani kegiatan festival
                         maupun expo kebudayaan dan potensi bisnis di tengah komunitas global,
                         membangun kemitraan dan kerjasama dalam kerangka pembangunan
@@ -90,11 +93,15 @@ const Event = () => {
                         pengembangan produk media komersil. Tentu semua kami lakukan berbasis digital. Meskipun tidak
                         meninggalkan output cetak yang masih menawan sesuai kebutuhannya, menjangkau hal penting yang
                         tidak terpikirkan.</p>
+                        </Col>
+                            </Row>
+                        </Container>
                     </div>
                     <div id="layanan" className="content__event__layananImg">
                         <img src="/event-layanan.jpg" alt="event-layanan" />
                     </div>
                     <div className="content__event__layanan">
+                    <Container>
                         <Row>
                             <Col xs={12} md={12}>
                                 <h4>Layanan</h4>
@@ -113,28 +120,35 @@ const Event = () => {
                                 maksimal.</p>
                             </Col>
                         </Row>
+                    </Container>
                     </div>
 
                     <div className="content__event__slider2">
-                        <Slider {...settings} ref={refslider}>
-                            {dataLayanan.map((item,i)=>{
-                                return(
-                                    <div className="content__event__slider2-wrapper" key={i}>
-                                        <div className="content__event__slider2-wrapper--img">
-                                            <img src={`/layanan/${item.img}`} width="100%"/>
-                                        </div>
-                                        <div className="content__event__slider2-wrapper--desc">
-                                            <ul>
-                                                <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
-                                                <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
-                                            </ul>
-                                            <h3>{item.judul}</h3>
-                                            <p>{item.deskripsi}</p>
-                                        </div>
-                                    </div>
-                                )
-                            })}
-                        </Slider>
+                    <Container className="p-0">
+                        <Row>
+                            <Col xs={12} md={12}>
+                                <Slider {...settings} ref={refslider}>
+                                    {dataLayanan.map((item,i)=>{
+                                        return(
+                                            <div className="content__event__slider2-wrapper" key={i}>
+                                                <div className="content__event__slider2-wrapper--img">
+                                                    <img src={`/layanan/${item.img}`} width="100%"/>
+                                                </div>
+                                                <div className="content__event__slider2-wrapper--desc">
+                                                    <ul>
+                                                        <li className="prev" onClick={_prevArrow}><img src="/arrow-serviceswhite.svg" alt="arrow"/><p>Sebelumnya</p></li>
+                                                        <li className="next" onClick={_nextArrow}><p>Selanjutnya</p><img src="/arrow-serviceswhite.svg" alt="arrow"/></li>
+                                                    </ul>
+                                                    <h3>{item.judul}</h3>
+                                                    <p>{item.deskripsi}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
+                                </Slider>
+                            </Col>
+                        </Row>
+                    </Container>
                     </div>
 
                 </div>
