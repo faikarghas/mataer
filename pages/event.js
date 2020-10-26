@@ -125,8 +125,8 @@ const Event = () => {
 
                     <div className="content__event__slider2">
                     <Container className="p-0">
-                        <Row>
-                            <Col xs={12} md={12}>
+                        <Row noGutters>
+                            <Col xs={12} md={12} className="p-0">
                                 <Slider {...settings} ref={refslider}>
                                     {dataLayanan.map((item,i)=>{
                                         return(
