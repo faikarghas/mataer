@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+import ScrollToTop from '../scrollToTop'
 
 const Index = () => {
     const [url, setUrl] = useState()
@@ -45,7 +46,7 @@ const Index = () => {
                     <li><img src="/Linkedin.png" /></li>
                 </ul>
             </ul>
-            <div className="scrollToTop"></div>
+            <ScrollToTop/>
         </div>
     )
 }

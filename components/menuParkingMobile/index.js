@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import ScrollToTop from '../scrollToTop'
+
 const MenuParkingMobile = () => {
     return (
         <div className="menuAct forMobile">
@@ -19,8 +21,7 @@ const MenuParkingMobile = () => {
             </ul>
             <li><Link href="/parking-kontak"><a>Kontak</a></Link></li>
         </ul>
-        <div className="scrollToTop"></div>
-
+        <ScrollToTop/>
     </div>
     )
 }

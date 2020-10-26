@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import ScrollToTop from '../scrollToTop'
+
 const Index = () => {
     return (
         <div className="menuAct forMobile">
@@ -21,8 +23,7 @@ const Index = () => {
             </ul>
             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
         </ul>
-        <div className="scrollToTop"></div>
-
+        <ScrollToTop/>
     </div>
     )
 }

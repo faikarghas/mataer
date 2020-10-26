@@ -638,4 +638,10 @@ hr.blue{
     box-shadow: 1px 1px 5px 0 #9c9c9c;
     z-index: 999;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 24px;
+    }
 }
