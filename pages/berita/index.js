@@ -6,7 +6,7 @@ import Slider from "react-slick";
 
 import Menu from '../../components/layout/menu'
 import MenuBerita from '../../components/menuBerita'
-
+import MenuAct from '../../components/menuBeritaMobile'
 
 const settings = {
     dots: true,
@@ -75,7 +75,7 @@ const Berita = () => {
                     </div>
                 </div>
                 <div className="content__berita">
-                    {/* <MenuAct/> */}
+                    <MenuAct/>
                     <div className="content__berita_wrapper">
                         <Container>
                             <Row>

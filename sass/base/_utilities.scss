@@ -573,3 +573,57 @@ hr.blue{
       }
     }
   }
+
+.menuAct{
+    background-color:#0164AF;
+    width: 100%;
+    padding: 2rem;
+    transition: all 0.5s;
+    &.active_scroll{
+        top: 0;
+    }
+    ul{
+        li{
+            list-style: none;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+        .follow{
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            font-family: 'BLISS2B';
+            margin-top: 4rem;
+        }
+        .sosmed{
+            padding-left: 0;
+            border: none;
+            li{
+                display: inline-block;
+                margin-bottom: 0;
+                margin-right: 2rem;
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        ul{
+            padding-left: 1rem;
+            border-left: 1px solid white;
+            li{
+                list-style: none;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
