@@ -11,13 +11,13 @@ const Index = () => {
             </ul>
             <li><Link href="/event-portfolio"><a>Portfolio</a></Link></li>
             <ul>
-                <li><Link href="/event#exhibition"><a>Exhibition</a></Link></li>
-                <li><Link href="/event#forum"><a>Forum</a></Link></li>
-                <li><Link href="/event#media"><a>Media</a></Link></li>
+                <li><Link href="/event-portfolio#exhibition"><a>Exhibition</a></Link></li>
+                <li><Link href="/event-portfolio#forum"><a>Forum</a></Link></li>
+                <li><Link href="/event-portfolio#media"><a>Media</a></Link></li>
             </ul>
             <li><Link href="/event-legal"><a>Legal Perusahaan</a></Link></li>
             <ul>
-                <li><Link href="/event#strukturOrganisasi"><a>Struktur Organisasi</a></Link></li>
+                <li><Link href="/event-legal#strukturOrganisasi"><a>Struktur Organisasi</a></Link></li>
             </ul>
             <li><Link href="/event-kontak"><a>Kontak</a></Link></li>
         </ul>
