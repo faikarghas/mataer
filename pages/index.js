@@ -236,7 +236,7 @@ const Home = () => {
                             <div className="button_toArtikel">
                                 <Col xs={12}>
                                     <div className="link__to">
-                                        <Link href="/about"><a>Lihat Semua Artikel <span><img src="/arrow-front.png" /></span></a></Link>
+                                        <Link href="/berita"><a>Lihat Semua Artikel <span><img src="/arrow-front.png" /></span></a></Link>
                                         <div className="am__bg-link"></div>
                                     </div>
                                 </Col>
