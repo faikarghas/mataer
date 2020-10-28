@@ -66,7 +66,7 @@ const EventLegal = () => {
                     </div>
                 </div>
                 <div className="content__event">
-                    <MenuAct/>
+                    <MenuAct page="event-legal"/>
                     <div className="content__event__why">
                     <Container>
                             <Row>

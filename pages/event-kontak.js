@@ -66,7 +66,7 @@ const EventKontak = () => {
                     </div>
                 </div>
                 <div className="content__parking">
-                    <MenuAct/>
+                    <MenuAct page="event-kontak"/>
                     <div className="content__parking__kontak">
                         <Container>
                             <Row>

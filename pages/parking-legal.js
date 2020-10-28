@@ -66,7 +66,7 @@ const ParkingLegal = () => {
                     </div>
                 </div>
                 <div className="content__parking">
-                    <MenuAct/>
+                    <MenuAct page="parking-legal"/>
                     <div className="content__parking__legal">
                     <Container>
                             <Row>

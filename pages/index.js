@@ -98,6 +98,7 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col xs={12} md={6} className="align-items-center d-flex am_wrapper">
+                        <Container>
                             <Row noGutters>
                                 <Col xs={12} >
                                     <div className="pm">
@@ -118,6 +119,7 @@ const Home = () => {
                                     </div>
                                 </Col>
                             </Row>
+                        </Container>
                         </Col>
                     </Row>
                 </Container>

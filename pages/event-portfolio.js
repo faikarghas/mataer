@@ -130,7 +130,7 @@ const EventPortfolio = () => {
                     </div>
                 </div>
                 <div className="content__event">
-                    <MenuAct/>
+                    <MenuAct page="event-portfolio"/>
                     <div className="content__event__why">
                     <Container>
                         <Row>

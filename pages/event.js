@@ -71,7 +71,7 @@ const Event = () => {
                     </div>
                 </div>
                 <div className="content__event">
-                    <MenuAct/>
+                    <MenuAct page="event"/>
                     <div className="content__event__headerImg">
                         <img src="/banner-event.jpg" alt="banner event" />
                         <div className="content__event__headerImg-title">

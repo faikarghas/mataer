@@ -10,6 +10,9 @@
     &__headerImg{
         height: 420px;
         position: relative;
+        @include respond(down-tab-port){
+            height: 200px;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -21,6 +24,9 @@
             bottom: 20%;
             left: 5%;
             transform: translateY(-50%);
+            @include respond(down-tab-port){
+                bottom: 0%;
+            }
             h1{
                 color: white;
                 font-size: 4.5rem;
@@ -39,7 +45,7 @@
     &__firstSection{
         padding: 9rem 23rem 9rem 5rem;
         @include respond(down-tab-port){
-            padding: 2rem;
+            padding: 2rem 0rem;
         }
         p:first-child{
             color:#0164AF;
@@ -68,7 +74,7 @@
         padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         h4{
             margin-bottom: 6rem;
@@ -126,7 +132,7 @@
         padding-bottom: 9rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         p{
             font-family: "BLISS2R";
@@ -201,7 +207,7 @@
         padding-right: 23rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
             padding-right: 0rem;
         }
         h3{
@@ -297,7 +303,7 @@
         padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         h3{
             font-size: 3rem;
@@ -333,7 +339,7 @@
         padding: 9rem 0 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         h4{
             color:#0164AF;
@@ -466,6 +472,9 @@
         .section__slider_imgWrapper{
             height: 500px;
             margin: 2rem 0;
+            @include respond(down-tab-port){
+                height: 174px;
+            }
             img{
                 height: 100%;
                 object-fit: cover;
@@ -650,7 +659,7 @@
         padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         h3{
             font-size: 3rem;
@@ -712,7 +721,7 @@
         padding: 9rem 0;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         h3{
             font-size: 3.5rem;
@@ -779,7 +788,7 @@
         padding-top: 9rem;
         margin: 0 5rem;
         @include respond(down-tab-port){
-            margin: 0 2rem;
+            margin: 0 0;
         }
         h4{
             margin-bottom: 10rem;

@@ -66,7 +66,7 @@ const ParkingKontak = () => {
                     </div>
                 </div>
                 <div className="content__parking">
-                    <MenuAct/>
+                    <MenuAct page="parking-kontak"/>
                     <div className="content__parking__kontak">
                         <Container>
                             <Row>

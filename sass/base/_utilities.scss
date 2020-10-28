@@ -1,8 +1,12 @@
+.xs-mb-40{
+    @include respond(down-tab-port){
+        margin-bottom: 40px;
+    }
+}
+
 // Arrow slider
 
 .arrow__slider{
-    
-
     ul{
         margin: 0;
         border: 1px solid grey;
@@ -587,19 +591,27 @@ hr.blue{
 .menuAct{
     background-color:#0164AF;
     width: 100%;
-    padding: 2rem;
+    padding: 4rem 3rem;
     transition: all 0.5s;
     &.active_scroll{
         top: 0;
     }
     ul{
+        margin: 0;
         li{
             list-style: none;
+            &.active{
+                a{
+                    border-bottom: 1.3px solid hsla(0,0%,100%,.56);
+                    font-weight: 700;
+                }
+            }
             a{
                 color: white;
                 text-decoration: none;
                 font-size: 1.4rem;
                 cursor: pointer;
+                font-family: 'BLISS2R';
             }
             &:not(:last-child){
                 margin-bottom: 1rem;

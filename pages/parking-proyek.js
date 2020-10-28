@@ -134,7 +134,7 @@ const ParkingProyek = () => {
                     </div>
                 </div>
                 <div className="content__parking">
-                    <MenuAct/>
+                    <MenuAct page="parking-proyek"/>
                     <div className="content__parking__why">
                         <Container>
                             <Row>

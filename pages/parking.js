@@ -72,7 +72,7 @@ const Parking = () => {
                     </div>
                 </div>
                 <div className="content__parking">
-                    <MenuAct/>
+                    <MenuAct page="parking"/>
                     <div className="content__parking__headerImg">
                         <img src="/banner-parking.jpg" alt="banner parking" />
                         <div className="content__parking__headerImg-title">
@@ -122,7 +122,7 @@ const Parking = () => {
                             <Col xs={12}>
                                 <h4>Layanan</h4>
                             </Col>
-                            <Col xs={12} md={12} lg={4}>
+                            <Col xs={12} md={12} lg={4} className="xs-mb-40">
                                 <div className="content__parking__layanan_top">
                                     <div className="title_wrapper">
                                         <h4>Parking<br/>Management</h4>
@@ -140,7 +140,7 @@ const Parking = () => {
                                     <img src="/Parking-Management-min.jpg" width="100%" alt=""/>
                                 </div>
                             </Col>
-                            <Col xs={12} md={12} lg={4}>
+                            <Col xs={12} md={12} lg={4} className="xs-mb-40">
                                 <div className="content__parking__layanan_top">
                                     <div className="title_wrapper">
                                     <h4>Insurance</h4>
@@ -156,7 +156,7 @@ const Parking = () => {
                                     <img src="/Insurance-min.jpg" width="100%" alt=""/>
                                 </div>
                             </Col>
-                            <Col xs={12} md={12} lg={4}>
+                            <Col xs={12} md={12} lg={4} className="xs-mb-40">
                                 <div className="content__parking__layanan_top">
                                     <div className="title_wrapper">
                                     <h4>Consulting</h4>

@@ -170,6 +170,11 @@ header{
 
     .header__slider{
         margin-top: 11.5rem;
+        .container{
+            @include respond(down-tab-port){
+                padding: 0 25px;
+            }
+        }
         @include respond(down-tab-port){
             margin-top: 9rem;
         }
