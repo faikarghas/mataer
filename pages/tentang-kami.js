@@ -54,7 +54,7 @@ const About = () => {
                                 <Container>
                                     <Row>
                                         <Col xs={12}>
-                                        <h1>Ketertarikan kami<br/>terhadap dunia usaha<br/>menjadi salah satu<br/>kunci keberhasilan<br/>Anda.</h1>
+                                        <h1>Ketertarikan kami<br/>terhadap dunia usaha<br/>menjadi salah satu<br/>kunci keberhasilan<br/>Anda</h1>
                                         </Col>
                                     </Row>
                                 </Container>

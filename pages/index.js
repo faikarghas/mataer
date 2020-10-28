@@ -102,7 +102,7 @@ const Home = () => {
                                 <Col xs={12} >
                                     <div className="pm">
                                         <h3 className="text-center fs-big"><NumberAnimation numberRef={numberRef} value={150}/></h3>
-                                        <p className="text-center">Proyek dibawah Manajemen</p>
+                                        <p className="text-center">Proyek di bawah Manajemen</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} md={6} >

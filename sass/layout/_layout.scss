@@ -12,7 +12,7 @@ header{
         box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
         transition: all 0.5s;
         @include respond(down-tab-port){
-            padding: 2rem;
+            padding: 1rem;
         }
         &.active_scroll{
             // opacity: 0;
@@ -119,26 +119,27 @@ header{
                     z-index: 3;
                 }
                 &.active{
-                    color: $color_blue;
+                    color: $color_green;
                 }
             }
 
             &_box{
                 position: fixed;
                 top: 0;
-                left: 0;
+                right: -100%;
                 width: 100%;
                 height: 100vh;
                 background-color: #12132A;
-                opacity: 0;
-                visibility: hidden;
+                // opacity: 0;
+                // visibility: hidden;
                 transition: 0.2s all;
                 a{
                     color: white;
                 }
                 &.openMenu{
-                    opacity: 1;
-                    visibility: visible;
+                    right: 0%;
+                    // opacity: 1;
+                    // visibility: visible;
                     body{
                         overflow: hidden;
                     }
@@ -149,8 +150,10 @@ header{
                     margin-left: 4rem;
                     li{
                         margin-bottom: 1rem;
+                        list-style: none;
                         a {
-                            font-size: 2.5rem;
+                            font-size: 2rem;
+                            font-family: 'BLISS2R';
                         }
                     }
                 }
@@ -180,7 +183,7 @@ header{
                 transition: all 1s ;
                 transform: scale(1.01);
                 @include respond(down-tab-port){
-                    height: 200px;
+                    height: 220px;
                 }
             }
             .text__banner{
@@ -197,6 +200,7 @@ header{
                     color: white;
                     font-size: 4rem;
                     margin-bottom: 3rem;
+                    text-shadow: 1px 1px 3px rgba(0,0,0,.25);
                     @include respond(down-tab-port){
                         color: $color_blue;
                         font-size: 3rem;
@@ -221,7 +225,14 @@ header{
 
 }
 
+
 main{
+    .container{
+        @include respond(down-tab-port){
+            padding: 0 25px;
+        }
+    }
+
     .product__wrapper{
         width: 100%;
         display: flex;

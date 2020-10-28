@@ -221,7 +221,7 @@ const ParkingProyek = () => {
                                             {listGaleri()}
                                         </Slider>
                                         <div className="slick_ia">
-                                            <p>{currentSlide} <span>/</span>21</p>
+                                            <p>{currentSlide}<span>/</span>21</p>
                                             <ul className="button_slider">
                                                 <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
                                                 <li onClick={_nextArrow}><img style={{opacity:currentSlide == 21? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>

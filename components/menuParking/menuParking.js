@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-const MenuParking = () => {
+const MenuParking = ({hash}) => {
     const [url, setUrl] = useState()
     const [url2, setUrl2] = useState()
     const router = useRouter()
@@ -14,7 +14,8 @@ const MenuParking = () => {
         let b = window.location.href.split('/')[3].split('#')[1]
 
         setUrl(a)
-        setUrl2(b)
+        setUrl2(hash)
+        console.log(hash,'asds');
 
         const handleRouteChange = (url) => {
             let c = url.split('#')[1]
@@ -29,7 +30,7 @@ const MenuParking = () => {
         return () => {
             router.events.off('hashChangeComplete', handleRouteChange)
         }
-    }, [])
+    }, [hash])
 
     return (
         <ul className="sidebar__menu-ul">

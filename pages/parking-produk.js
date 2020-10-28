@@ -17,7 +17,7 @@ const ParkingProduct = () => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -165,7 +165,7 @@ const ParkingProduct = () => {
                             </div>
                         </Slider>
                         <div className="slick_ia">
-                            <p>{currentSlide} <span>/</span> 4</p>
+                            <p>{currentSlide}<span>/</span> 4</p>
                             <ul className="button_slider">
                                 <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
                                 <li onClick={_nextArrow}><img style={{opacity:currentSlide == 4? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>

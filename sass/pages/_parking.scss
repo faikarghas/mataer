@@ -5,6 +5,7 @@
     
     @include respond(down-tab-port){
         width: 100%;
+        margin-top: 10rem;
     }
 
     &__headerImg{
@@ -203,7 +204,7 @@
             p{
                 font-size: 1.8rem;
                 letter-spacing: normal;
-                font-family: 'BLISS2B';
+                font-family: 'BLISS2R';
             }
         }
         &_img{
@@ -765,9 +766,7 @@
                 p{
                     margin: 0;
                     &:first-child{
-                        b{
-                            font-family: "MONTSERRAT-BOLD";
-                        }
+                        font-family: "MONTSERRAT-BOLD";
                     }
                 }
                 .mb-5rem{

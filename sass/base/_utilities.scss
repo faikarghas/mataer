@@ -140,7 +140,7 @@ background: transparent;
         color: $color_green;
         span{
             color: black;
-            margin: 0 3px;
+            margin: 0 7px;
         }
     }
     .button_slider{
@@ -191,19 +191,23 @@ background: transparent;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
     cursor: pointer;
+    @include respond(down-tab-port){
+        width: 37px
+    }
   }
 
 .menu_mobile_btn span {
     &:not(:nth-child(2)){
         display: block;
         position: absolute;
-        height: 5px;
+        height: 2px;
         width: 100%;
         background: $color_blue;
         opacity: 1;
         left: 0;
         transform: rotate(0deg);
         transition: .25s ease-in-out;
+      
     }
   }
 
@@ -217,15 +221,18 @@ background: transparent;
 }
 
 .menu_mobile_btn span:nth-child(2) {
-  top: 18px;
-  transform-origin: left center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 2rem;
-  color: $color_blue;
-  padding: 1rem 0;
+    top: 18px;
+    transform-origin: left center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2rem;
+    color: $color_blue;
+    padding: 1rem 0;
+    @include respond(down-tab-port){
+        font-size: 1.3rem;
+    }
 }
 
 .menu_mobile_btn span:nth-child(3) {
@@ -250,6 +257,9 @@ background: transparent;
     top: 39px;
     left: 9px;
     background-color: white;
+    @include respond(down-tab-port){
+        top: 27px;
+    }
 }
 
 // proyek

@@ -17,7 +17,7 @@ const EventPortfolio = () => {
 
     const settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -168,19 +168,19 @@ const EventPortfolio = () => {
                     <Container>
                         <Row>
                             <Col xs={12} md={12}>
-                        <h4>Media</h4>
-                        <Slider {...settings} ref={refSlider}>
-                            {listImgMedia()}
-                        </Slider>
-                        <div className="slick_ia">
-                            <p>{currentSlide} <span>/</span>3</p>
-                            <ul className="button_slider">
-                                <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
-                                <li onClick={_nextArrow}><img style={{opacity:currentSlide == 3? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
-                            </ul>
-                        </div>
-                        </Col>
-                            </Row>
+                            <h4>MEDIA</h4>
+                            <Slider {...settings} ref={refSlider}>
+                                {listImgMedia()}
+                            </Slider>
+                            <div className="slick_ia">
+                                <p>{currentSlide}<span>/</span>3</p>
+                                <ul className="button_slider">
+                                    <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                    <li onClick={_nextArrow}><img style={{opacity:currentSlide == 3? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                </ul>
+                            </div>
+                            </Col>
+                        </Row>
                         </Container>
                     </div>
                 </div>

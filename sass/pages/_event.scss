@@ -2,9 +2,9 @@
     width: 80%;
     margin-top: 11.5rem;
 
-    
     @include respond(down-tab-port){
         width: 100%;
+        margin-top: 10rem;
     }
 
     &__headerImg{
@@ -689,9 +689,7 @@
                 p{
                     margin: 0;
                     &:first-child{
-                        b{
-                            font-family: "MONTSERRAT-BOLD";
-                        }
+                        font-family: "MONTSERRAT-BOLD";
                     }
                 }
                 .mb-5rem{

@@ -3,6 +3,7 @@
     margin-top: 11.5rem;
     @include respond(down-tab-port){
         width: 100%;
+        margin-top: 10rem;
     }
     &_wrapper{
         padding: 9rem 0;

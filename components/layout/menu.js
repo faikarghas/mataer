@@ -28,10 +28,10 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                 <ul>
                                     <li><Link href="/parking"><a className={page === 'parking' ? 'active' : ''}>Parking</a></Link></li>
                                     <li><Link href="/event"><a className={page === 'event' ? 'active' : ''}>Event & Media</a></Link></li>
-                                    <li><Link href="/"><a>Adspro</a></Link></li>
-                                    <li><Link href="/"><a>Business & Consultant</a></Link></li>
+                                    <li><Link href="/"><a className="disable">Adspro</a></Link></li>
+                                    <li><Link href="/"><a className="disable">Business & Consultant</a></Link></li>
                                     <li><Link href="/berita"><a className={page === 'berita' ? 'active' : ''}>Berita & Artikel</a></Link></li>
-                                    <li><Link href="/"><a>Karir</a></Link></li>
+                                    <li><Link href="/"><a className="disable">Karir</a></Link></li>
                                     <li><Link href="/tentang-kami"><a className={page === 'tentang-kami' ? 'active' : ''}>Tentang Kami</a></Link></li>
                                     <li className="hub m-0"><Link href="/hubungi-kami"><a className={page === 'kontak' ? 'active' : ''}>Hubungi Kami</a></Link></li>
                                 </ul>

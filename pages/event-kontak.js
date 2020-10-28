@@ -5,8 +5,8 @@ import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
-import MenuAct from '../components/menuParkingMobile'
-import MenuParking from '../components/menuParking/menuParking'
+import MenuAct from '../components/menuEventMobile'
+import MenuEvent from '../components/menuEvent'
 
 const settings = {
     dots: true,
@@ -62,7 +62,7 @@ const EventKontak = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuParking/>
+                        <MenuEvent/>
                     </div>
                 </div>
                 <div className="content__parking">
