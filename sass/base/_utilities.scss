@@ -575,11 +575,19 @@ hr.blue{
     list-style: none;
     display: inline-block;
     position: fixed;
+    @include respond (down-phone){
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin: 0;
+        padding: 3rem;
+    }
     li{
       margin-bottom: 1.5rem;
-      @include respond (phone){
+      @include respond (down-phone){
         display: inline-block;
         margin-right: 1rem;
+        margin-bottom: 0;
       }
       img{
         width: 2.5rem;
@@ -635,6 +643,11 @@ hr.blue{
                 a{
                     &:hover{
                         text-decoration: none;
+                    }
+                }
+                img{
+                    @include respond(down-tab-port){
+                        width: 24px;
                     }
                 }
             }

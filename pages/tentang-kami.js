@@ -67,7 +67,7 @@ const About = () => {
                         <Container>
                             <p className="title">TENTANG PERUSAHAAN</p>
                             <Row>
-                                <Col xs={12} md={6} className="home__section_about-1">
+                                <Col xs={12} md={6} className="about__section_about-1">
                                     <h2>PT. Mata Aer Makmurindo <br/> merupakan induk perusahaan yang bergerak di berbagai bidang dan layanan.</h2>
                                 </Col>
                                 <Col xs={12} md={6} className="">
@@ -90,36 +90,36 @@ const About = () => {
                             <p className="title">GRUP KAMI</p>
                             <Row>
                                 <Col xs={12} md={6} lg={3} style={{paddingRight:'2rem'}}>
-                                    <div className="about__section_grup-box">
+                                    <Link href="/parking"><a className="about__section_grup-box">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoPark.png" width="100px"/>
                                         </div>
                                         <p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra. Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang professional.</p>
-                                    </div>
+                                    </a></Link>
                                 </Col>
                                 <Col xs={12} md={6} lg={3} style={{padding:'0 2rem'}}>
-                                    <div className="about__section_grup-box">
+                                    <Link href="/event"><a className="about__section_grup-box">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoMEM.png" width="100px"/>
                                         </div>
                                         <p>Mengadakan event, pameran, dan agenda promosi lainnya, baik secara independen dan kerjasama, dengan mengutamakan kelancaran & kesuksesan agenda melalui pelayanan yang dapat dipercaya dan professional di seluruh aspek dengan penawaran yang kompetitif.</p>
-                                    </div>
+                                    </a></Link>
                                 </Col>
                                 <Col xs={12} md={6} lg={3} style={{padding:'0 2rem'}}>
-                                    <div className="about__section_grup-box">
+                                    <Link href=""><a className="about__section_grup-box disable">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoMAP.png" width="100px"/>
                                         </div>
                                         <p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra. Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang professional.</p>
-                                    </div>
+                                    </a></Link>
                                 </Col>
                                 <Col xs={12} md={6} lg={3} style={{paddingLeft:'0 2rem'}}>
-                                    <div className="about__section_grup-box">
+                                    <Link href=""><a className="about__section_grup-box disable">
                                         <div className="img_wrapper">
                                             <img src="/LogoGrupMataer/logoMBIC.png" width="100px"/>
                                         </div>
                                         <p>Memberikan layanan pengelolaan parkir kendaraan bermotor yang profitable dengan mitra. Meningkatkan mutu dan kualitas pengelolaan parkir dengan efisiensi pekerjaan melalui penggunaan teknologi dan sumber daya manusia yang professional.</p>
-                                    </div>
+                                    </a></Link>
                                 </Col>
                             </Row>
                         </Container>

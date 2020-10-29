@@ -1,15 +1,8 @@
 import React,{useEffect} from 'react'
 import { useCountUp} from 'react-countup';
-import {useIntersection} from 'react-use'
 
 
 const Index = ({numberRef,value}) => {
-
-    const intersection = useIntersection(numberRef,{
-        root: null,
-        rootMargin:'0px',
-        threshold: 0.5
-    })
 
     const { countUp, start} = useCountUp({
         start: 0,
@@ -19,12 +12,28 @@ const Index = ({numberRef,value}) => {
     });
 
     useEffect(() => {
-        if (intersection && intersection.intersectionRatio < 0.5) {
-            console.log('OBS');
-        } else {
-            start()
+
+        const observer = new IntersectionObserver(
+            ([entry],self) => {
+                if (entry.isIntersecting) {
+                    //do your actions here
+                    start()
+                    self.unobserve(numberRef.current)
+                }
+            },
+            {
+              root: null,
+              rootMargin: "0px",
+              threshold: 0.6
+            }
+        );
+
+        if (numberRef.current) {
+            observer.observe(numberRef.current);
         }
-    }, [intersection])
+
+
+    }, [numberRef])
 
     return (
         countUp

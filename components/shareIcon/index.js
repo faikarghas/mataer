@@ -5,8 +5,8 @@ import {
     TwitterShareButton
 } from 'react-share'
 
-const shareIcon = ({url,showShare}) => (
-    <ul className="shareIcon" style={{display:showShare ? 'inline-block' : 'none'}}>
+const shareIcon = ({url,showShare,device}) => (
+    <ul className={`shareIcon ${device}`} style={{display:showShare ? 'inline-block' : 'none'}}>
         <li><img src="/shareIcon/share-icon.png" alt="share-fb"/></li>
         <li><FacebookShareButton url={url}><img src="/shareIcon/fb-icon.svg" alt="icon-fb"/></FacebookShareButton></li>
         <li><LinkedinShareButton url={url}><img src="/shareIcon/linked-icon.svg" alt="icon-linkedin"/></LinkedinShareButton></li>

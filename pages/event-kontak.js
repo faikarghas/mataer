@@ -71,7 +71,7 @@ const EventKontak = () => {
                         <Container>
                             <Row>
                                 <Col xs={12}>
-                                   <h3>Kontak MAPI</h3>
+                                   <h3>Kontak Event & Media</h3>
                                 </Col>
                             </Row>
                         </Container>

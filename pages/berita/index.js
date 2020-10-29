@@ -76,6 +76,15 @@ const Berita = () => {
                 </div>
                 <div className="content__berita">
                     <MenuAct/>
+                    <div className="kontak_press forMobile">
+                        <ul>
+                            <li>Kontak Press</li>
+                            <li>Agus Ruspendy</li>
+                            <li>Direktur Marketing</li>
+                            <li>Corporate Communication</li>
+                            <li>0812 3456 789</li>
+                        </ul>
+                    </div>
                     <div className="content__berita_wrapper">
                         <Container>
                             <Row>

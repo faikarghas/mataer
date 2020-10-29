@@ -45,7 +45,7 @@
     &__firstSection{
         padding: 9rem 23rem 9rem 5rem;
         @include respond(down-tab-port){
-            padding: 2rem 0rem;
+            padding: 2.5rem 0rem;
         }
         p:first-child{
             color:#0164AF;
@@ -106,6 +106,7 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding-top: 2.5rem;
         }
         h4{
             margin-bottom: 6rem;
@@ -167,6 +168,8 @@
         border-bottom: 1px solid #d6d4d4;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
         }
         h4{
             margin-bottom: 6rem;
@@ -228,6 +231,7 @@
         @include respond(down-tab-port){
             margin: 0 0;
             padding-right: 0rem;
+            padding: 2.5rem 0;
         }
         h3{
             font-size: 4rem;
@@ -278,6 +282,7 @@
         @include respond(down-tab-port){
             margin: 0 0;
             padding-right: 0rem;
+            padding-top: 2.5rem;
         }
         h3{
             font-size: 4rem;
@@ -375,6 +380,7 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding-bottom: 2.5rem;
         }
         h3{
             font-size: 3rem;
@@ -411,6 +417,7 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding-top: 2.5rem;
         }
         h3{
             font-size: 3rem;
@@ -447,6 +454,7 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding-top: 2.5rem;
         }
         h4{
             margin-bottom: 6rem;
@@ -510,6 +518,7 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding: 2.5rem 0;
         }
         h4{
             color: #0164AF;
@@ -564,11 +573,11 @@
                 .head{
                     height: 70px;
                     width: calc(100% - 13rem);
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid#d6d4d4;
                     margin: auto;
                     @include respond(down-tab-port){
                         width: calc(100% - 5rem);
-                        margin: 2.5rem;
+                        height: 25px;
                     }
                 }
                 .body{
@@ -599,12 +608,13 @@
                 .head{
                     height: 70px;
                     width: calc(100% - 5rem);
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid #d6d4d4;
                     margin-left: 5rem;
                     display: flex;
                     @include respond(down-tab-port){
                         width: calc(100% - 5rem);
                         margin: 2.5rem;
+                        border-bottom: none;
                     }
                     p{
                         align-self: center;
@@ -634,7 +644,7 @@
                         li{
                             list-style: none;
                             padding: 1rem 0;
-                            border-bottom: 1px solid black;
+                            border-bottom: 1px solid #d6d4d4;
                             p{
                                 color: $color_blue;
                                 margin: 0;
@@ -651,12 +661,13 @@
                 .head{
                     height: 70px;
                     width: calc(100% - 5rem);
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid #d6d4d4;
                     margin-right: 5rem;
                     display: flex;
                     @include respond(down-tab-port){
                         width: calc(100% - 5rem);
                         margin: 2.5rem;
+                        border-bottom: none;
                     }
                     p{
                         align-self: center;
@@ -686,7 +697,7 @@
                         li{
                             list-style: none;
                             padding: 1rem 0;
-                            border-bottom: 1px solid black;
+                            border-bottom: 1px solid #d6d4d4;
                             p{
                                 color: $color_blue;
                                 margin: 0;
@@ -739,6 +750,7 @@
         margin: 0 5rem;
         @include respond(down-tab-port){
             margin: 0 0;
+            padding: 2.5rem 0;
         }
         h3{
             font-size: 3rem;
@@ -801,6 +813,7 @@
         background-color: #70707017;
         @include respond(down-tab-port){
             margin: 0;
+            padding: 2.5rem 5rem;
         }
         h3{
             font-size: 3.5rem;

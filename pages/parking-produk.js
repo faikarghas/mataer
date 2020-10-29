@@ -86,7 +86,9 @@ const ParkingProduct = () => {
                         </Container>
                     </div>
                     <div className="content__parking__onlyTextOrImg">
-                        <img src="/Produk.jpg" alt="banner parking" />
+                        <img className="forDesktop" src="/Produk.jpg" alt="banner parking" />
+                        <img className="forMobile" src="/produk-1.png" alt="banner parking" />
+                        <img className="forMobile" src="/produk-2.png" alt="banner parking" />
                     </div>
                     <div className="content__parking__bannerWithBgText">
                         <img src="/Smart-City.jpg" alt="visi" />
@@ -116,7 +118,9 @@ const ParkingProduct = () => {
                             <Row>
                                 <Col xs={12}>
                         <h4>Sistem & Infrastruktur Teknologi</h4>
-                        <img src="/Sistem.png" alt="banner parking" />
+                        <img className="forDesktop" src="/Sistem.png" alt="banner parking" />
+                        <img className="forMobile" src="/sistem-1.png" alt="banner parking" />
+                        <img className="forMobile" src="/sistem-2.png" alt="banner parking" />
                         </Col>
                             </Row>
                         </Container>

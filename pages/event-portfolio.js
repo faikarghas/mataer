@@ -164,7 +164,7 @@ const EventPortfolio = () => {
                             </Row>
                         </Container>
                     </div>
-                    <div id="media" className="content__event__slider">
+                    <div id="media" className="content__event__slider mt-5">
                     <Container>
                         <Row>
                             <Col xs={12} md={12}>

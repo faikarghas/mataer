@@ -69,6 +69,7 @@ const Category = ({data}) => {
                 </div>
                 <div className="content__berita">
                     <MenuAct/>
+
                     <div className="content__berita_wrapper">
                         <Container>
                             <Row>

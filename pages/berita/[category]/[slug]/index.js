@@ -91,7 +91,7 @@ const BeritaDetail = () => {
                     </div>
                 </div>
                 <div className="content__berita">
-                    {/* <MenuAct/> */}
+                    <MenuAct/>
                     <div className="content__berita_detail">
                         <Container>
                         <Row>
@@ -120,10 +120,11 @@ const BeritaDetail = () => {
                                     <br/>
                                     <br/>
                                     <img src="/Article 1.png" width="100%" alt="foto artikel"/>
+                                    <ShareIcon device="forMobile" url={url} showShare={true}/>
                                 </div>
                             </Col>
                             <Col xs={12} md={3} className="d-flex justify-content-center">
-                                <ShareIcon showShare={showShare} url={url}/>
+                                <ShareIcon device="forDesktop" showShare={showShare} url={url}/>
                             </Col>
                         </Row>
                         </Container>
