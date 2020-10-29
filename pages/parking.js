@@ -94,7 +94,8 @@ const Parking = () => {
                         </Container>
                     </div>
                     <div id="visiMisi" className="content__parking__visiSection" >
-                        <img src="/Visi.jpg" alt="visi" />
+                        <img className="forDesktop" src="/Visi.jpg" alt="visi" />
+                        <img className="forMobile" src="/Visi-mobile.jpg" alt="visi" />
                         <div className="content__parking__visiSection-desc">
                              <h4>Visi</h4>
                              <p>“Menjadi perusahaan penyedia layanan pengelolaan parkir terpercaya oleh mitra dan pengguna parkir se-<br/>Indonesia.”</p>
