@@ -1,4 +1,4 @@
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState,useEffect,createRef} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
@@ -6,13 +6,14 @@ import { motion, useViewportScroll } from "framer-motion"
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuParkingMobile'
 import MenuParking from '../components/menuParking/menuParking'
+import Section from '../components/layout/refWrapper'
 
 const Parking = () => {
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
     const [currentHash, setCurrentHash] = useState('')
-
-    const ref = useRef();
+    const [refSection, setRefSection] = useState()
+    const [currentSection , setCurrentSection] = useState('')
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
@@ -23,63 +24,58 @@ const Parking = () => {
         }
     }
 
+
     useEffect(() => {
-        let hashUrl = window.location.href.split('/')[3].split('#')[1]
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    //do your actions here
-                    setCurrentHash('layanan')
+        let sectionInPage = document.querySelectorAll('section')
 
-                    console.log('It works!',ref.current)
-                } else {
-                    setCurrentHash('')
-                }
-            },
-            {
-              root: null,
-              rootMargin: "0px",
-              threshold: 0.6
-            }
-        );
+        let setcArray = [...sectionInPage].map((item,key)=>{
+            return item.id
+        })
 
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
+        var refs = setcArray.reduce((refsObj, indicator) => {
+            refsObj[indicator] = createRef();
+            return refsObj
+        }, {});
+
+
+        setRefSection(refs);
 
         function watchScroll() {
             window.addEventListener("scroll", handleScroll);
         }
         watchScroll();
         // Remove listener (like componentWillUnmount)
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
+
     }, [])
+
 
     return (
         <React.Fragment>
         <header>
-            <Menu logo="/LogoGrupMataer/logoPark.png" page="parking" scrollActive={scrollActive}/>
+            <Menu logo="/LogoGrupMataer/logoPark.png" page="parking" scrollActive={scrollActive} />
         </header>
 
         <main>
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuParking hash={currentHash}/>
+                        <MenuParking hash={currentHash} refSec={refSection}/>
                     </div>
                 </div>
                 <div className="content__parking">
                     <MenuAct page="parking"/>
-                    <div className="content__parking__headerImg">
+                    <Section id="headerImg" className="content__parking__headerImg" refSec={refSection}>
                         <img src="/banner-parking.jpg" alt="banner parking" />
                         <div className="content__parking__headerImg-title">
                             <h1>Mataer Parking Indonesia</h1>
                         </div>
-                    </div>
-                    <div className="content__parking__firstSection">
+                    </Section>
+                    <Section id="firstSection" className="content__parking__firstSection" refSec={refSection}>
                         <Container>
                             <Row>
                                 <Col xs={12}>
@@ -92,16 +88,16 @@ const Parking = () => {
                                 </Col>
                             </Row>
                         </Container>
-                    </div>
-                    <div id="visiMisi" className="content__parking__visiSection" >
+                    </Section>
+                    <Section id="visiMisi" className="content__parking__visiSection" refSec={refSection}>
                         <img className="forDesktop" src="/Visi.jpg" alt="visi" />
                         <img className="forMobile" src="/Visi-mobile.jpg" alt="visi" />
                         <div className="content__parking__visiSection-desc">
                              <h4>Visi</h4>
                              <p>“Menjadi perusahaan penyedia layanan pengelolaan parkir terpercaya oleh mitra dan pengguna parkir se-<br/>Indonesia.”</p>
                         </div>
-                    </div>
-                    <div className="content__parking__misiSection">
+                    </Section>
+                    <Section id="misiSection" className="content__parking__misiSection" refSec={refSection}>
                         <Container>
                         <Row>
                             <Col xs={12} md={5}>
@@ -116,8 +112,8 @@ const Parking = () => {
                             </Col>
                         </Row>
                         </Container>
-                    </div>
-                    <div id="layanan" className="content__parking__layanan" ref={ref}>
+                    </Section>
+                    <Section id="layanan" className="content__parking__layanan" refSec={refSection}>
                         <Container>
                         <Row>
                             <Col xs={12}>
@@ -176,9 +172,8 @@ const Parking = () => {
                             </Col>
                         </Row>
                         </Container>
-                    </div>
-
-                    <div id="mengapaKami" className="content__parking__why" >
+                    </Section>
+                    <Section id="mengapaKami" className="content__parking__why" refSec={refSection}>
                         <Container>
                             <Row>
                                 <Col xs={12}>
@@ -193,7 +188,7 @@ const Parking = () => {
                                 </Col>
                             </Row>
                         </Container>
-                    </div>
+                    </Section>
                 </div>
             </div>
         </main>

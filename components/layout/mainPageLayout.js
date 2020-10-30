@@ -1,13 +1,11 @@
-import React from 'react'
-import { AnimatePresence,motion } from "framer-motion";
+import React, { useState } from 'react'
 
 const MainPageLayout = (props) => {
+    const [sectionActive, setSectionActive] = useState()
     return (
-        // <AnimatePresence exitBeforeEnter>
-            <div className="page_layout-main">
-                {props.children}
-            </div>
-        // </AnimatePresence>
+        <main>
+            {props.children}
+        </main>
 
     )
 }

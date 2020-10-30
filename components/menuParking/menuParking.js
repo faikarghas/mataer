@@ -3,11 +3,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-const MenuParking = ({hash}) => {
+const MenuParking = ({hash,refSec}) => {
     const [url, setUrl] = useState()
     const [url2, setUrl2] = useState()
     const router = useRouter()
-
     useEffect(() => {
         // get url
         let a = window.location.href.split('/')[3].split('#')[0]
@@ -15,7 +14,6 @@ const MenuParking = ({hash}) => {
 
         setUrl(a)
         setUrl2(hash)
-        console.log(hash,'asds');
 
         const handleRouteChange = (url) => {
             let c = url.split('#')[1]
@@ -25,12 +23,43 @@ const MenuParking = ({hash}) => {
 
         router.events.on('hashChangeComplete', handleRouteChange)
 
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.target.id  && entry.isIntersecting) {
+                    // refSec[entry.target.id].current.style.backgroundColor = 'black'
+                    console.log(entry.target.id);
+                    setUrl2(entry.target.id)
+                    // setCurrentSection(entry.target.id);
+                } else {
+                    // refSec[entry.target.id].current.style.backgroundColor = 'white'
+                }
+            },
+            {
+              root: null,
+              rootMargin: "0px",
+              threshold: 0.7
+            }
+        );
+
+
+        if (refSec) {
+            observer.observe(refSec['headerImg'].current);
+            observer.observe(refSec['firstSection'].current);
+            observer.observe(refSec['visiMisi'].current);
+            observer.observe(refSec['misiSection'].current);
+            observer.observe(refSec['layanan'].current);
+            observer.observe(refSec['mengapaKami'].current);
+
+        }
+
         // If the component is unmounted, unsubscribe
         // from the event with the `off` method:
         return () => {
+            observer.disconnect()
             router.events.off('hashChangeComplete', handleRouteChange)
         }
-    }, [hash])
+    }, [hash,refSec])
 
     return (
         <ul className="sidebar__menu-ul">

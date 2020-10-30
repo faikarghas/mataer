@@ -149,7 +149,10 @@ const EventPortfolio = () => {
                                 <Col xs={12}>
                                     <img className="forDesktop" src={`/exhibition/exhibition1.png`} width="100%"/>
                                     <img className="forDesktop" src={`/exhibition/exhibition2.png`} width="100%"/>
-                                    <img className="forMobile" src={`/exhibition/exhibition-mobile.png`} width="100%"/>
+                                    <img className="forMobile" src={`/exhibition/[Mobile] Exhibition Batch 1.png`} width="100%"/>
+                                    <img className="forMobile" src={`/exhibition/[Mobile] Exhibition Batch 2.png`} width="100%"/>
+                                    <img className="forMobile" src={`/exhibition/[Mobile] Exhibition Batch 3.png`} width="100%"/>
+                                    <img className="forMobile" src={`/exhibition/[Mobile] Exhibition Batch 4.png`} width="100%"/>
                                 </Col>
                             </Row>
                         </Container>
@@ -160,7 +163,8 @@ const EventPortfolio = () => {
                                 <Col xs={12}><h4>FORUM</h4></Col>
                                 <Col>
                                     <img className="forDesktop" src={`/forum/Forum.png`} width="100%"/>
-                                    <img className="forMobile" src={`/forum/forum-mobile.png`} width="100%"/>
+                                    <img className="forMobile" src={`/forum/[Mobile] Forum Batch 1.png`} width="100%"/>
+                                    <img className="forMobile" src={`/forum/[Mobile] Forum Batch 2.png`} width="100%"/>
                                 </Col>
                             </Row>
                         </Container>
