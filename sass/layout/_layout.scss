@@ -287,7 +287,7 @@ main{
                     .follow{
                         color: white;
                         text-decoration: none;
-                        font-size: 1.9rem;
+                        font-size: 1.5rem;
                         margin-top: 3rem;
                     }
                     .sosmed{
@@ -344,11 +344,10 @@ main{
                     li{
                         list-style: none;
                         color: white;
-                        font-size: 1.7rem;
                         margin: 0;
                         &:first-child{
                             margin-bottom: 2.5rem;
-                            font-size: 1.8rem;
+                            font-size: 1.5rem;
                         }
                         &:not(:first-child){
                             font-size: 1.5rem;
