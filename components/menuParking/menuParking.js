@@ -3,11 +3,13 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 
-const MenuParking = ({hash,refSec}) => {
+const MenuParking = ({hash,refSec,threshold}) => {
     const [url, setUrl] = useState()
     const [url2, setUrl2] = useState()
     const router = useRouter()
+
     useEffect(() => {
+        console.log(threshold,'threshold');
         // get url
         let a = window.location.href.split('/')[3].split('#')[0]
         let b = window.location.href.split('/')[3].split('#')[1]
@@ -27,30 +29,32 @@ const MenuParking = ({hash,refSec}) => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.target.id  && entry.isIntersecting) {
-                    // refSec[entry.target.id].current.style.backgroundColor = 'black'
-                    console.log(entry.target.id);
                     setUrl2(entry.target.id)
-                    // setCurrentSection(entry.target.id);
-                } else {
-                    // refSec[entry.target.id].current.style.backgroundColor = 'white'
+                    console.log('its');
                 }
             },
             {
               root: null,
               rootMargin: "0px",
-              threshold: 0.7
+              threshold: threshold
             }
         );
 
 
         if (refSec) {
-            observer.observe(refSec['headerImg'].current);
-            observer.observe(refSec['firstSection'].current);
-            observer.observe(refSec['visiMisi'].current);
-            observer.observe(refSec['misiSection'].current);
-            observer.observe(refSec['layanan'].current);
-            observer.observe(refSec['mengapaKami'].current);
-
+            if (a === 'parking') {
+                 // tentang
+                observer.observe(refSec['headerImg'].current);
+                observer.observe(refSec['firstSection'].current);
+                observer.observe(refSec['visiMisi'].current);
+                observer.observe(refSec['misiSection'].current);
+                observer.observe(refSec['layanan'].current);
+                observer.observe(refSec['mengapaKami'].current);
+            } else if (a === 'parking-legal') {
+                // legal
+                observer.observe(refSec['firstLegal'].current);
+                observer.observe(refSec['strukturOrganisasi'].current);
+            } 
         }
 
         // If the component is unmounted, unsubscribe

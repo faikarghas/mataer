@@ -1,4 +1,4 @@
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState,useEffect,createRef} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
@@ -6,6 +6,8 @@ import { motion, useViewportScroll } from "framer-motion"
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuEventMobile'
 import MenuEvent from '../components/menuEvent'
+
+import Section from '../components/layout/refWrapper'
 
 import {dataLayanan} from '../lib/data'
 
@@ -16,6 +18,7 @@ const Event = () => {
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
     const [currentSlide , setCurrentSlide] = useState(1)
+    const [refSection, setRefSection] = useState()
 
     const settings = {
         dots: false,
@@ -47,6 +50,21 @@ const Event = () => {
     }
 
     useEffect(() => {
+
+        let sectionInPage = document.querySelectorAll('section')
+
+        let setcArray = [...sectionInPage].map((item,key)=>{
+            return item.id
+        })
+
+        var refs = setcArray.reduce((refsObj, indicator) => {
+            refsObj[indicator] = createRef();
+            return refsObj
+        }, {});
+
+
+        setRefSection(refs);
+
         function watchScroll() {
             window.addEventListener("scroll", handleScroll);
         }
@@ -67,7 +85,7 @@ const Event = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuEvent/>
+                        <MenuEvent refSec={refSection} threshold={0.8}/>
                     </div>
                 </div>
                 <div className="content__event">
@@ -97,31 +115,31 @@ const Event = () => {
                             </Row>
                         </Container>
                     </div>
-                    <div id="layanan" className="content__event__layananImg">
+                    <Section id="layananImg" className="content__event__layananImg" refSec={refSection}>
                         <img src="/event-layanan.jpg" alt="event-layanan" />
-                    </div>
-                    <div className="content__event__layanan">
-                    <Container>
-                        <Row>
-                            <Col xs={12} md={12}>
-                                <h4>Layanan</h4>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <h5> Reaching<br/><b>the Unthinkable</b></h5>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <p>Pentingnya mendiskusikan rencana kegiatan Anda
-                                kepada pihak yang lebih berpengalaman,
-                                mempersiapkan purpose of event, target audience,
-                                event benefits and value, event marketing and
-                                metrics, dan budgeting planning. Kami dapat
-                                membantu untuk semua kebutuhan acara apa pun,
-                                merancang kembali rencana kegiatan yang lebih
-                                maksimal.</p>
-                            </Col>
-                        </Row>
-                    </Container>
-                    </div>
+                    </Section>
+                    <Section id="layanan" className="content__event__layanan" refSec={refSection}>
+                        <Container>
+                            <Row>
+                                <Col xs={12} md={12}>
+                                    <h4>Layanan</h4>
+                                </Col>
+                                <Col xs={12} md={6}>
+                                    <h5> Reaching<br/><b>the Unthinkable</b></h5>
+                                </Col>
+                                <Col xs={12} md={6}>
+                                    <p>Pentingnya mendiskusikan rencana kegiatan Anda
+                                    kepada pihak yang lebih berpengalaman,
+                                    mempersiapkan purpose of event, target audience,
+                                    event benefits and value, event marketing and
+                                    metrics, dan budgeting planning. Kami dapat
+                                    membantu untuk semua kebutuhan acara apa pun,
+                                    merancang kembali rencana kegiatan yang lebih
+                                    maksimal.</p>
+                                </Col>
+                            </Row>
+                        </Container>
+                    </Section>
 
                     <div className="content__event__slider2">
                     <Container className="p-0">

@@ -1,36 +1,18 @@
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState,useEffect,createRef} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
-import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
-import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuParkingMobile'
 import MenuParking from '../components/menuParking/menuParking'
 
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    arrows:true
-};
-
+import Section from '../components/layout/refWrapper'
 
 const ParkingLegal = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
-
-    function _nextArrow(params) {
-        refSlider.current.slickNext()
-    }
-
-    function _prevArrow(params) {
-        refSlider.current.slickPrev()
-    }
+    const [refSection, setRefSection] = useState()
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
@@ -42,6 +24,21 @@ const ParkingLegal = () => {
     }
 
     useEffect(() => {
+
+        let sectionInPage = document.querySelectorAll('section')
+
+        let setcArray = [...sectionInPage].map((item,key)=>{
+            return item.id
+        })
+
+        var refs = setcArray.reduce((refsObj, indicator) => {
+            refsObj[indicator] = createRef();
+            return refsObj
+        }, {});
+
+
+        setRefSection(refs);
+
         function watchScroll() {
             window.addEventListener("scroll", handleScroll);
         }
@@ -62,31 +59,31 @@ const ParkingLegal = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuParking/>
+                        <MenuParking refSec={refSection} threshold={0.5}/>
                     </div>
                 </div>
                 <div className="content__parking">
                     <MenuAct page="parking-legal"/>
-                    <div className="content__parking__legal">
-                    <Container>
-                            <Row>
-                                <Col xs={12}>
-                        <h3>Legal Perusahaan</h3>
-                        <p>PT Mataer Makmurindo didirikan pada tanggal 11 November 2014,
-                        berkantor pusat di Ruko Golden Madrid 1 No B 10 Tangerang Selatan
-                        dan Gedung Griya Upakara Kemenlu Lt. 3B Jl Cikini IV No 10 Jakarta Pusat.
-                        Akte Notaris - No 123. 21 Oktober 2014
-                        Keputusan Menteri Hukum dan HAM RI – AHU-0028382.AH.01.02 TAHUN 2019 Domisili Perusahaan –
-                        No 503/172-Kel. RMJ
-                        Nomor Pokok Wajib Pajak Perusahaan (NPWP) - 71.314.677.7-411.000
-                        Surat Ijin Usaha Perdagangan - No 503/000873-BP2T/30-08/PM/XII2104
-                        No Pendaftaran BPJS Ketenagakerjaan – 19153228 Tahun 2019
-                        </p>
-                        </Col>
+                    <Section id="firstLegal" className="content__parking__legal" refSec={refSection} >
+                        <Container>
+                                <Row>
+                                    <Col xs={12}>
+                                    <h3>Legal Perusahaan</h3>
+                                    <p>PT Mataer Makmurindo didirikan pada tanggal 11 November 2014,
+                                    berkantor pusat di Ruko Golden Madrid 1 No B 10 Tangerang Selatan
+                                    dan Gedung Griya Upakara Kemenlu Lt. 3B Jl Cikini IV No 10 Jakarta Pusat.
+                                    Akte Notaris - No 123. 21 Oktober 2014
+                                    Keputusan Menteri Hukum dan HAM RI – AHU-0028382.AH.01.02 TAHUN 2019 Domisili Perusahaan –
+                                    No 503/172-Kel. RMJ
+                                    Nomor Pokok Wajib Pajak Perusahaan (NPWP) - 71.314.677.7-411.000
+                                    Surat Ijin Usaha Perdagangan - No 503/000873-BP2T/30-08/PM/XII2104
+                                    No Pendaftaran BPJS Ketenagakerjaan – 19153228 Tahun 2019
+                                    </p>
+                                    </Col>
                             </Row>
                         </Container>
-                    </div>
-                    <div id="strukturOrganisasi" className="content__parking__struktur">
+                    </Section>
+                    <Section id="strukturOrganisasi" className="content__parking__struktur" refSec={refSection} >
                         <Container>
                             <Row>
                                 <Col xs={12}>
@@ -198,7 +195,7 @@ const ParkingLegal = () => {
                             </Row>
                             </Container>
                         </div>
-                    </div>
+                    </Section>
                 </div>
             </div>
         </main>

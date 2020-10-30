@@ -13,7 +13,6 @@ const Parking = () => {
     const [scrollActive , setScrollActive] = useState('')
     const [currentHash, setCurrentHash] = useState('')
     const [refSection, setRefSection] = useState()
-    const [currentSection , setCurrentSection] = useState('')
 
     function handleScroll() {
         let currentScroll = Math.round(scrollY.current)
@@ -64,7 +63,7 @@ const Parking = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuParking hash={currentHash} refSec={refSection}/>
+                        <MenuParking hash={currentHash} refSec={refSection} threshold={0.7}/>
                     </div>
                 </div>
                 <div className="content__parking">

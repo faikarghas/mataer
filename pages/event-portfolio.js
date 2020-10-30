@@ -1,19 +1,21 @@
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState,useEffect,createRef} from 'react'
 import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
-import { motion, useViewportScroll } from "framer-motion"
+import { motion, useViewportScroll} from "framer-motion"
 import Slider from "react-slick";
 
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuEventMobile'
 import MenuEvent from '../components/menuEvent'
 
+import Section from '../components/layout/refWrapper'
 
 const EventPortfolio = () => {
     const refSlider = useRef(null)
     const { scrollY,scrollYProgress } = useViewportScroll()
     const [scrollActive , setScrollActive] = useState('')
     const [currentSlide , setCurrentSlide] = useState(1)
+    const [refSection, setRefSection] = useState()
 
     const settings = {
         dots: false,
@@ -45,6 +47,22 @@ const EventPortfolio = () => {
     }
 
     useEffect(() => {
+
+        let sectionInPage = document.querySelectorAll('section')
+
+        let setcArray = [...sectionInPage].map((item,key)=>{
+            return item.id
+        })
+
+        var refs = setcArray.reduce((refsObj, indicator) => {
+            refsObj[indicator] = createRef();
+            return refsObj
+        }, {});
+
+
+        setRefSection(refs);
+
+
         function watchScroll() {
             window.addEventListener("scroll", handleScroll);
         }
@@ -126,23 +144,23 @@ const EventPortfolio = () => {
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
-                        <MenuEvent/>
+                        <MenuEvent refSec={refSection} threshold={0.5}/>
                     </div>
                 </div>
                 <div className="content__event">
                     <MenuAct page="event-portfolio"/>
                     <div className="content__event__why">
-                    <Container>
-                        <Row>
-                            <Col xs={12} md={12}>
-                        <h3>Portfolio</h3>
-                        <p>Pelayanan industri mice internasional yang tidak lagi berbatas sektoral dan geografis dalam era digital saat ini, dituntut mampu memenuhi berbagai kebutuhan para penggiat perencana kegiatan penyelenggaraan yang semakin berkembang,</p>
-                        <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
-                        </Col>
+                        <Container>
+                            <Row>
+                                <Col xs={12} md={12}>
+                                <h3>Portfolio</h3>
+                                <p>Pelayanan industri mice internasional yang tidak lagi berbatas sektoral dan geografis dalam era digital saat ini, dituntut mampu memenuhi berbagai kebutuhan para penggiat perencana kegiatan penyelenggaraan yang semakin berkembang,</p>
+                                <p>Berikut adalah institusi dan instansi yang telah bekerjasama dengan kami:</p>
+                                </Col>
                             </Row>
                         </Container>
                     </div>
-                    <div id="exhibition" className="content__event__listImg">
+                    <Section id="exhibition" className="content__event__listImg" refSec={refSection}>
                         <Container>
                             <Row className="mt-5">
                                 <Col xs={12}><h4>EXHIBITION</h4></Col>
@@ -156,8 +174,8 @@ const EventPortfolio = () => {
                                 </Col>
                             </Row>
                         </Container>
-                    </div>
-                    <div id="forum" className="content__event__listImg">
+                    </Section>
+                    <Section id="forum" className="content__event__listImg" refSec={refSection}>
                         <Container>
                             <Row className="mt-5">
                                 <Col xs={12}><h4>FORUM</h4></Col>
@@ -168,26 +186,26 @@ const EventPortfolio = () => {
                                 </Col>
                             </Row>
                         </Container>
-                    </div>
-                    <div id="media" className="content__event__slider mt-5">
-                    <Container>
-                        <Row>
-                            <Col xs={12} md={12}>
-                            <h4>MEDIA</h4>
-                            <Slider {...settings} ref={refSlider}>
-                                {listImgMedia()}
-                            </Slider>
-                            <div className="slick_ia">
-                                <p>{currentSlide}<span>/</span>3</p>
-                                <ul className="button_slider">
-                                    <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
-                                    <li onClick={_nextArrow}><img style={{opacity:currentSlide == 3? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
-                                </ul>
-                            </div>
-                            </Col>
-                        </Row>
+                    </Section>
+                    <Section id="media" className="content__event__slider mt-5" refSec={refSection}>
+                        <Container>
+                            <Row>
+                                <Col xs={12} md={12}>
+                                <h4>MEDIA</h4>
+                                <Slider {...settings} ref={refSlider}>
+                                    {listImgMedia()}
+                                </Slider>
+                                <div className="slick_ia">
+                                    <p>{currentSlide}<span>/</span>3</p>
+                                    <ul className="button_slider">
+                                        <li onClick={_prevArrow}><img style={{opacity:currentSlide == 1? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                        <li onClick={_nextArrow}><img style={{opacity:currentSlide == 3? '0.5' : '1'}} src="/arrow-services.svg" alt="arrow"/></li>
+                                    </ul>
+                                </div>
+                                </Col>
+                            </Row>
                         </Container>
-                    </div>
+                    </Section>
                 </div>
             </div>
         </main>
