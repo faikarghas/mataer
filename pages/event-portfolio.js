@@ -147,7 +147,8 @@ const EventPortfolio = () => {
                             <Row className="mt-5">
                                 <Col xs={12}><h4>EXHIBITION</h4></Col>
                                 <Col xs={12}>
-                                    <img className="forDesktop" src={`/exhibition/Exhibition.png`} width="100%"/>
+                                    <img className="forDesktop" src={`/exhibition/exhibition1.png`} width="100%"/>
+                                    <img className="forDesktop" src={`/exhibition/exhibition2.png`} width="100%"/>
                                     <img className="forMobile" src={`/exhibition/exhibition-mobile.png`} width="100%"/>
                                 </Col>
                             </Row>
