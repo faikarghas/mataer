@@ -6,24 +6,33 @@ import ScrollToTop from '../scrollToTop'
 
 const Index = () => {
     const [url, setUrl] = useState()
-    const [url2, setUrl2] = useState()
     const router = useRouter()
 
     useEffect(() => {
         // get url
-        let a = window.location.href.split('/')[3].split('#')[0]
-        let b = window.location.href.split('/')[3].split('#')[1]
 
-        setUrl(a)
-        setUrl2(b)
-
-        const handleRouteChange = (url) => {
-            let c = url.split('#')[1]
-
-            setUrl2(c)
+        let currUrl = window.location.href.split('/').length
+        let a
+        if (currUrl > 4) {
+            a = window.location.href.split('/')[4].split('#')[0]
+            setUrl(a)
+        } else {
+            a = window.location.href.split('/')[3].split('#')[0]
+            setUrl(a)
         }
 
-        router.events.on('hashChangeComplete', handleRouteChange)
+        const handleRouteChange = (url) => {
+            if (currUrl > 4) {
+                try {
+                    a = window.location.href.split('/')[4].split('#')[0]
+                    setUrl(a)
+                } catch (error) {
+
+                }
+
+            }
+        }
+        router.events.on('routeChangeComplete', handleRouteChange)
 
         // If the component is unmounted, unsubscribe
         // from the event with the `off` method:

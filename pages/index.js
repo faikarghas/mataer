@@ -23,11 +23,11 @@ const Home = () => {
     const numberRef = useRef(null)
     const [active, setActive] = useState(false)
 
-    function _nextArrow(params) {
+    function _nextArrow() {
         refSlider.current.slickNext()
     }
 
-    function _prevArrow(params) {
+    function _prevArrow() {
         refSlider.current.slickPrev()
     }
 

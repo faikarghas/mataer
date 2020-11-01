@@ -129,9 +129,12 @@ const About = () => {
                             <p className="title-longb">KLIEN KAMI</p>
                             <hr className="blue"></hr>
                             <Row>
-                                <Col className="d-flex align-items-center" xs={12} md={12}>
+                                <Col className="" xs={12} md={12}>
                                     <img className="forDesktop1" src="/LogoKlien.png" width="100%"/>
-                                    <img className="forMobile1" src="/LogoKlienMobile.png" width="100%"/>
+                                    <img className="forMobile1" src="/logo-client/[Mobile] Client - Batch 1.png" width="100%"/>
+                                    <img className="forMobile1" src="/logo-client/[Mobile] Client - Batch 2.png" width="100%"/>
+                                    <img className="forMobile1" src="/logo-client/[Mobile] Client - Batch 3.png" width="100%"/>
+                                    <img className="forMobile1" src="/logo-client/[Mobile] Client - Batch 4.png" width="100%"/>
                                 </Col>
                             </Row>
                         </Container>

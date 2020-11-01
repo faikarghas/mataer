@@ -55,7 +55,7 @@ const EventKontak = () => {
     return (
         <React.Fragment>
         <header>
-            <Menu logo="/LogoGrupMataer/logoPark.png" page="parking" scrollActive={scrollActive}/>
+            <Menu logo="/LogoGrupMataer/logoPark.png" page="event" scrollActive={scrollActive}/>
         </header>
 
         <main>

@@ -7,7 +7,7 @@ const Index = () => {
     }
 
     return (
-        <div className="scrollToTop" onClick={_scrollToTop}><img src="arrowup.png"/></div>
+        <div className="scrollToTop" onClick={_scrollToTop}><img src="/arrowup.png"/></div>
     )
 }
 

@@ -338,7 +338,7 @@
         img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: unset;
         }
         &-desc{
             position: absolute;
@@ -813,7 +813,7 @@
         background-color: #70707017;
         @include respond(down-tab-port){
             margin: 0;
-            padding: 2.5rem 5rem;
+            padding: 2.5rem 2.5rem;
         }
         h3{
             font-size: 3.5rem;

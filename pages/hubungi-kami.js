@@ -60,7 +60,6 @@ const ParkingKontak = () => {
         <main>
             <div className={`product__wrapper ${scrollActive}`}>
                 <div className="content__parking" style={{width:'100%'}}>
-                    <MenuAct/>
                     <div className="content__parking__kontak">
                         <h3>Kontak Mataer</h3>
 

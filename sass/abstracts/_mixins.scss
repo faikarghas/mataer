@@ -77,6 +77,9 @@ ORDER:  Base + typography > general layout + grid > page layout > components
     @if $breakpoint == down-desktop {
         @media only screen and (max-width: 75em) { @content };    //1200px
     }
+    @if $breakpoint == down-medium-desktop {
+        @media only screen and (max-width: 81.25em) { @content };    //1300
+    }
     @if $breakpoint == down-big-desktop {
         @media only screen and (max-width: 112.5em) { @content };    //1800
     }
