@@ -9,7 +9,6 @@ const MenuParking = ({hash,refSec,threshold}) => {
     const router = useRouter()
 
     useEffect(() => {
-        console.log(threshold,'threshold');
         // get url
         let a = window.location.href.split('/')[3].split('#')[0]
         let b = window.location.href.split('/')[3].split('#')[1]
@@ -30,7 +29,6 @@ const MenuParking = ({hash,refSec,threshold}) => {
             ([entry]) => {
                 if (entry.target.id  && entry.isIntersecting) {
                     setUrl2(entry.target.id)
-                    console.log('its');
                 }
             },
             {
@@ -42,19 +40,10 @@ const MenuParking = ({hash,refSec,threshold}) => {
 
 
         if (refSec) {
-            if (a === 'parking') {
-                 // tentang
-                observer.observe(refSec['headerImg'].current);
-                observer.observe(refSec['firstSection'].current);
-                observer.observe(refSec['visiMisi'].current);
-                observer.observe(refSec['misiSection'].current);
-                observer.observe(refSec['layanan'].current);
-                observer.observe(refSec['mengapaKami'].current);
-            } else if (a === 'parking-legal') {
-                // legal
-                observer.observe(refSec['firstLegal'].current);
-                observer.observe(refSec['strukturOrganisasi'].current);
-            } 
+            Object.entries(refSec).forEach(element => {
+                const [key, value] = element;
+                observer.observe(value.current);
+            });
         }
 
         // If the component is unmounted, unsubscribe

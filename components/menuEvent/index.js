@@ -9,7 +9,6 @@ const Index = ({hash,refSec,threshold}) => {
     const router = useRouter()
 
     useEffect(() => {
-        console.log(threshold,'threshold');
         // get url
         let a = window.location.href.split('/')[3].split('#')[0]
         let b = window.location.href.split('/')[3].split('#')[1]
@@ -23,14 +22,11 @@ const Index = ({hash,refSec,threshold}) => {
             setUrl2(c)
         }
 
-        router.events.on('hashChangeComplete', handleRouteChange)
-
 
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.target.id  && entry.isIntersecting) {
                     setUrl2(entry.target.id)
-                    console.log('its');
                 } else {
                     setUrl2('')
                 }
@@ -44,18 +40,13 @@ const Index = ({hash,refSec,threshold}) => {
 
 
         if (refSec) {
-            if (a === 'event') {
-                 // tentang
-                observer.observe(refSec['layanan'].current);
-            } else if (a === 'event-portfolio') {
-                // legal
-                observer.observe(refSec['exhibition'].current);
-                observer.observe(refSec['forum'].current);
-                observer.observe(refSec['media'].current);
-            } else if (a === 'event-legal') {
-                observer.observe(refSec['strukturOrganisasi'].current);
-            }
+            Object.entries(refSec).forEach(element => {
+                const [key, value] = element;
+                observer.observe(value.current);
+            });
         }
+
+        router.events.on('hashChangeComplete', handleRouteChange)
 
         // If the component is unmounted, unsubscribe
         // from the event with the `off` method:
