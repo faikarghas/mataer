@@ -365,7 +365,6 @@ footer{
     @include respond(down-phone){
         padding: 5rem 2rem;
     }
-    
     img{
         margin-bottom: 2rem;
     }
@@ -437,7 +436,7 @@ footer{
                 margin-top: 4rem;
                 li{
                     display: inline-block;
-                    margin-right: 1rem;
+                    margin-left: 2rem;
                     img{
                         width: 24px;
                         margin: 0;
@@ -455,6 +454,14 @@ footer{
             margin-bottom: 1rem;
             &:last-child{
                 margin: 0;
+            }
+        }
+        a{
+            font-size: 1.5rem;
+            color: rgb(255 255 255 / 56%);
+            font-family: 'BLISS2R';
+            &:hover{
+                text-decoration: none;
             }
         }
     }

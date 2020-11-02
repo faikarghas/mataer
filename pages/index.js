@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import Menu from '../components/layout/menu'
 import NumberAnimation from '../components/countAnimation'
+import ScrollToTop from '../components/scrollToTop'
 import Footer from '../components/layout/footer'
 
 const settings = {
@@ -249,6 +250,7 @@ const Home = () => {
             </div>
         </main>
         <Footer/>
+        <ScrollToTop/>
         </React.Fragment>
     )
 }

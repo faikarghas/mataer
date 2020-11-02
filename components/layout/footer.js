@@ -67,7 +67,7 @@ const Index = () => {
                     <Col xs={12}>
                         <div className="copyright">
                             <p>Copyright © Mata Aer Makmurindo 2020</p>
-                            <p>Site Created by Dignite Studio</p>
+                            <a href="https://dignite.studio" target="_blank">Site Created by Dignite Studio</a>
                         </div>
                     </Col>
                 </Row>

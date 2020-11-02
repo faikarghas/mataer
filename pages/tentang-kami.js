@@ -7,7 +7,7 @@ import { useCountUp} from 'react-countup';
 
 import Menu from '../components/layout/menu'
 import Footer from '../components/layout/footer'
-
+import ScrollToTop from '../components/scrollToTop'
 
 const settings = {
     dots: false,
@@ -142,6 +142,7 @@ const About = () => {
                     </div>
                 </main>
                 <Footer/>
+                <ScrollToTop/>
             </div>
         </div>
         </React.Fragment>
