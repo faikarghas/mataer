@@ -5,6 +5,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import Menu from '../components/layout/menu'
 import MenuAct from '../components/menuEventMobile'
 import MenuEvent from '../components/menuEvent'
+import Footer from '../components/layout/footer'
 
 import Section from '../components/layout/refWrapper'
 
@@ -201,23 +202,8 @@ const EventLegal = () => {
                 </div>
             </div>
         </main>
-        <footer>
-            <Container fluid>
-                <Row>
-                    <Col xs={12} md={6}>
-                        <img src="mataer-logo-dark.png" alt="logo mataer" width="70px"/>
-                        <p>PT. Mata Aer Makmurindo</p>
-                        <p>Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
-                        Jalan Cikini IV No 10, Jakarta Pusat</p>
-                        <ul>
-                            <li><span>Telepon</span>(021) 3103080, (021) 310 5671</li>
-                            <li><span>Fax</span>(021) 3162315</li>
-                            <li><span>HP</span>0812-8394-1426</li>
-                        </ul>
-                    </Col>
-                </Row>
-            </Container>
-        </footer>
+        <Footer/>
+
         </React.Fragment>
     )
 }

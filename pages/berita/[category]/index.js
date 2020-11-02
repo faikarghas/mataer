@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import Menu from '../../../components/layout/menu'
 import MenuBerita from '../../../components/menuBerita'
 import MenuAct from '../../../components/menuBeritaMobile'
+import Footer from '../../../components/layout/footer'
 
 import {absoluteUrl} from '../../../lib/absoluteUrl'
 
@@ -94,23 +95,7 @@ const Category = ({data}) => {
                 </div>
             </div>
         </main>
-        <footer>
-            <Container fluid>
-                <Row>
-                    <Col xs={12} md={6}>
-                        <img src="/mataer-logo-dark.png" alt="logo mataer" width="70px"/>
-                        <p>PT. Mata Aer Makmurindo</p>
-                        <p>Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
-                        Jalan Cikini IV No 10, Jakarta Pusat</p>
-                        <ul>
-                            <li><span>Telepon</span>(021) 3103080, (021) 310 5671</li>
-                            <li><span>Fax</span>(021) 3162315</li>
-                            <li><span>HP</span>0812-8394-1426</li>
-                        </ul>
-                    </Col>
-                </Row>
-            </Container>
-        </footer>
+        <Footer/>
         </React.Fragment>
     )
 }

@@ -7,7 +7,7 @@ const Index = ({page}) => {
     return (
         <div className="menuAct forMobile">
         <ul>
-            <li className={page === 'event' ? 'active' : ''}><Link href="/event"><a>Tentang MEM</a></Link></li>
+            <li className={page === 'event' ? 'active' : ''}><Link href="/event"><a>Tentang Mataer Event & Media</a></Link></li>
             <ul>
                 <li><Link href="/event#layanan"><a>Layanan</a></Link></li>
             </ul>
