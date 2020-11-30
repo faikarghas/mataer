@@ -22,7 +22,6 @@ const Index = ({hash,refSec,threshold}) => {
             setUrl2(c)
         }
 
-
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.target.id  && entry.isIntersecting) {
