@@ -41,6 +41,11 @@
    "sizes": "192x192",
    "type": "image\/png",
    "density": "4.0"
-  }
+  },
+  {
+    "src": "mataer_splash.png",
+    "sizes": "1187x2037",
+    "type": "image\/png"
+   }
  ]
 }
