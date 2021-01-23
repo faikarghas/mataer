@@ -151,11 +151,11 @@ const ParkingLegal = () => {
                                         </Col>
                                     </Row>
                                 </Col> */}
-                                <Col xs={12} md={6} className="list_struktur-item">
+                                {/* <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} md={5} className="mb-5rem">
                                             <div className="imgAvatar">
-                                                {/* <img src="/struktur/joe-hamilton-860px.jpg" /> */}
+                                                <img src="/struktur/joe-hamilton-860px.jpg" />
                                             </div>
                                         </Col>
                                         <Col xs={6} md={7} className="mb-5rem">
@@ -164,7 +164,7 @@ const ParkingLegal = () => {
                                             <a href="mailto: abc@example.com">EMAIL</a>
                                         </Col>
                                     </Row>
-                                </Col>
+                                </Col> */}
                                 {/* <Col xs={12} md={6} className="list_struktur-item">
                                     <Row>
                                         <Col xs={6} md={5} className="mb-5rem">
