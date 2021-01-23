@@ -64,7 +64,7 @@ const Berita = () => {
                 <div className="sidebar">
                     <div className={`sidebar__menu ${scrollActive}`}>
                         <MenuBerita/>
-                        <div className="kontak_press">
+                        {/* <div className="kontak_press">
                             <ul>
                                 <li>Kontak Press</li>
                                 <li>Agus Ruspendy</li>
@@ -72,12 +72,12 @@ const Berita = () => {
                                 <li>Corporate Communication</li>
                                 <li>0812 3456 789</li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="content__berita">
                     <MenuAct/>
-                    <div className="kontak_press forMobile">
+                    {/* <div className="kontak_press forMobile">
                         <ul>
                             <li>Kontak Press</li>
                             <li>Agus Ruspendy</li>
@@ -85,7 +85,7 @@ const Berita = () => {
                             <li>Corporate Communication</li>
                             <li>0812 3456 789</li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="content__berita_wrapper">
                         <Container>
                             <Row>
