@@ -55,7 +55,7 @@ const About = () => {
                                 <Container>
                                     <Row>
                                         <Col xs={12}>
-                                        <h1>Ketertarikan kami<br/>terhadap dunia usaha<br/>menjadi salah satu<br/>kunci keberhasilan<br/>Anda</h1>
+                                        <h1>Perhitungan tepat, Instuisi, <br/>dan Kreatifitas dalam<br/>menghadirkan solusi<br/>kepada dunia usaha</h1>
                                         </Col>
                                     </Row>
                                 </Container>
@@ -83,12 +83,12 @@ const About = () => {
                         <img src="/visiMataer.jpg" alt="visi" />
                         <div className="about__section_visi-desc">
                             <h4>Visi</h4>
-                            <p>“Menjadi perusahaan prioritas dalam penyedia barang & jasa mitra pemerintahan dan swasta terpercaya di Indonesia.”</p>
+                            <p>“Menjadi perusahaan prioritas dan terpercaya oleh swasta dan pemerintah untuk setiap industri anak perusahaan di Indonesia.”</p>
                         </div>
                     </div>
                     <div className="about__section_grup">
                         <Container>
-                            <p className="title">GRUP KAMI</p>
+                            <p className="title">ANAK PERUSAHAAN</p>
                             <Row>
                                 <Col xs={12} md={6} lg={3} style={{paddingRight:'2rem'}}>
                                     <Link href="/parking"><a className="about__section_grup-box">
@@ -125,7 +125,7 @@ const About = () => {
                             </Row>
                         </Container>
                     </div>
-                    <div className="about__section_klien">
+                    {/* <div className="about__section_klien">
                         <Container>
                             <p className="title-longb">KLIEN KAMI</p>
                             <hr className="blue"></hr>
@@ -139,7 +139,7 @@ const About = () => {
                                 </Col>
                             </Row>
                         </Container>
-                    </div>
+                    </div> */}
                 </main>
                 <Footer/>
                 <ScrollToTop/>

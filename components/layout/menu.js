@@ -43,14 +43,14 @@ const Menu = ({logo,page,scrollActive,showContact}) => {
                                 </ul>
                                 <div className="menu__link-bottom">
                                     <ul className="menu__link-bottom-left">
-                                        <li><Link href="/parking"><a className={page === 'parking' ? 'active' : ''}>Parking</a></Link></li>
-                                        <li><Link href="/event"><a className={page === 'event' ? 'active' : ''}>Event & Media</a></Link></li>
-                                        <li><Link href="/"><a className="disable">Adspro</a></Link></li>
-                                        <li><Link href="/"><a className="disable">Business & Consultant</a></Link></li>
+                                        <li><Link href="/parking"><a className={page === 'parking' ? 'active' : ''}>PARKING</a></Link></li>
+                                        <li><Link href="/event"><a className={page === 'event' ? 'active' : ''}>EVENT & MEDIA</a></Link></li>
+                                        <li><Link href="/"><a className="disable">ADSPRO</a></Link></li>
+                                        <li><Link href="/"><a className="disable">BUSINESS & CONSULTANT</a></Link></li>
                                     </ul>
                                     <ul className="menu__link-bottom-right">
-                                        <li><Link href="/berita"><a>Berita & Artikel</a></Link></li>
-                                        <li className="m-0"><Link href="/"><a className="disable">Karir</a></Link></li>
+                                        <li><Link href="/berita"><a>BERITA & ARTIKEL</a></Link></li>
+                                        <li className="m-0"><Link href="/"><a className="disable">KARIR</a></Link></li>
                                     </ul>
                                 </div>
                             </div>

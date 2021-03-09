@@ -75,16 +75,38 @@ const Category = ({data}) => {
                         <Container>
                             <Row>
                                 <Col xs={12}><h3>Berita & Artikel</h3></Col>
-                                {data.dataCategory.map((item,i)=>{
-                                    let category = item.category.split('-').join(' ')
+                                {data.dataCategory.map((data,i)=>{
+                                    let category = data.category.split('-').join(' ')
+                                    let d = new Date(data.date);
+                                    let date = d.getDate()
+                                    let gmonth = d.getMonth()
+                                    let year = d.getFullYear()
+                                    let month;
+
+                                    switch (gmonth) {
+                                        case 1:
+                                            month = 'Januari'
+                                            break;
+                                        case 2:
+                                            month = 'Februari'
+                                            break;
+                                        case 3:
+                                            month = 'Maret'
+                                            break;
+                                        case 9:
+                                            month = 'September'
+                                            break;
+                                        default:
+                                            break;
+                                    }
                                     return(
                                         <Col xs={12} md={4} className="mb-5" key={i}>
                                             <div className="content__berita_wrapper-item">
-                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}>
-                                                    <a><img src="/Article1.jpg" width="100%"/></a>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}>
+                                                    <a><img src={`/artikel/${data.image}`} width="100%"/></a>
                                                 </Link>
-                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a className="news_title">{item.title}</a></Link>
-                                                <div className="date_title"><p>14 AGUSTUS 2020</p><span>/</span><Link href="/berita/[category]" as={`/berita/${category.split(' ').join('-')}`}><a>{category}</a></Link></div>
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}><a className="news_title">{data.title}</a></Link>
+                                                <div className="date_title"><p>{`${date} ${month} ${year}`}</p><span>/</span><Link href="/berita/[category]" as={`/berita/${category.split(' ').join('-')}`}><a>{category}</a></Link></div>
                                             </div>
                                         </Col>
                                     )
@@ -106,11 +128,12 @@ Category.getInitialProps = async (ctx) => {
 
     const category = ctx.query.category
 
-    console.log(origin);
-
     const pageRequest = `${origin}/api/getCategory/${category}`
     const res = await fetch(pageRequest)
     const json = await res.json()
+
+    console.log(json    );
+
 
     return { data: json }
 }

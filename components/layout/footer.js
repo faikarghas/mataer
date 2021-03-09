@@ -8,14 +8,15 @@ const Index = () => {
             <Container fluid>
                 <Row>
                     <Col xs={12} md={4}>
-                        <img src="mataer-logo-dark.png" alt="logo mataer" width="70px"/>
-                        <p className="cpm">PT. Mata Aer Makmurindo</p>
-                        <p>Gd. Griya Upakara Kemenlu, Lt 3B,<br/>
-                        Jalan Cikini IV No 10, Jakarta Pusat</p>
+                        <img src="/mataer-logo-dark.png" alt="logo mataer" width="70px"/>
+                        <p className="cpm">MATAER GROUP | PT. MATAER CAPITAL NUSANTARA</p>
+                        <p>Jalan Pahlawan Seribu,CBD Bidex Blok I No. 15,<br/>
+                        Kota Tangerang Selatan, Prov. Banten</p>
                         <ul>
-                            <li><span>Telepon</span>(021) 3103080, (021) 310 5671</li>
-                            <li><span>Fax</span>(021) 3162315</li>
-                            <li><span>HP</span>0812-8394-1426</li>
+                            <li><span>Telepon</span>(021) 222 314 86</li>
+                            <li>Layanan konsumen unit usaha : layanan.konsumen@mataer.com</li>
+                            <li>Layanan umum : info@mataer.com</li>
+                            <li>Layanan Kerjasama Usaha : b2b@mataer.com</li>
                         </ul>
                     </Col>
                     <Col xs={12} md={8} className="sitemap_footer">

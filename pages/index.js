@@ -8,6 +8,7 @@ import Menu from '../components/layout/menu'
 import NumberAnimation from '../components/countAnimation'
 import ScrollToTop from '../components/scrollToTop'
 import Footer from '../components/layout/footer'
+import {absoluteUrl} from '../lib/absoluteUrl'
 
 const settings = {
     dots: false,
@@ -20,7 +21,7 @@ const settings = {
 };
 
 
-const Home = () => {
+const Home = ({dataNews}) => {
     const refSlider = useRef(null)
     const numberRef = useRef(null)
     const [active, setActive] = useState(false)
@@ -56,7 +57,7 @@ const Home = () => {
                             </Container>
                         </div>
                     </div>
-                    <div className="header__slider_item">
+                    {/* <div className="header__slider_item">
                         <img src="/rsz_banner-min.jpg" alt="banner 1"/>
                         <div className="text__banner">
                             <Container>
@@ -71,7 +72,7 @@ const Home = () => {
                                 </Row>
                             </Container>
                         </div>
-                    </div>
+                    </div> */}
                 </Slider>
             </div>
             <Container>
@@ -131,6 +132,8 @@ const Home = () => {
                     <Row>
                         <Col xs={12} md={6} className="d-flex align-items-center">
                             <h2>Kami selalu menyediakan<br/> penawaran yang potensial<br/> untuk memberikan nilai<br/>tambah kepada klien kami.</h2>
+                            {/* <h2>Kami selalu menyediakan<br/> penawaran yang potensial<br/> untuk memberikan nilai<br/>tambah kepada klien kami.</h2> */}
+
                         </Col>
                         <Col xs={12} md={6} className="d-flex align-items-center">
                             <ul>
@@ -147,94 +150,77 @@ const Home = () => {
                 <Container>
                     <p className="title2">ARTIKEL TERBARU</p>
                     <div className="artikel__firstBorder">
-                        <Row>
-                            <Col xs={12} md={6}>
-                                <div className="artikel__wrapper_desc1">
-                                    <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
-                                    <span>14 Agustus 2020</span>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className="artikel__wrapper_img1">
-                                    <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/Article1.jpg" width="100%" alt="img artikel" className="forDesktop"/></a></Link>
-                                    <div className="linkToArtikel forDesktop"><Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a><img src="/arrow-front.png" /></a></Link></div>
-                                </div>
-                            </Col>
-                        </Row>
+                    {dataNews.data.filter((a)=>{
+                                return a.headline === 0
+                            })
+                            .map((data)=>{
+                                let d = new Date(data.date);
+                                let date = d.getDate()
+                                let gmonth = d.getMonth()
+                                let year = d.getFullYear()
+                                let month;
+
+                                switch (gmonth) {
+                                    case 1:
+                                        month = 'Januari'
+                                        break;
+                                    case 2:
+                                        month = 'Februari'
+                                        break;
+                                    case 3:
+                                        month = 'Maret'
+                                        break;
+                                    case 9:
+                                        month = 'September'
+                                        break;
+                                    default:
+                                        break;
+                                }
+
+                                return (
+                                    <Row>
+                                        <Col xs={12} md={6}>
+                                            <div className="artikel__wrapper_desc1">
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}><a>{data.title}</a></Link>
+                                                <span>{`${date} ${month} ${year}`}</span>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={6}>
+                                            <div className="artikel__wrapper_img1">
+                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}><a><img src={`/artikel/${data.image}`} width="100%" alt="img artikel" className="forDesktop"/></a></Link>
+                                                <div className="linkToArtikel forDesktop"><Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}><a><img src="/arrow-front.png" /></a></Link></div>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                )
+                            })}
                     </div>
                         <Row>
-                            <Col xs={12} md={6}>
-                                <div className="artikel__secondBorder">
-                                    <Row>
-                                        <Col xs={12} md={7}>
-                                            <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
-                                                <span>14 Agustus 2020</span>
-                                            </div>
-                                        </Col>
-                                        <Col xs={12} md={5}>
-                                            <div className="artikel__wrapper_img2">
-                                                <img src="/berita1.png" width="100%" alt="img artikel" className="forDesktop"/>
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className="artikel__secondBorder">
-                                    <Row>
-                                        <Col xs={12} md={7}>
-                                            <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
-                                                <span>14 Agustus 2020</span>
-                                            </div>
-                                        </Col>
-                                        <Col xs={12} md={5}>
-                                            <div className="artikel__wrapper_img2">
-                                                <img src="/berita2.png" width="100%" alt="img artikel" className="forDesktop"/>
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className="artikel__secondBorder">
-                                    <Row>
-                                        <Col xs={12} md={7}>
-                                            <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
-                                                <span>14 Agustus 2020</span>
-                                            </div>
-                                        </Col>
-                                        <Col xs={12} md={5}>
-                                            <div className="artikel__wrapper_img2">
-                                                <img src="/berita3.png" width="100%" alt="img artikel" className="forDesktop"/>
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={6}>
-                                <div className="artikel__secondBorder">
-                                    <Row>
-                                        <Col xs={12} md={7}>
-                                            <div className="artikel__wrapper_desc2">
-                                                <Link href={`/berita/[category]/[slug]`} as={`/berita/event-press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari. Rekor Terbanyak Selama 5 Tahun Terakhir</a></Link>
-                                                <span>14 Agustus 2020</span>
-                                            </div>
-                                        </Col>
-                                        <Col xs={12} md={5}>
-                                            <div className="artikel__wrapper_img2">
-                                                <img src="/berita4.png" width="100%" alt="img artikel" className="forDesktop"/>
-                                                <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
+                            {dataNews.data.filter((a)=>{
+                                return a.headline != 0
+                            })
+                            .map((data)=>{
+                                return (
+                                    <Col xs={12} md={6}>
+                                        <div className="artikel__secondBorder">
+                                            <Row>
+                                                <Col xs={12} md={7}>
+                                                    <div className="artikel__wrapper_desc2">
+                                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>{data.title}</a></Link>
+                                                        <span>14 Agustus 2020</span>
+                                                    </div>
+                                                </Col>
+                                                <Col xs={12} md={5}>
+                                                    <div className="artikel__wrapper_img2">
+                                                        <img src="/berita4.png" width="100%" alt="img artikel" className="forDesktop"/>
+                                                        <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    </Col>
+                                )
+                            })}
                         </Row>
                         <Row>
                             <div className="button_toArtikel">
@@ -254,5 +240,18 @@ const Home = () => {
         </React.Fragment>
     )
 }
+
+Home.getInitialProps = async (ctx) => {
+    const { origin } = absoluteUrl(ctx.req, "localhost:3010");
+
+    const pageRequest = `${origin}/api/news`
+    const res = await fetch(pageRequest)
+    const json = await res.json()
+
+    console.log(json);
+
+    return { dataNews: json }
+}
+
 
 export default Home

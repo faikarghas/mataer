@@ -3,12 +3,15 @@ import {Row,Col, Container} from 'react-bootstrap'
 import Link from 'next/link'
 import { motion, useViewportScroll } from "framer-motion"
 import Slider from "react-slick";
+import parse from 'html-react-parser';
 
 import Menu from '../../../../components/layout/menu'
 import MenuBerita from '../../../../components/menuBerita'
 import ShareIcon from '../../../../components/shareIcon'
 import MenuAct from '../../../../components/menuBeritaMobile'
 import Footer from '../../../../components/layout/footer'
+
+import {absoluteUrl} from '../../../../lib/absoluteUrl'
 
 const settings = {
     dots: true,
@@ -21,7 +24,7 @@ const settings = {
 };
 
 
-const BeritaDetail = () => {
+const BeritaDetail = ({dataNews}) => {
     const refSlider = useRef(null)
     const refContent = useRef(null)
 
@@ -69,6 +72,29 @@ const BeritaDetail = () => {
         };
     }, [])
 
+    let d = new Date(dataNews.data[0].date);
+    let date = d.getDate()
+    let gmonth = d.getMonth()
+    let year = d.getFullYear()
+    let month;
+
+    switch (gmonth) {
+        case 1:
+            month = 'Januari'
+            break;
+        case 2:
+            month = 'Februari'
+            break;
+        case 3:
+            month = 'Maret'
+            break;
+        case 9:
+            month = 'September'
+            break;
+        default:
+            break;
+    }
+
     return (
         <React.Fragment>
         <header>
@@ -98,29 +124,21 @@ const BeritaDetail = () => {
                         <Row>
                             <Col xs={12}>
                                 <div className="brd">
-                                    <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita/[category]" as={`/berita/event-press-release`}><a>Event Press Release</a></Link>
+                                    <Link href="/berita"><a>Berita & Artikel</a></Link><span> {'>'} </span><Link href="/berita/[category]" as={`/berita/press-release`}><a>Press Release</a></Link>
                                 </div>
                             </Col>
                             <Col xs={12} md={9}>
                                 <div className="content__berita_detail-content" ref={refContent}>
-                                    <h1>Pagelaran Budaya Jakarta Berlangsung Ramai, PT. Mata Aer Makmurindo Berhasil Menarik 1000 Pengunjung dalam Sehari</h1>
-                                    <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</h4>
+                                    <h1>{dataNews.data[0].title}</h1>
+                                    {/* <h4>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</h4> */}
                                     <div className="date_wrapper">
                                         <div className="date_wrapper-f">
-                                            <span >14 AGUSTUS 2020</span>
+                                            <span >{`${date} ${month} ${year}`}</span>
                                         </div>
                                         <div className="date_wrapper-m">
                                         </div>
                                     </div>
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
-                                    <br/>
-                                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                    <br/>
-                                    <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-                                    <img src="/Article 1.png" width="100%" alt="foto artikel"/>
+                                    {parse(dataNews.data[0].description)}
                                     <ShareIcon device="forMobile" url={url} showShare={true}/>
                                 </div>
                             </Col>
@@ -137,5 +155,21 @@ const BeritaDetail = () => {
         </React.Fragment>
     )
 }
+
+BeritaDetail.getInitialProps = async (ctx) => {
+    const { origin } = absoluteUrl(ctx.req, "localhost:3010");
+
+    const slug = ctx.query.slug
+
+    const pageRequest = `${origin}/api/getNewsDetail/${slug}`
+    const res = await fetch(pageRequest)
+    const json = await res.json()
+
+    console.log(json.data[0].title);
+
+    return { dataNews: json }
+}
+
+
 
 export default BeritaDetail
