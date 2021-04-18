@@ -156,7 +156,7 @@ const Home = ({dataNews}) => {
                             .map((data)=>{
                                 let d = new Date(data.date);
                                 let date = d.getDate()
-                                let gmonth = d.getMonth()
+                                let gmonth = d.getMonth() + 1
                                 let year = d.getFullYear()
                                 let month;
 
@@ -170,8 +170,32 @@ const Home = ({dataNews}) => {
                                     case 3:
                                         month = 'Maret'
                                         break;
+                                    case 4:
+                                        month = 'April'
+                                        break;
+                                    case 5:
+                                        month = 'Mei'
+                                        break;
+                                    case 6:
+                                        month = 'Juni'
+                                        break;
+                                    case 7:
+                                        month = 'Juli'
+                                        break;
+                                    case 8:
+                                        month = 'Agustus'
+                                        break;
                                     case 9:
                                         month = 'September'
+                                        break;
+                                    case 10:
+                                        month = 'Oktober'
+                                        break;
+                                    case 11:
+                                        month = 'November'
+                                        break;
+                                    case 12:
+                                        month = 'Desember'
                                         break;
                                     default:
                                         break;
@@ -200,20 +224,68 @@ const Home = ({dataNews}) => {
                                 return a.headline != 0
                             })
                             .map((data)=>{
+                                let d = new Date(data.date);
+                                let date = d.getDate()
+                                let gmonth = d.getMonth() + 1
+                                let year = d.getFullYear()
+                                let month;
+
+                                console.log(gmonth);
+
+                                switch (gmonth) {
+                                    case 1:
+                                        month = 'Januari'
+                                        break;
+                                    case 2:
+                                        month = 'Februari'
+                                        break;
+                                    case 3:
+                                        month = 'Maret'
+                                        break;
+                                    case 4:
+                                        month = 'April'
+                                        break;
+                                    case 5:
+                                        month = 'Mei'
+                                        break;
+                                    case 6:
+                                        month = 'Juni'
+                                        break;
+                                    case 7:
+                                        month = 'Juli'
+                                        break;
+                                    case 8:
+                                        month = 'Agustus'
+                                        break;
+                                    case 9:
+                                        month = 'September'
+                                        break;
+                                    case 10:
+                                        month = 'Oktober'
+                                        break;
+                                    case 11:
+                                        month = 'November'
+                                        break;
+                                    case 12:
+                                        month = 'Desember'
+                                        break;
+                                    default:
+                                        break;
+                                }
                                 return (
                                     <Col xs={12} md={6}>
                                         <div className="artikel__secondBorder">
                                             <Row>
                                                 <Col xs={12} md={7}>
                                                     <div className="artikel__wrapper_desc2">
-                                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/Pagelaran-Budaya-Jakarta-Berlangsung`}><a>{data.title}</a></Link>
-                                                        <span>14 Agustus 2020</span>
+                                                        <Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}><a>{data.title}</a></Link>
+                                                        <span>{`${date} ${month} ${year}`}</span>
                                                     </div>
                                                 </Col>
                                                 <Col xs={12} md={5}>
                                                     <div className="artikel__wrapper_img2">
-                                                        <img src="/berita4.png" width="100%" alt="img artikel" className="forDesktop"/>
-                                                        <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href=""><a><img src="/arrow-front.png" /></a></Link></div>
+                                                        <img src={`/artikel/${data.image}`} width="100%" alt="img artikel" className="forDesktop"/>
+                                                        <div className="linkToArtikel linkToArtikel_bottom-zero forDesktop" ><Link href={`/berita/[category]/[slug]`} as={`/berita/press-release/${data.slug}`}><a><img src="/arrow-front.png" /></a></Link></div>
                                                     </div>
                                                 </Col>
                                             </Row>

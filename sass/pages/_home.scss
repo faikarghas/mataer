@@ -231,8 +231,8 @@
             text-decoration: none;
             margin-bottom: 5px;
             // temporary
-            pointer-events: none;
-            cursor: default;
+            // pointer-events: none;
+            // cursor: default;
 
             @include respond(down-tab-port){
                 margin-bottom: 1.5rem;
