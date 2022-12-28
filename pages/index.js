@@ -320,8 +320,6 @@ Home.getInitialProps = async (ctx) => {
     const res = await fetch(pageRequest)
     const json = await res.json()
 
-    console.log(json);
-
     return { dataNews: json }
 }
 
